@@ -1,65 +1,107 @@
-import Image from "next/image";
+import { Suspense } from "react";
+import { getThemes, filterThemes, formatInstalls } from "@/lib/data";
+import { ThemeCard } from "@/components/ThemeCard";
+import { SearchBar } from "@/components/SearchBar";
+import { JsonLd } from "@/components/JsonLd";
 
-export default function Home() {
+interface HomeProps {
+  searchParams: Promise<{
+    q?: string;
+    type?: string;
+    sort?: string;
+    max?: string;
+  }>;
+}
+
+export default async function Home({ searchParams }: HomeProps) {
+  const params = await searchParams;
+  const allThemes = await getThemes();
+  const themes = filterThemes(allThemes, {
+    search: params.q,
+    type: (params.type as "dark" | "light" | "all") || "all",
+    sort:
+      (params.sort as "trending" | "installs" | "rating" | "updated" | "random") ||
+      "trending",
+    maxInstalls: params.max ? parseInt(params.max, 10) : undefined,
+  }).slice(0, 15);
+  const topTheme = themes[0];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "trendingvscode.themes",
+          url: "https://trendingvscode.themes",
+          description: "Discover emerging VS Code themes under 150K installs. Ranked by trending velocity.",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: {
+              "@type": "EntryPoint",
+              urlTemplate: "https://trendingvscode.themes?q={search_term_string}",
+            },
+            "query-input": "required name=search_term_string",
+          },
+        }}
+      />
+      <div className="flex flex-1 flex-col">
+      <header className="border-b border-[var(--border)] px-4 pt-8 pb-6 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-[10px] tracking-[0.3em] uppercase text-[var(--muted)] mb-3">
+            ~/trending-themes
           </p>
+
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter leading-[0.9]" aria-label="Discover emerging VS Code themes under 150K installs, ranked by trending velocity">
+            <span className="text-[var(--text)]">discover</span>
+            <br />
+            <span className="text-[var(--accent)]">emerging</span>
+            <br />
+            <span className="text-[var(--text)]">themes</span>
+            <span className="inline-block w-[2px] h-[0.85em] bg-[var(--accent)] ml-1 align-middle cursor-blink" />
+          </h1>
+
+          <p className="mt-4 text-sm text-[var(--muted)]">
+            under 150K installs · ranked by trending velocity
+          </p>
+
+          <div className="mt-6">
+            <Suspense>
+              <SearchBar />
+            </Suspense>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+      </header>
+
+      <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-0 flex-1">
+        {themes.length === 0 ? (
+          <div className="flex flex-col items-center py-24 text-[var(--muted)]">
+            <p className="text-sm">$ no results found</p>
+            <p className="mt-1 text-xs opacity-60">
+              try: different query or filter
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {themes.map((theme, i) => (
+              <ThemeCard key={theme.id} theme={theme} index={i} />
+            ))}
+          </div>
+        )}
       </main>
+
+      <footer className="border-t border-[var(--border)] px-4 py-2 flex items-center justify-between text-[10px] text-[var(--muted)] sm:px-6 lg:px-8">
+        <span>trendingvscode.themes</span>
+        <span className="flex items-center gap-3">
+          <span className="flex items-center gap-1">
+            <span className="inline-block h-1.5 w-1.5 bg-[var(--accent)]" />
+            connected
+          </span>
+          <span>{themes.length} results</span>
+          {params.max && <span>max {formatInstalls(parseInt(params.max, 10))}</span>}
+        </span>
+      </footer>
     </div>
+    </>
   );
 }
