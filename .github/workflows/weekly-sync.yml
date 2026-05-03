@@ -26,7 +26,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --ignore-scripts
+        run: npm ci --no-audit --no-fund --ignore-scripts
 
       - name: Run weekly sync
         run: npx tsx scripts/sync-weekly.ts
