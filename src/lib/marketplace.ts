@@ -30,6 +30,7 @@ interface MarketplaceExtension {
     value: number;
   }>;
   tags: string[];
+  _hasThemeCache?: boolean;
 }
 
 function buildQuery(
@@ -43,7 +44,6 @@ function buildQuery(
       {
         criteria: [
           { filterType: 8, value: "Microsoft.VisualStudio.Code" },
-          { filterType: 10, value: "4096" },
         ],
         direction: sortOrder,
         pageSize,
@@ -51,7 +51,8 @@ function buildQuery(
         sortBy,
       },
     ],
-    assetTypes: [],
+    // Request manifest to check for theme contributions
+    assetTypes: ["Microsoft.VisualStudio.Code.Manifest"],
     flags: 0x192,
   };
 }
@@ -115,7 +116,7 @@ function extractColors(ext: MarketplaceExtension): ThemeColor[] {
 
 function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
   const stats = Object.fromEntries(
-    ext.statistics.map((s) => [s.statisticName, s.value])
+    (ext.statistics || []).map((s) => [s.statisticName, s.value])
   );
   const latest = ext.versions[0];
   const typeTag = ext.tags?.find(
@@ -150,9 +151,38 @@ function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
   };
 }
 
+// Check if extension has theme contribution by fetching manifest asset
+async function hasThemeContribution(ext: MarketplaceExtension): Promise<boolean> {
+  if (ext._hasThemeCache !== undefined) return ext._hasThemeCache;
+  
+  try {
+    const manifestFile = ext.versions[0].files.find(
+      (f) => f.assetType === "Microsoft.VisualStudio.Code.Manifest"
+    );
+    if (!manifestFile) {
+      ext._hasThemeCache = false;
+      return false;
+    }
+    
+    const res = await fetch(manifestFile.source);
+    if (!res.ok) {
+      ext._hasThemeCache = false;
+      return false;
+    }
+    
+    const manifest = await res.json();
+    const hasThemes = !!(manifest.contributes?.themes?.length);
+    ext._hasThemeCache = hasThemes;
+    return hasThemes;
+  } catch {
+    ext._hasThemeCache = false;
+    return false;
+  }
+}
+
 function scoreTheme(ext: MarketplaceExtension): number {
   const stats = Object.fromEntries(
-    ext.statistics.map((s) => [s.statisticName, s.value])
+    (ext.statistics || []).map((s) => [s.statisticName, s.value])
   );
   const daily = stats["trendingdaily"] || 0;
   const weekly = stats["trendingweekly"] || 0;
@@ -187,29 +217,51 @@ async function fetchPage(
   return data.results?.[0]?.extensions || [];
 }
 
+// Check themes in batches to avoid overwhelming the API
+async function checkThemesInBatches(
+  extensions: MarketplaceExtension[],
+  batchSize: number
+): Promise<void> {
+  for (let i = 0; i < extensions.length; i += batchSize) {
+    const batch = extensions.slice(i, i + batchSize);
+    await Promise.all(batch.map((ext) => hasThemeContribution(ext)));
+  }
+}
+
 export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
   const SORT_BY_INSTALLS = 4;
   const SORT_BY_DATE = 1;
   const SORT_BY_RATING = 2;
   const SORT_DESC = 0;
 
-  const [byInstalls, byDate, byRating] = await Promise.all([
-    fetchPage(SORT_BY_INSTALLS, SORT_DESC, pageSize),
-    fetchPage(SORT_BY_DATE, SORT_DESC, pageSize),
-    fetchPage(SORT_BY_RATING, SORT_DESC, Math.floor(pageSize / 2)),
-  ]);
-
-  const seen = new Set<string>();
+  // Fetch all extensions (need larger page size for themes which are rare)
   const all: MarketplaceExtension[] = [];
-  for (const ext of [...byInstalls, ...byDate, ...byRating]) {
-    const key = ext.extensionId;
-    if (!seen.has(key)) {
-      seen.add(key);
-      all.push(ext);
+  let cursor: string | undefined;
+  const maxPages = 50;
+  
+  for (let page = 0; page < maxPages; page++) {
+    const [byInstalls, byDate, byRating] = await Promise.all([
+      fetchPage(SORT_BY_INSTALLS, SORT_DESC, pageSize, cursor),
+      fetchPage(SORT_BY_DATE, SORT_DESC, pageSize, cursor),
+      fetchPage(SORT_BY_RATING, SORT_DESC, Math.floor(pageSize / 2), cursor),
+    ]);
+    
+    const seen = new Set(all.map((ext) => ext.extensionId));
+    for (const ext of [...byInstalls, ...byDate, ...byRating]) {
+      if (!seen.has(ext.extensionId)) {
+        seen.add(ext.extensionId);
+        all.push(ext);
+      }
     }
+    
+    if (cursor === undefined || all.length >= pageSize * 3) break;
   }
 
+  // Check each extension for theme contribution
+  await checkThemesInBatches(all, 10);
+
   return all
+    .filter((ext) => ext._hasThemeCache)
     .map((ext) => mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100))
     .sort((a, b) => b.trendingScore - a.trendingScore);
 }
