@@ -17,7 +17,7 @@
       "colors": [],
       "iconUrl": null,
       "vscodeId": "da1z.darkvsthemeoldfuk",
-      "trendingScore": 6.99
+      "trendingScore": 7
     },
     {
       "id": "38826998-1819-43c8-ad3f-c4ad17289620",
@@ -53,7 +53,7 @@
       "colors": [],
       "iconUrl": null,
       "vscodeId": "LuanKY.synth-wave-min-theme",
-      "trendingScore": 4.56
+      "trendingScore": 4.59
     },
     {
       "id": "dda5d730-a71b-47a4-9828-df9b57a4c764",
@@ -97,7 +97,7 @@
       "publisher": "hfac",
       "publisherId": "hfac",
       "description": "A theme for the ones of us that are still missing good old MS-DOS",
-      "installs": 14950,
+      "installs": 14949,
       "rating": 4.699999809265137,
       "ratingCount": 10,
       "lastUpdated": "2025-05-25T12:12:30.85Z",
@@ -107,7 +107,7 @@
       "colors": [],
       "iconUrl": null,
       "vscodeId": "hfac.msdos-theme",
-      "trendingScore": 3.15
+      "trendingScore": 3.19
     },
     {
       "id": "73df7cae-2185-4cfb-a117-ec7a43f08e71",
@@ -115,7 +115,7 @@
       "publisher": "Luis Rogelio Reyes Hernandez",
       "publisherId": "luis-reyes",
       "description": "Synth Wave '84 color theme Fork with minor changes",
-      "installs": 22026,
+      "installs": 22025,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2020-10-19T01:30:37.753Z",
@@ -125,7 +125,7 @@
       "colors": [],
       "iconUrl": null,
       "vscodeId": "luis-reyes.synth-wave-remix",
-      "trendingScore": 3.13
+      "trendingScore": 3.18
     },
     {
       "id": "40d39ce9-c381-47a0-80c8-a6661f731eab",
@@ -133,7 +133,7 @@
       "publisher": "Microsoft",
       "publisherId": "ms-vscode",
       "description": "Develop PowerShell modules, commands and scripts in Visual Studio Code!",
-      "installs": 19205273,
+      "installs": 19203527,
       "rating": 3.563218355178833,
       "ratingCount": 174,
       "lastUpdated": "2026-04-08T23:44:43.717Z",
@@ -169,7 +169,7 @@
       "publisher": "Dracula Theme",
       "publisherId": "dracula-theme",
       "description": "The official Dracula Theme: a dark theme for many editors, shells, and more. 🦇",
-      "installs": 10415885,
+      "installs": 10415379,
       "rating": 4.778443336486816,
       "ratingCount": 167,
       "lastUpdated": "2024-07-17T12:56:35.03Z",
@@ -187,7 +187,7 @@
       "publisher": "GitHub",
       "publisherId": "GitHub",
       "description": "GitHub theme for VS Code",
-      "installs": 18874583,
+      "installs": 18873548,
       "rating": 4.586826324462891,
       "ratingCount": 167,
       "lastUpdated": "2024-10-03T05:36:07.743Z",
@@ -205,7 +205,7 @@
       "publisher": "binaryify",
       "publisherId": "zhuangtongfa",
       "description": "Atom's iconic One Dark theme for Visual Studio Code",
-      "installs": 12241526,
+      "installs": 12241002,
       "rating": 4.665158271789551,
       "ratingCount": 221,
       "lastUpdated": "2025-02-09T15:48:47.563Z",
@@ -223,7 +223,7 @@
       "publisher": "Microsoft",
       "publisherId": "ms-vscode",
       "description": "UI Themes for C/C++ extension.",
-      "installs": 55378297,
+      "installs": 55374372,
       "rating": 3.473684310913086,
       "ratingCount": 19,
       "lastUpdated": "2022-10-24T21:51:14.927Z",
@@ -236,30 +236,12 @@
       "trendingScore": 2.36
     },
     {
-      "id": "b860eb50-4eec-4947-a28f-6c5e61c38da2",
-      "name": " Fuyuko Mayuzumi color theme",
-      "publisher": "shadow tanaka",
-      "publisherId": "shadowtanaka",
-      "description": "color theme for FuyukoPs",
-      "installs": 174,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-06-29T06:32:20.203Z",
-      "repository": "https://github.com/TenshiMunasinghe/fuyuko-mayuzumi-color-theme.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [],
-      "iconUrl": null,
-      "vscodeId": "shadowtanaka.fuyuko-mayuzumi-color-theme",
-      "trendingScore": 2.3
-    },
-    {
       "id": "d0bfc4ab-1d3a-4487-8782-7cf6027b4fff",
       "name": "C#",
       "publisher": "Microsoft",
       "publisherId": "ms-dotnettools",
       "description": "Base language support for C#",
-      "installs": 40390849,
+      "installs": 40388545,
       "rating": 2.7391304969787598,
       "ratingCount": 667,
       "lastUpdated": "2026-04-24T13:39:15.13Z",
@@ -362,21 +344,21 @@
       "trendingScore": 1.5
     },
     {
-      "id": "946417a8-4a9f-4c4b-a186-1c9da1274477",
-      "name": "  [.𝘝𝘖𝘚𝘛𝘍𝘙.] 𝘚𝘰𝘯𝘪𝘤 𝟤, 𝘭𝘦 𝘧𝘪𝘭𝘮 (𝟤0𝟤𝟤) 𝘍𝘐𝘓𝘔 𝘌𝘕 𝘍𝘙𝘈𝘕Ç𝘈𝘐𝘚 𝘚𝘛𝘙𝘌𝘈𝘔𝘐𝘕𝘎|𝘝𝘍 WOUW",
-      "publisher": "conicdehegog",
-      "publisherId": "conicdehegog",
-      "description": "The only easy way to watch Moonfall streaming f.r.e.e without downloading anything is by visiting this web page. You can stream Moonfall online here right now.",
-      "installs": 0,
+      "id": "b860eb50-4eec-4947-a28f-6c5e61c38da2",
+      "name": " Fuyuko Mayuzumi color theme",
+      "publisher": "shadow tanaka",
+      "publisherId": "shadowtanaka",
+      "description": "color theme for FuyukoPs",
+      "installs": 174,
       "rating": 0,
       "ratingCount": 0,
-      "lastUpdated": "2022-04-08T17:54:57.553Z",
-      "repository": "",
+      "lastUpdated": "2022-06-29T06:32:20.203Z",
+      "repository": "https://github.com/TenshiMunasinghe/fuyuko-mayuzumi-color-theme.git",
       "type": "dark",
       "categories": [],
       "colors": [],
       "iconUrl": null,
-      "vscodeId": "conicdehegog.coniccc3",
+      "vscodeId": "shadowtanaka.fuyuko-mayuzumi-color-theme",
       "trendingScore": 1.5
     },
     {
