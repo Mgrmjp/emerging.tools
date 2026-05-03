@@ -14,28 +14,19 @@
       "repository": "https://github.com/da1z/darkvsthemeoldfuk.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "da1z.darkvsthemeoldfuk",
       "trendingScore": 7
-    },
-    {
-      "id": "38826998-1819-43c8-ad3f-c4ad17289620",
-      "name": "Stencila",
-      "publisher": "Stencila",
-      "publisherId": "stencila",
-      "description": "Documents with Scientific Intelligence",
-      "installs": 384,
-      "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2026-05-03T04:18:15.45Z",
-      "repository": "https://github.com/stencila/stencila.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [],
-      "iconUrl": null,
-      "vscodeId": "stencila.stencila",
-      "trendingScore": 4.87
     },
     {
       "id": "a0b69ebf-2779-492f-92e3-9fac156fc69d",
@@ -50,46 +41,19 @@
       "repository": "https://github.com/LuanKY/synthwave-remix-vscode-min-theme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "LuanKY.synth-wave-min-theme",
       "trendingScore": 4.59
-    },
-    {
-      "id": "dda5d730-a71b-47a4-9828-df9b57a4c764",
-      "name": "Fifty Shades of Grape",
-      "publisher": "Chen Yefet",
-      "publisherId": "ChenYefet",
-      "description": "A dark theme with pink, purple and turquoise as the main colours. Designed to be pleasant on the eyes",
-      "installs": 1330,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2026-05-03T05:06:43.663Z",
-      "repository": "https://github.com/ChenYefet/fifty-shades-of-grape.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [],
-      "iconUrl": null,
-      "vscodeId": "ChenYefet.fifty-shades-of-grape",
-      "trendingScore": 4.13
-    },
-    {
-      "id": "61187cc2-ffb9-40f8-84f5-a3cf743f3f44",
-      "name": "Eloquent Dark Pro",
-      "publisher": "HFA-NYC",
-      "publisherId": "HFA-NYC",
-      "description": "A refined dark theme based on Atom One Dark — tuned for long coding sessions, with carefully balanced contrast for JS/TS, JSX, PHP, Blade, and modern web stacks.",
-      "installs": 43,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2026-05-03T04:29:25.693Z",
-      "repository": "https://github.com/Eloquent-Software/vscode-theme-dark-pro.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [],
-      "iconUrl": null,
-      "vscodeId": "HFA-NYC.hani-dark-pro",
-      "trendingScore": 3.5
     },
     {
       "id": "ea25ab2f-7aaa-42df-8bb4-50dd9348e4c5",
@@ -104,7 +68,16 @@
       "repository": "",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "hfac.msdos-theme",
       "trendingScore": 3.19
@@ -122,7 +95,16 @@
       "repository": "https://github.com/LuisReyes98/synthwave-remix-vscode",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "luis-reyes.synth-wave-remix",
       "trendingScore": 3.18
@@ -133,17 +115,26 @@
       "publisher": "Microsoft",
       "publisherId": "ms-vscode",
       "description": "Develop PowerShell modules, commands and scripts in Visual Studio Code!",
-      "installs": 19203527,
+      "installs": 19203099,
       "rating": 3.563218355178833,
       "ratingCount": 174,
       "lastUpdated": "2026-04-08T23:44:43.717Z",
       "repository": "https://github.com/PowerShell/vscode-powershell.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "ms-vscode.PowerShell",
-      "trendingScore": 2.94
+      "trendingScore": 2.95
     },
     {
       "id": "455efde4-14e9-44c0-aca0-05f6a1448a0f",
@@ -158,7 +149,16 @@
       "repository": "https://github.com/jonaslng/vscodetheme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "jonaslng.jonas-design",
       "trendingScore": 2.87
@@ -169,17 +169,26 @@
       "publisher": "Dracula Theme",
       "publisherId": "dracula-theme",
       "description": "The official Dracula Theme: a dark theme for many editors, shells, and more. 🦇",
-      "installs": 10415379,
+      "installs": 10415238,
       "rating": 4.778443336486816,
       "ratingCount": 167,
       "lastUpdated": "2024-07-17T12:56:35.03Z",
       "repository": "https://github.com/dracula/visual-studio-code.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "dracula-theme.theme-dracula",
-      "trendingScore": 2.64
+      "trendingScore": 2.65
     },
     {
       "id": "7328a705-91fc-49e6-8293-da6f112e482d",
@@ -187,14 +196,23 @@
       "publisher": "GitHub",
       "publisherId": "GitHub",
       "description": "GitHub theme for VS Code",
-      "installs": 18873548,
+      "installs": 18873282,
       "rating": 4.586826324462891,
       "ratingCount": 167,
       "lastUpdated": "2024-10-03T05:36:07.743Z",
       "repository": "https://github.com/primer/github-vscode-theme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "GitHub.github-vscode-theme",
       "trendingScore": 2.52
@@ -205,17 +223,26 @@
       "publisher": "binaryify",
       "publisherId": "zhuangtongfa",
       "description": "Atom's iconic One Dark theme for Visual Studio Code",
-      "installs": 12241002,
+      "installs": 12240868,
       "rating": 4.665158271789551,
       "ratingCount": 221,
       "lastUpdated": "2025-02-09T15:48:47.563Z",
       "repository": "https://github.com/Binaryify/OneDark-Pro.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "zhuangtongfa.Material-theme",
-      "trendingScore": 2.4
+      "trendingScore": 2.41
     },
     {
       "id": "99b17261-8f6e-45f0-9ad5-a69c6f509a4f",
@@ -223,17 +250,26 @@
       "publisher": "Microsoft",
       "publisherId": "ms-vscode",
       "description": "UI Themes for C/C++ extension.",
-      "installs": 55374372,
+      "installs": 55373658,
       "rating": 3.473684310913086,
       "ratingCount": 19,
       "lastUpdated": "2022-10-24T21:51:14.927Z",
       "repository": "https://github.com/Microsoft/vscode-cpptools.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "ms-vscode.cpptools-themes",
-      "trendingScore": 2.36
+      "trendingScore": 2.38
     },
     {
       "id": "d0bfc4ab-1d3a-4487-8782-7cf6027b4fff",
@@ -241,17 +277,53 @@
       "publisher": "Microsoft",
       "publisherId": "ms-dotnettools",
       "description": "Base language support for C#",
-      "installs": 40388545,
+      "installs": 40387893,
       "rating": 2.7391304969787598,
       "ratingCount": 667,
       "lastUpdated": "2026-04-24T13:39:15.13Z",
       "repository": "https://github.com/dotnet/vscode-csharp.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "ms-dotnettools.csharp",
-      "trendingScore": 1.99
+      "trendingScore": 2
+    },
+    {
+      "id": "fd582f67-7a6a-4c96-874f-4725d9a4734a",
+      "name": "AOE2 AI Parser",
+      "publisher": "aoe2-ai-scripters",
+      "publisherId": "aoe2-ai-scripters",
+      "description": "Parser diagnostics, command tooltips, syntax highlighting, and autocomplete for Age of Empires 2 AI scripts in VS Code and Cursor",
+      "installs": 3,
+      "rating": 0,
+      "ratingCount": 0,
+      "lastUpdated": "2026-05-03T08:38:36.677Z",
+      "repository": "https://github.com/joerollman/aoe2-ai-parser.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "aoe2-ai-scripters.aoe2-ai-parser",
+      "trendingScore": 1.5
     },
     {
       "id": "0ef9a9d4-b232-45ce-b664-7cdbf1bbaa3b",
@@ -266,7 +338,16 @@
       "repository": "https://github.com/kushagra1212/Flow-Wing.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "kushagra.Flow-Wing",
       "trendingScore": 1.5
@@ -284,7 +365,16 @@
       "repository": "https://github.com/minkul/focusflow.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "minkul.focusflowtheme",
       "trendingScore": 1.5
@@ -302,7 +392,16 @@
       "repository": "https://github.com/Dru1DD/warhammer-vscode-theme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "Dru1DD.warhammer-40k-theme",
       "trendingScore": 1.5
@@ -320,27 +419,45 @@
       "repository": "https://github.com/Saarmyx/NexoraTheme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "Nexora.nexora-theme",
       "trendingScore": 1.5
     },
     {
-      "id": "fd582f67-7a6a-4c96-874f-4725d9a4734a",
-      "name": "AOE2 AI Parser",
-      "publisher": "aoe2-ai-scripters",
-      "publisherId": "aoe2-ai-scripters",
-      "description": "Parser diagnostics, command tooltips, syntax highlighting, and autocomplete for Age of Empires 2 AI scripts in VS Code and Cursor",
-      "installs": 3,
+      "id": "946417a8-4a9f-4c4b-a186-1c9da1274477",
+      "name": "  [.𝘝𝘖𝘚𝘛𝘍𝘙.] 𝘚𝘰𝘯𝘪𝘤 𝟤, 𝘭𝘦 𝘧𝘪𝘭𝘮 (𝟤0𝟤𝟤) 𝘍𝘐𝘓𝘔 𝘌𝘕 𝘍𝘙𝘈𝘕Ç𝘈𝘐𝘚 𝘚𝘛𝘙𝘌𝘈𝘔𝘐𝘕𝘎|𝘝𝘍 WOUW",
+      "publisher": "conicdehegog",
+      "publisherId": "conicdehegog",
+      "description": "The only easy way to watch Moonfall streaming f.r.e.e without downloading anything is by visiting this web page. You can stream Moonfall online here right now.",
+      "installs": 0,
       "rating": 0,
       "ratingCount": 0,
-      "lastUpdated": "2026-05-03T04:47:02.29Z",
-      "repository": "https://github.com/joerollman/aoe2-ai-parser.git",
+      "lastUpdated": "2022-04-08T17:54:57.553Z",
+      "repository": "",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
-      "vscodeId": "aoe2-ai-scripters.aoe2-ai-parser",
+      "vscodeId": "conicdehegog.coniccc3",
       "trendingScore": 1.5
     },
     {
@@ -356,27 +473,18 @@
       "repository": "https://github.com/TenshiMunasinghe/fuyuko-mayuzumi-color-theme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "shadowtanaka.fuyuko-mayuzumi-color-theme",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "b1a7eea2-5f12-4e28-9e81-6679770ead13",
-      "name": " Legendás állatok dumbledore titkai【2022】 online HD™ teljes film magyarul videa ingyen",
-      "publisher": "markles",
-      "publisherId": "markles",
-      "description": "",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-04-14T16:45:25.967Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [],
-      "iconUrl": null,
-      "vscodeId": "markles.meikatof-fantastic-dombulderetitkai",
       "trendingScore": 1.5
     },
     {
@@ -392,7 +500,16 @@
       "repository": "https://github.com/Chandraprakash-Darji/rega.theme.git",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "regatheme.rega-theme",
       "trendingScore": 1.5
@@ -410,27 +527,45 @@
       "repository": "",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
       "vscodeId": "MonalizaMov.parasitas2019ptfilmes",
       "trendingScore": 1.5
     },
     {
-      "id": "28da740d-99b6-44a0-bfe3-8993b5e63ae8",
-      "name": " ▷VIDEA HD™ Legendás állatok: Dumbledore titkai [[2022]] Teljes Film Magyarul",
+      "id": "654f5119-5e71-42c9-aeb5-3106c09e2ec2",
+      "name": " 《手錶》HD™電影 怪獸與鄧不利多的秘密▷線上看完整版(2022)tw在线观看",
       "publisher": "markles",
       "publisherId": "markles",
       "description": "",
       "installs": 0,
       "rating": 0,
       "ratingCount": 0,
-      "lastUpdated": "2022-04-14T16:25:39.317Z",
+      "lastUpdated": "2022-04-14T16:09:07.327Z",
       "repository": "",
       "type": "dark",
       "categories": [],
-      "colors": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1e2e"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdd6f4"
+        }
+      ],
       "iconUrl": null,
-      "vscodeId": "markles.bungah-of-dombuldere-fantastic",
+      "vscodeId": "markles.satuhatifantastic-of-dombuldere",
       "trendingScore": 1.5
     }
   ]
