@@ -37,7 +37,7 @@ function buildQuery(
   sortBy: number,
   sortOrder: number,
   pageSize: number,
-  cursor?: number
+  cursor?: string
 ) {
   return {
     filters: [
@@ -201,7 +201,7 @@ async function fetchPage(
   sortBy: number,
   sortOrder: number,
   pageSize: number,
-  cursor?: number
+  cursor?: string
 ): Promise<MarketplaceExtension[]> {
   const body = buildQuery(sortBy, sortOrder, pageSize, cursor);
 
