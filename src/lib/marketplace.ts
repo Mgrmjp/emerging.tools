@@ -118,7 +118,7 @@ function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
     ext.statistics.map((s) => [s.statisticName, s.value])
   );
   const latest = ext.versions[0];
-  const typeTag = ext.tags.find(
+  const typeTag = ext.tags?.find(
     (t) => t === "theme-dark" || t === "theme-light"
   );
   const iconFile = latest?.files?.find(
@@ -140,7 +140,7 @@ function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
         (p) => p.key === "Microsoft.VisualStudio.Services.Links.Source"
       )?.value || "",
     type: typeTag === "theme-light" ? "light" : "dark",
-    categories: ext.tags.filter(
+    categories: (ext.tags || []).filter(
       (t) => !t.startsWith("theme-") && !t.startsWith("__")
     ),
     colors: extractColors(ext),
