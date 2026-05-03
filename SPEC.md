@@ -41,6 +41,13 @@ Build a curated, fast, and SEO friendly website that surfaces trending Visual St
 - Redis cache for fast read access to trending lists
 - Fallback static generation for offline resilience
 
+### Weekly Automation
+- GitHub Actions cron job runs every Sunday at 00:00 UTC
+- Fetches top 100 trending themes and saves to `/data/weekly-YYYY-MM-DD.json`
+- Also maintains `/data/latest.json` for quick access to most recent snapshot
+- Can be triggered manually via workflow_dispatch
+- Optional auth token via SYNC_SECRET env var for API route protection
+
 ## 5. Technical Architecture
 ### Frontend
 - Next.js with App Router for SSR and static generation

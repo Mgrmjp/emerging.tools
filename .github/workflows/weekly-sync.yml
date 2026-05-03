@@ -1,0 +1,47 @@
+name: Weekly Theme Sync
+
+on:
+  schedule:
+    # Every Sunday at 00:00 UTC
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force sync even if already run this week"
+        required: false
+        default: "false"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run weekly sync
+        run: npx tsx scripts/sync-weekly.ts
+        env:
+          NODE_ENV: production
+
+      - name: Commit snapshot
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git diff --staged --quiet || git commit -m "Weekly sync $(date +%Y-%m-%d)"
+          git push
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Weekly sync failed - check workflow logs"
