@@ -30,7 +30,7 @@ interface MarketplaceExtension {
     value: number;
   }>;
   tags: string[];
-  _hasThemeCache?: boolean;
+  _manifest?: Record<string, unknown>;
 }
 
 function buildQuery(
@@ -58,24 +58,23 @@ function buildQuery(
 }
 
 function extractColors(ext: MarketplaceExtension): ThemeColor[] {
-  const contribution = ext.versions?.[0]?.properties?.find(
-    (p) => p.key === "Microsoft.VisualStudio.Code.ExtensionContributions"
-  );
-  if (!contribution) return [];
+  const manifest = ext._manifest;
+  if (!manifest) return [];
   try {
-    const parsed = JSON.parse(contribution.value);
-    const themeContribs = parsed?.contributes?.themes;
+    const themeContribs = (manifest.contributes as Record<string, unknown> | undefined)?.themes as Record<string, unknown>[] | undefined;
     if (!themeContribs?.length) return [];
     const colors: ThemeColor[] = [];
     const tc = themeContribs[0];
-    if (tc.colors) {
-      for (const [name, hex] of Object.entries(tc.colors)) {
-        colors.push({ name, hex: hex as string });
+    const tcColors = tc.colors as Record<string, string> | undefined;
+    if (tcColors) {
+      for (const [name, hex] of Object.entries(tcColors)) {
+        colors.push({ name, hex });
       }
     }
-    if (colors.length === 0 && tc.tokenColors) {
+    const tokenColors = tc.tokenColors as Array<{ scope?: string | string[]; settings?: { foreground?: string } }> | undefined;
+    if (colors.length === 0 && tokenColors) {
       const tokenMap: Record<string, string> = {};
-      for (const token of tc.tokenColors) {
+      for (const token of tokenColors) {
         if (token.settings?.foreground) {
           const scope = Array.isArray(token.scope) ? token.scope[0] : token.scope;
           if (scope && !tokenMap[scope]) {
@@ -103,8 +102,8 @@ function extractColors(ext: MarketplaceExtension): ThemeColor[] {
       }
     }
     if (colors.length === 0) {
-      const bg = tc.colors?.["editor.background"] || "#1e1e2e";
-      const fg = tc.colors?.["editor.foreground"] || "#cdd6f4";
+      const bg = tcColors?.["editor.background"] || "#1e1e2e";
+      const fg = tcColors?.["editor.foreground"] || "#cdd6f4";
       colors.push({ name: "editor.background", hex: bg });
       colors.push({ name: "editor.foreground", hex: fg });
     }
@@ -151,32 +150,17 @@ function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
   };
 }
 
-// Check if extension has theme contribution by fetching manifest asset
-async function hasThemeContribution(ext: MarketplaceExtension): Promise<boolean> {
-  if (ext._hasThemeCache !== undefined) return ext._hasThemeCache;
-  
+async function fetchManifest(ext: MarketplaceExtension): Promise<Record<string, unknown> | null> {
   try {
     const manifestFile = ext.versions[0].files.find(
       (f) => f.assetType === "Microsoft.VisualStudio.Code.Manifest"
     );
-    if (!manifestFile) {
-      ext._hasThemeCache = false;
-      return false;
-    }
-    
+    if (!manifestFile) return null;
     const res = await fetch(manifestFile.source);
-    if (!res.ok) {
-      ext._hasThemeCache = false;
-      return false;
-    }
-    
-    const manifest = await res.json();
-    const hasThemes = !!(manifest.contributes?.themes?.length);
-    ext._hasThemeCache = hasThemes;
-    return hasThemes;
+    if (!res.ok) return null;
+    return await res.json();
   } catch {
-    ext._hasThemeCache = false;
-    return false;
+    return null;
   }
 }
 
@@ -217,14 +201,16 @@ async function fetchPage(
   return data.results?.[0]?.extensions || [];
 }
 
-// Check themes in batches to avoid overwhelming the API
-async function checkThemesInBatches(
+async function attachManifestsInBatches(
   extensions: MarketplaceExtension[],
   batchSize: number
 ): Promise<void> {
   for (let i = 0; i < extensions.length; i += batchSize) {
     const batch = extensions.slice(i, i + batchSize);
-    await Promise.all(batch.map((ext) => hasThemeContribution(ext)));
+    const manifests = await Promise.all(batch.map((ext) => fetchManifest(ext)));
+    for (let j = 0; j < batch.length; j++) {
+      batch[j]._manifest = manifests[j] ?? undefined;
+    }
   }
 }
 
@@ -234,7 +220,6 @@ export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
   const SORT_BY_RATING = 2;
   const SORT_DESC = 0;
 
-  // Fetch all extensions (need larger page size for themes which are rare)
   const all: MarketplaceExtension[] = [];
   let cursor: string | undefined;
   const maxPages = 50;
@@ -257,11 +242,10 @@ export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
     if (cursor === undefined || all.length >= pageSize * 3) break;
   }
 
-  // Check each extension for theme contribution
-  await checkThemesInBatches(all, 10);
+  await attachManifestsInBatches(all, 10);
 
   return all
-    .filter((ext) => ext._hasThemeCache)
+    .filter((ext) => ext._manifest && (ext._manifest.contributes as Record<string, unknown> | undefined)?.themes)
     .map((ext) => mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100))
     .sort((a, b) => b.trendingScore - a.trendingScore);
 }
@@ -294,6 +278,8 @@ export async function fetchThemeById(id: string): Promise<Theme | null> {
   const ext: MarketplaceExtension | undefined =
     data.results?.[0]?.extensions?.[0];
   if (!ext) return null;
+
+  ext._manifest = (await fetchManifest(ext)) ?? undefined;
 
   return mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100);
 }
