@@ -4,6 +4,7 @@ import { Theme } from "./types";
 import { SAMPLE_THEMES } from "./sample-data";
 
 const MAX_INSTALLS = 150_000;
+const MIN_INSTALLS = 1_000;
 const MIN_YEAR = 2020;
 const SNAPSHOT_PATH = path.join(process.cwd(), "data", "latest.json");
 
@@ -26,6 +27,7 @@ async function readSnapshotThemes(): Promise<Theme[] | null> {
 function filterSupportedThemes(themes: Theme[]): Theme[] {
   return themes.filter(
     (t) =>
+      t.installs >= MIN_INSTALLS &&
       t.installs <= MAX_INSTALLS &&
       new Date(t.lastUpdated).getFullYear() >= MIN_YEAR
   );

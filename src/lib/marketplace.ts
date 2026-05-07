@@ -3,6 +3,7 @@ import { Theme, ThemeColor } from "./types";
 
 const MARKETPLACE_API =
   "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery";
+const MIN_INSTALLS = 1_000;
 
 const MARKETPLACE_HEADERS = {
   "Content-Type": "application/json",
@@ -530,6 +531,7 @@ export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
 
   return ranked
     .map((ext) => mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100))
+    .filter((theme) => theme.installs >= MIN_INSTALLS)
     .sort((a, b) => b.trendingScore - a.trendingScore);
 }
 
@@ -565,5 +567,6 @@ export async function fetchThemeById(id: string): Promise<Theme | null> {
   ext._manifest = (await fetchManifest(ext)) ?? undefined;
   ext._palette = await fetchPalette(ext);
 
-  return mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100);
+  const theme = mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100);
+  return theme.installs >= MIN_INSTALLS ? theme : null;
 }

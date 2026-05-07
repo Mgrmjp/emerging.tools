@@ -2,57 +2,6 @@
   "date": "2026-05-07",
   "themes": [
     {
-      "id": "7d566cd1-995a-481a-b156-69ca8cc15a69",
-      "name": " Dark (Visual Studio) Old Fuk",
-      "publisher": "da1z",
-      "publisherId": "da1z",
-      "description": "Improved Dark (Visual Studio) theme",
-      "installs": 788,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2024-09-05T20:37:00.96Z",
-      "repository": "https://github.com/da1z/darkvsthemeoldfuk.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e1e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#d4d4d4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#569CD6"
-        },
-        {
-          "name": "string",
-          "hex": "#CE9178"
-        },
-        {
-          "name": "comment",
-          "hex": "#6A9955"
-        },
-        {
-          "name": "variable",
-          "hex": "#9CDCFE"
-        },
-        {
-          "name": "function",
-          "hex": "#B4B3FA"
-        },
-        {
-          "name": "number",
-          "hex": "#B5CEA8"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "da1z.darkvsthemeoldfuk",
-      "trendingScore": 6.56
-    },
-    {
       "id": "a0b69ebf-2779-492f-92e3-9fac156fc69d",
       "name": " Synth Wave '84 Min Theme",
       "publisher": "LuanKY",
@@ -102,57 +51,6 @@
       "iconUrl": null,
       "vscodeId": "LuanKY.synth-wave-min-theme",
       "trendingScore": 4.54
-    },
-    {
-      "id": "fa5f403d-4904-4503-bb98-d3674eccdc50",
-      "name": "Zairyō Themes",
-      "publisher": "Evgeniy Khramov (thejenja)",
-      "publisherId": "thejenja",
-      "description": "🎨 20 Zairyō themes — 5 color schemes × 4 variants. by thejenja",
-      "installs": 9,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2026-05-07T15:40:23.053Z",
-      "repository": "https://github.com/thejenja/zairyo-theme-vscode.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1C1B1F"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#E6E1E5"
-        },
-        {
-          "name": "keyword",
-          "hex": "#D0BCFF"
-        },
-        {
-          "name": "string",
-          "hex": "#EFB8C8"
-        },
-        {
-          "name": "comment",
-          "hex": "#938F99"
-        },
-        {
-          "name": "variable",
-          "hex": "#E6E1E5"
-        },
-        {
-          "name": "function",
-          "hex": "#CCC2DC"
-        },
-        {
-          "name": "number",
-          "hex": "#FFB4AB"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "thejenja.zairyo-color-themes",
-      "trendingScore": 3.5
     },
     {
       "id": "ea25ab2f-7aaa-42df-8bb4-50dd9348e4c5",
@@ -211,7 +109,7 @@
       "publisher": "Luis Rogelio Reyes Hernandez",
       "publisherId": "luis-reyes",
       "description": "Synth Wave '84 color theme Fork with minor changes",
-      "installs": 22042,
+      "installs": 22040,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2020-10-19T01:30:37.753Z",
@@ -262,7 +160,7 @@
       "publisher": "Microsoft",
       "publisherId": "ms-vscode",
       "description": "Develop PowerShell modules, commands and scripts in Visual Studio Code!",
-      "installs": 19280009,
+      "installs": 19288201,
       "rating": 3.563218355178833,
       "ratingCount": 174,
       "lastUpdated": "2026-04-08T23:44:43.717Z",
@@ -313,7 +211,7 @@
       "publisher": "Dracula Theme",
       "publisherId": "dracula-theme",
       "description": "The official Dracula Theme: a dark theme for many editors, shells, and more. 🦇",
-      "installs": 10435148,
+      "installs": 10436803,
       "rating": 4.778443336486816,
       "ratingCount": 167,
       "lastUpdated": "2024-07-17T12:56:35.03Z",
@@ -364,7 +262,7 @@
       "publisher": "GitHub",
       "publisherId": "GitHub",
       "description": "GitHub theme for VS Code",
-      "installs": 18904874,
+      "installs": 18907573,
       "rating": 4.586826324462891,
       "ratingCount": 167,
       "lastUpdated": "2024-10-03T05:36:07.743Z",
@@ -415,7 +313,7 @@
       "publisher": "binaryify",
       "publisherId": "zhuangtongfa",
       "description": "Atom's iconic One Dark theme for Visual Studio Code",
-      "installs": 12256797,
+      "installs": 12258406,
       "rating": 4.665158271789551,
       "ratingCount": 221,
       "lastUpdated": "2025-02-09T15:48:47.563Z",
@@ -466,7 +364,7 @@
       "publisher": "Microsoft",
       "publisherId": "ms-vscode",
       "description": "UI Themes for C/C++ extension.",
-      "installs": 55506331,
+      "installs": 55520968,
       "rating": 3.473684310913086,
       "ratingCount": 19,
       "lastUpdated": "2022-10-24T21:51:14.927Z",
@@ -512,114 +410,12 @@
       "trendingScore": 2.32
     },
     {
-      "id": "b860eb50-4eec-4947-a28f-6c5e61c38da2",
-      "name": " Fuyuko Mayuzumi color theme",
-      "publisher": "shadow tanaka",
-      "publisherId": "shadowtanaka",
-      "description": "color theme for FuyukoPs",
-      "installs": 174,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-06-29T06:32:20.203Z",
-      "repository": "https://github.com/TenshiMunasinghe/fuyuko-mayuzumi-color-theme.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#343344"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#ffdaea"
-        },
-        {
-          "name": "keyword",
-          "hex": "#e4005c"
-        },
-        {
-          "name": "string",
-          "hex": "#deff95"
-        },
-        {
-          "name": "comment",
-          "hex": "#7f848e"
-        },
-        {
-          "name": "variable",
-          "hex": "#ffeddf"
-        },
-        {
-          "name": "function",
-          "hex": "#e09baf"
-        },
-        {
-          "name": "number",
-          "hex": "#fbd4b7"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "shadowtanaka.fuyuko-mayuzumi-color-theme",
-      "trendingScore": 2.3
-    },
-    {
-      "id": "455efde4-14e9-44c0-aca0-05f6a1448a0f",
-      "name": " jonas-design",
-      "publisher": "jonaslng",
-      "publisherId": "jonaslng",
-      "description": "A nice little Visual Studio Code Design package",
-      "installs": 128,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-01-16T17:01:05.217Z",
-      "repository": "https://github.com/jonaslng/vscodetheme.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "jonaslng.jonas-design",
-      "trendingScore": 2.05
-    },
-    {
       "id": "d0bfc4ab-1d3a-4487-8782-7cf6027b4fff",
       "name": "C#",
       "publisher": "Microsoft",
       "publisherId": "ms-dotnettools",
       "description": "Base language support for C#",
-      "installs": 40481020,
+      "installs": 40490236,
       "rating": 2.7391304969787598,
       "ratingCount": 667,
       "lastUpdated": "2026-04-24T13:39:15.13Z",
@@ -663,415 +459,7 @@
       "iconUrl": null,
       "vscodeId": "ms-dotnettools.csharp",
       "trendingScore": 1.97
-    },
-    {
-      "id": "658ac5d2-33e7-4c7d-9130-660a892a4707",
-      "name": "Haru Theme",
-      "publisher": "oldfarmer96",
-      "publisherId": "oldfarmer96",
-      "description": "A theme inspired by concentration, not attention",
-      "installs": 4,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2026-05-07T16:43:10.99Z",
-      "repository": "https://github.com/oldfarmer96/haru-vscode.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#14171d"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#c5c9c7"
-        },
-        {
-          "name": "keyword",
-          "hex": "#8992A7"
-        },
-        {
-          "name": "string",
-          "hex": "#8A9A7B"
-        },
-        {
-          "name": "comment",
-          "hex": "#75797F"
-        },
-        {
-          "name": "variable",
-          "hex": "#c5c9c7"
-        },
-        {
-          "name": "function",
-          "hex": "#8BA4B0"
-        },
-        {
-          "name": "number",
-          "hex": "#A292A3"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "oldfarmer96.haru-theme",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "38638a1b-8761-4e9b-ac35-71ee2f000172",
-      "name": "Short Giraffe Theme",
-      "publisher": "kumamaki",
-      "publisherId": "kumamaki",
-      "description": "A dark theme with carefully picked colors",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2026-05-07T15:54:53.7Z",
-      "repository": "https://github.com/kumamaki/Short-Giraffe.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#191F2B"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#F7F7E5"
-        },
-        {
-          "name": "keyword",
-          "hex": "#F5DA7A"
-        },
-        {
-          "name": "string",
-          "hex": "#F6ABA8"
-        },
-        {
-          "name": "comment",
-          "hex": "#414B5D"
-        },
-        {
-          "name": "variable",
-          "hex": "#BBD2EE"
-        },
-        {
-          "name": "function",
-          "hex": "#45CAC2"
-        },
-        {
-          "name": "number",
-          "hex": "#F7C0A5"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "kumamaki.short-giraffe-theme",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "946417a8-4a9f-4c4b-a186-1c9da1274477",
-      "name": "  [.𝘝𝘖𝘚𝘛𝘍𝘙.] 𝘚𝘰𝘯𝘪𝘤 𝟤, 𝘭𝘦 𝘧𝘪𝘭𝘮 (𝟤0𝟤𝟤) 𝘍𝘐𝘓𝘔 𝘌𝘕 𝘍𝘙𝘈𝘕Ç𝘈𝘐𝘚 𝘚𝘛𝘙𝘌𝘈𝘔𝘐𝘕𝘎|𝘝𝘍 WOUW",
-      "publisher": "conicdehegog",
-      "publisherId": "conicdehegog",
-      "description": "The only easy way to watch Moonfall streaming f.r.e.e without downloading anything is by visiting this web page. You can stream Moonfall online here right now.",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-04-08T17:54:57.553Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#f5f5f5"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#333333"
-        },
-        {
-          "name": "keyword",
-          "hex": "#4B83CD"
-        },
-        {
-          "name": "string",
-          "hex": "#448C27"
-        },
-        {
-          "name": "comment",
-          "hex": "#AAAAAA"
-        },
-        {
-          "name": "variable",
-          "hex": "#7A3E9D"
-        },
-        {
-          "name": "function",
-          "hex": "#AA3731"
-        },
-        {
-          "name": "number",
-          "hex": "#AB6526"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "conicdehegog.coniccc3",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "b1a7eea2-5f12-4e28-9e81-6679770ead13",
-      "name": " Legendás állatok dumbledore titkai【2022】 online HD™ teljes film magyarul videa ingyen",
-      "publisher": "markles",
-      "publisherId": "markles",
-      "description": "",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-04-14T16:45:25.967Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#a4ec92"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#eeffff"
-        },
-        {
-          "name": "keyword",
-          "hex": "#C792EA"
-        },
-        {
-          "name": "string",
-          "hex": "#C3E88D"
-        },
-        {
-          "name": "comment",
-          "hex": "#546E7A"
-        },
-        {
-          "name": "variable",
-          "hex": "#EEFFFF"
-        },
-        {
-          "name": "function",
-          "hex": "#82AAFF"
-        },
-        {
-          "name": "number",
-          "hex": "#F78C6C"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "markles.meikatof-fantastic-dombulderetitkai",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "b9a36106-c81d-4531-86e6-9fee1d68ea43",
-      "name": " rega.theme",
-      "publisher": "rega.theme",
-      "publisherId": "regatheme",
-      "description": "Dark Darky",
-      "installs": 38,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2024-02-04T03:15:25.29Z",
-      "repository": "https://github.com/Chandraprakash-Darji/rega.theme.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "regatheme.rega-theme",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "f1647b3f-72d3-4cfe-a291-45a64e7d5128",
-      "name": " ▷ 【Download!!】Assistir Parasitas 【2019】Filmes Dublado Online Grátis Legendado DISNEY-MARVEL'S",
-      "publisher": "MonalizaMov",
-      "publisherId": "MonalizaMov",
-      "description": " ? ?Download!!?Assistir Parasitas ?2019?Filmes Dublado Online Grátis Legendado DISNEY-MARVEL'S",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-04-12T06:22:14.247Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "MonalizaMov.parasitas2019ptfilmes",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "28da740d-99b6-44a0-bfe3-8993b5e63ae8",
-      "name": " ▷VIDEA HD™ Legendás állatok: Dumbledore titkai [[2022]] Teljes Film Magyarul",
-      "publisher": "markles",
-      "publisherId": "markles",
-      "description": "",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-04-14T16:25:39.317Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#a4ec92"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#eeffff"
-        },
-        {
-          "name": "keyword",
-          "hex": "#C792EA"
-        },
-        {
-          "name": "string",
-          "hex": "#C3E88D"
-        },
-        {
-          "name": "comment",
-          "hex": "#546E7A"
-        },
-        {
-          "name": "variable",
-          "hex": "#EEFFFF"
-        },
-        {
-          "name": "function",
-          "hex": "#82AAFF"
-        },
-        {
-          "name": "number",
-          "hex": "#F78C6C"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "markles.bungah-of-dombuldere-fantastic",
-      "trendingScore": 1.5
-    },
-    {
-      "id": "654f5119-5e71-42c9-aeb5-3106c09e2ec2",
-      "name": " 《手錶》HD™電影 怪獸與鄧不利多的秘密▷線上看完整版(2022)tw在线观看",
-      "publisher": "markles",
-      "publisherId": "markles",
-      "description": "",
-      "installs": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2022-04-14T16:09:07.327Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#a4ec92"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#eeffff"
-        },
-        {
-          "name": "keyword",
-          "hex": "#C792EA"
-        },
-        {
-          "name": "string",
-          "hex": "#C3E88D"
-        },
-        {
-          "name": "comment",
-          "hex": "#546E7A"
-        },
-        {
-          "name": "variable",
-          "hex": "#EEFFFF"
-        },
-        {
-          "name": "function",
-          "hex": "#82AAFF"
-        },
-        {
-          "name": "number",
-          "hex": "#F78C6C"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "markles.satuhatifantastic-of-dombuldere",
-      "trendingScore": 1.5
     }
   ],
-  "generatedAt": "2026-05-07T18:07:19.512Z"
+  "generatedAt": "2026-05-07T18:11:08.430Z"
 }
