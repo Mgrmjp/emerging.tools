@@ -1,3 +1,4 @@
+import { inflateRawSync } from "zlib";
 import { Theme, ThemeColor } from "./types";
 
 const MARKETPLACE_API =
@@ -31,6 +32,24 @@ interface MarketplaceExtension {
   }>;
   tags: string[];
   _manifest?: Record<string, unknown>;
+  _palette?: ThemeColor[];
+}
+
+interface ThemeContribution {
+  label?: string;
+  uiTheme?: string;
+  path?: string;
+}
+
+interface TokenColorRule {
+  scope?: string | string[];
+  settings?: { foreground?: string };
+}
+
+interface ThemeDefinition {
+  colors?: Record<string, string>;
+  tokenColors?: TokenColorRule[] | string;
+  include?: string;
 }
 
 function buildQuery(
@@ -57,59 +76,304 @@ function buildQuery(
   };
 }
 
-function extractColors(ext: MarketplaceExtension): ThemeColor[] {
-  const manifest = ext._manifest;
-  if (!manifest) return [];
+const DEFAULT_THEME_COLORS: ThemeColor[] = [
+  { name: "editor.background", hex: "#1e1e2e" },
+  { name: "editor.foreground", hex: "#cdd6f4" },
+  { name: "keyword", hex: "#3cf73c" },
+  { name: "string", hex: "#f7d73c" },
+  { name: "comment", hex: "#5a5a66" },
+  { name: "variable", hex: "#f73c3c" },
+  { name: "function", hex: "#3c9cf7" },
+  { name: "number", hex: "#f7d73c" },
+];
+
+function getThemeContributions(
+  manifest?: Record<string, unknown>
+): ThemeContribution[] {
+  return (
+    ((manifest?.contributes as Record<string, unknown> | undefined)
+      ?.themes as ThemeContribution[] | undefined) ?? []
+  );
+}
+
+function pickBestHex(
+  tokenMap: Record<string, string>,
+  exactScopes: string[],
+  containsScopes: string[] = []
+): string | null {
+  for (const exactScope of exactScopes) {
+    for (const [scope, hex] of Object.entries(tokenMap)) {
+      if (scope.toLowerCase() === exactScope) {
+        return hex;
+      }
+    }
+  }
+
+  for (const exactScope of exactScopes) {
+    for (const [scope, hex] of Object.entries(tokenMap)) {
+      if (scope.toLowerCase().startsWith(`${exactScope}.`)) {
+        return hex;
+      }
+    }
+  }
+
+  for (const containsScope of containsScopes) {
+    for (const [scope, hex] of Object.entries(tokenMap)) {
+      if (scope.toLowerCase().includes(containsScope)) {
+        return hex;
+      }
+    }
+  }
+
+  return null;
+}
+
+function normalizeThemePath(themePath: string): string {
+  const clean = themePath.replace(/^\.\//, "");
+  return clean.startsWith("extension/") ? clean : `extension/${clean}`;
+}
+
+function resolveRelativeThemePath(basePath: string, relativePath: string): string {
+  const baseParts = normalizeThemePath(basePath).split("/");
+  baseParts.pop();
+
+  for (const part of relativePath.split("/")) {
+    if (!part || part === ".") continue;
+    if (part === "..") {
+      baseParts.pop();
+      continue;
+    }
+    baseParts.push(part);
+  }
+
+  return baseParts.join("/");
+}
+
+function readZipEntry(zipData: Uint8Array, entryName: string): string | null {
+  const data = Buffer.from(zipData);
+  const eocdSignature = 0x06054b50;
+  const centralDirectorySignature = 0x02014b50;
+  const localFileSignature = 0x04034b50;
+
+  let eocdOffset = -1;
+  for (let i = data.length - 22; i >= Math.max(0, data.length - 65557); i--) {
+    if (data.readUInt32LE(i) === eocdSignature) {
+      eocdOffset = i;
+      break;
+    }
+  }
+
+  if (eocdOffset === -1) return null;
+
+  const centralDirectoryOffset = data.readUInt32LE(eocdOffset + 16);
+  const totalEntries = data.readUInt16LE(eocdOffset + 10);
+  let offset = centralDirectoryOffset;
+
+  for (let i = 0; i < totalEntries; i++) {
+    if (data.readUInt32LE(offset) !== centralDirectorySignature) return null;
+
+    const compressionMethod = data.readUInt16LE(offset + 10);
+    const compressedSize = data.readUInt32LE(offset + 20);
+    const fileNameLength = data.readUInt16LE(offset + 28);
+    const extraLength = data.readUInt16LE(offset + 30);
+    const commentLength = data.readUInt16LE(offset + 32);
+    const localHeaderOffset = data.readUInt32LE(offset + 42);
+    const fileName = data
+      .subarray(offset + 46, offset + 46 + fileNameLength)
+      .toString("utf8");
+
+    if (fileName === entryName) {
+      if (data.readUInt32LE(localHeaderOffset) !== localFileSignature) {
+        return null;
+      }
+
+      const localFileNameLength = data.readUInt16LE(localHeaderOffset + 26);
+      const localExtraLength = data.readUInt16LE(localHeaderOffset + 28);
+      const contentOffset =
+        localHeaderOffset + 30 + localFileNameLength + localExtraLength;
+      const compressed = data.subarray(
+        contentOffset,
+        contentOffset + compressedSize
+      );
+
+      if (compressionMethod === 0) {
+        return compressed.toString("utf8");
+      }
+
+      if (compressionMethod === 8) {
+        return inflateRawSync(compressed).toString("utf8");
+      }
+
+      return null;
+    }
+
+    offset += 46 + fileNameLength + extraLength + commentLength;
+  }
+
+  return null;
+}
+
+function parseThemeDefinition(
+  zipData: Uint8Array,
+  themePath: string,
+  visited = new Set<string>()
+): ThemeDefinition | null {
+  const normalizedPath = normalizeThemePath(themePath);
+  if (visited.has(normalizedPath)) return null;
+  visited.add(normalizedPath);
+
+  const raw = readZipEntry(zipData, normalizedPath);
+  if (!raw) return null;
+
   try {
-    const themeContribs = (manifest.contributes as Record<string, unknown> | undefined)?.themes as Record<string, unknown>[] | undefined;
-    if (!themeContribs?.length) return [];
-    const colors: ThemeColor[] = [];
-    const tc = themeContribs[0];
-    const tcColors = tc.colors as Record<string, string> | undefined;
-    if (tcColors) {
-      for (const [name, hex] of Object.entries(tcColors)) {
-        colors.push({ name, hex });
-      }
+    const parsed = JSON.parse(raw) as ThemeDefinition;
+    const mergedColors: Record<string, string> = {};
+    const mergedTokens: TokenColorRule[] = [];
+
+    if (parsed.include) {
+      const parent = parseThemeDefinition(
+        zipData,
+        resolveRelativeThemePath(normalizedPath, parsed.include),
+        visited
+      );
+      if (parent?.colors) Object.assign(mergedColors, parent.colors);
+      if (Array.isArray(parent?.tokenColors)) mergedTokens.push(...parent.tokenColors);
     }
-    const tokenColors = tc.tokenColors as Array<{ scope?: string | string[]; settings?: { foreground?: string } }> | undefined;
-    if (colors.length === 0 && tokenColors) {
-      const tokenMap: Record<string, string> = {};
-      for (const token of tokenColors) {
-        if (token.settings?.foreground) {
-          const scope = Array.isArray(token.scope) ? token.scope[0] : token.scope;
-          if (scope && !tokenMap[scope]) {
-            tokenMap[scope] = token.settings.foreground;
-          }
+
+    if (typeof parsed.tokenColors === "string") {
+      const tokenFile = readZipEntry(
+        zipData,
+        resolveRelativeThemePath(normalizedPath, parsed.tokenColors)
+      );
+      if (tokenFile) {
+        try {
+          const parsedTokens = JSON.parse(tokenFile) as TokenColorRule[];
+          if (Array.isArray(parsedTokens)) mergedTokens.push(...parsedTokens);
+        } catch {
+          // Ignore token color formats we do not parse yet.
         }
       }
-      const priorities = [
-        "keyword",
-        "string",
-        "comment",
-        "variable",
-        "function",
-        "number",
-        "type",
-        "constant",
-      ];
-      for (const p of priorities) {
-        for (const [scope, hex] of Object.entries(tokenMap)) {
-          if (scope.toLowerCase().includes(p) && colors.length < 8) {
-            colors.push({ name: p, hex });
-            break;
-          }
-        }
-      }
+    } else if (Array.isArray(parsed.tokenColors)) {
+      mergedTokens.push(...parsed.tokenColors);
     }
-    if (colors.length === 0) {
-      const bg = tcColors?.["editor.background"] || "#1e1e2e";
-      const fg = tcColors?.["editor.foreground"] || "#cdd6f4";
-      colors.push({ name: "editor.background", hex: bg });
-      colors.push({ name: "editor.foreground", hex: fg });
-    }
-    return colors.slice(0, 8);
+
+    if (parsed.colors) Object.assign(mergedColors, parsed.colors);
+
+    return {
+      colors: mergedColors,
+      tokenColors: mergedTokens,
+    };
   } catch {
-    return [];
+    return null;
+  }
+}
+
+function buildPalette(themeDef: ThemeDefinition | null): ThemeColor[] {
+  if (!themeDef) return DEFAULT_THEME_COLORS;
+
+  const colors = themeDef.colors ?? {};
+  const tokenMap: Record<string, string> = {};
+
+  for (const token of Array.isArray(themeDef.tokenColors) ? themeDef.tokenColors : []) {
+    const foreground = token.settings?.foreground;
+    if (!foreground) continue;
+
+    const scopes = Array.isArray(token.scope) ? token.scope : [token.scope];
+    for (const scope of scopes) {
+      if (scope && !tokenMap[scope]) {
+        tokenMap[scope] = foreground;
+      }
+    }
+  }
+
+  const palette: ThemeColor[] = [
+    {
+      name: "editor.background",
+      hex: colors["editor.background"] ?? colors["terminal.background"] ?? DEFAULT_THEME_COLORS[0].hex,
+    },
+    {
+      name: "editor.foreground",
+      hex: colors["editor.foreground"] ?? colors.foreground ?? colors["terminal.foreground"] ?? DEFAULT_THEME_COLORS[1].hex,
+    },
+    {
+      name: "keyword",
+      hex:
+        pickBestHex(tokenMap, ["keyword", "storage"], ["keyword", "storage"]) ??
+        colors["editorCursor.foreground"] ??
+        DEFAULT_THEME_COLORS[2].hex,
+    },
+    {
+      name: "string",
+      hex:
+        pickBestHex(tokenMap, ["string"], ["quoted", "string"]) ??
+        colors["terminal.ansiYellow"] ??
+        DEFAULT_THEME_COLORS[3].hex,
+    },
+    {
+      name: "comment",
+      hex:
+        pickBestHex(
+          tokenMap,
+          ["comment", "punctuation.definition.comment"],
+          ["comment"]
+        ) ??
+        colors["descriptionForeground"] ??
+        DEFAULT_THEME_COLORS[4].hex,
+    },
+    {
+      name: "variable",
+      hex:
+        pickBestHex(
+          tokenMap,
+          ["variable", "entity.other.attribute-name"],
+          ["variable", "attribute"]
+        ) ??
+        colors["terminal.ansiRed"] ??
+        DEFAULT_THEME_COLORS[5].hex,
+    },
+    {
+      name: "function",
+      hex:
+        pickBestHex(
+          tokenMap,
+          ["entity.name.function", "support.function"],
+          ["function", "method"]
+        ) ??
+        colors["terminal.ansiBlue"] ??
+        DEFAULT_THEME_COLORS[6].hex,
+    },
+    {
+      name: "number",
+      hex:
+        pickBestHex(
+          tokenMap,
+          ["constant.numeric", "constant.language"],
+          ["numeric", "number", "constant"]
+        ) ??
+        colors["terminal.ansiMagenta"] ??
+        DEFAULT_THEME_COLORS[7].hex,
+    },
+  ];
+
+  return palette;
+}
+
+async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
+  const themePath = getThemeContributions(ext._manifest)[0]?.path;
+  if (!themePath) return DEFAULT_THEME_COLORS;
+
+  try {
+    const vsixUrl = `${ext.versions[0].assetUri}/Microsoft.VisualStudio.Services.VSIXPackage`;
+    const res = await fetch(vsixUrl, {
+      next: { revalidate: 21600 },
+    });
+    if (!res.ok) return DEFAULT_THEME_COLORS;
+
+    const zipData = new Uint8Array(await res.arrayBuffer());
+    const themeDef = parseThemeDefinition(zipData, themePath);
+    return buildPalette(themeDef);
+  } catch {
+    return DEFAULT_THEME_COLORS;
   }
 }
 
@@ -143,7 +407,7 @@ function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
     categories: (ext.tags || []).filter(
       (t) => !t.startsWith("theme-") && !t.startsWith("__")
     ),
-    colors: extractColors(ext),
+    colors: ext._palette ?? DEFAULT_THEME_COLORS,
     iconUrl: iconFile?.source || null,
     vscodeId: `${ext.publisher.publisherName}.${ext.extensionName}`,
     trendingScore,
@@ -214,6 +478,19 @@ async function attachManifestsInBatches(
   }
 }
 
+async function attachPalettesInBatches(
+  extensions: MarketplaceExtension[],
+  batchSize: number
+): Promise<void> {
+  for (let i = 0; i < extensions.length; i += batchSize) {
+    const batch = extensions.slice(i, i + batchSize);
+    const palettes = await Promise.all(batch.map((ext) => fetchPalette(ext)));
+    for (let j = 0; j < batch.length; j++) {
+      batch[j]._palette = palettes[j];
+    }
+  }
+}
+
 export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
   const SORT_BY_INSTALLS = 4;
   const SORT_BY_DATE = 1;
@@ -244,8 +521,14 @@ export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
 
   await attachManifestsInBatches(all, 10);
 
-  return all
+  const ranked = all
     .filter((ext) => ext._manifest && (ext._manifest.contributes as Record<string, unknown> | undefined)?.themes)
+    .sort((a, b) => scoreTheme(b) - scoreTheme(a))
+    .slice(0, pageSize);
+
+  await attachPalettesInBatches(ranked, 5);
+
+  return ranked
     .map((ext) => mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100))
     .sort((a, b) => b.trendingScore - a.trendingScore);
 }
@@ -280,6 +563,7 @@ export async function fetchThemeById(id: string): Promise<Theme | null> {
   if (!ext) return null;
 
   ext._manifest = (await fetchManifest(ext)) ?? undefined;
+  ext._palette = await fetchPalette(ext);
 
   return mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100);
 }
