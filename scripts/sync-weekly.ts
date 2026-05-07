@@ -1,37 +1,5 @@
-import fs from "fs";
-import path from "path";
-
-interface Theme {
-  id: string;
-  name: string;
-  publisher: string;
-  publisherId: string;
-  description: string;
-  installs: number;
-  rating: number;
-  ratingCount: number;
-  lastUpdated: string;
-  repository: string;
-  type: "dark" | "light";
-  categories: string[];
-  colors: { name: string; hex: string }[];
-  iconUrl: string | null;
-  vscodeId: string;
-  trendingScore: number;
-}
-
-interface WeeklySnapshot {
-  date: string;
-  themes: Theme[];
-}
-
-function getDateString(): string {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, "0");
-  const day = String(now.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-}
+import { Theme } from "../src/lib/types";
+import { createSnapshot, writeSnapshot } from "../src/lib/snapshots";
 
 async function fetchThemes(): Promise<Theme[]> {
   const { fetchTrendingThemes } = await import("../src/lib/marketplace");
@@ -39,24 +7,8 @@ async function fetchThemes(): Promise<Theme[]> {
 }
 
 async function saveSnapshot(themes: Theme[]): Promise<string> {
-  const dateStr = getDateString();
-  const snapshot: WeeklySnapshot = {
-    date: dateStr,
-    themes,
-  };
-
-  const dir = path.join(process.cwd(), "data");
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-
-  const filePath = path.join(dir, `weekly-${dateStr}.json`);
-  fs.writeFileSync(filePath, JSON.stringify(snapshot, null, 2));
-
-  // Also update latest.json for easy access
-  const latestPath = path.join(dir, "latest.json");
-  fs.writeFileSync(latestPath, JSON.stringify(snapshot, null, 2));
-
+  const snapshot = createSnapshot(themes);
+  const { filePath } = await writeSnapshot(snapshot);
   return filePath;
 }
 

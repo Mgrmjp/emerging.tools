@@ -1,21 +1,45 @@
+import fs from "fs/promises";
+import path from "path";
 import { Theme } from "./types";
 import { SAMPLE_THEMES } from "./sample-data";
 
 const MAX_INSTALLS = 150_000;
+const MIN_YEAR = 2020;
+const SNAPSHOT_PATH = path.join(process.cwd(), "data", "latest.json");
+
+interface ThemeSnapshot {
+  date: string;
+  themes: Theme[];
+  generatedAt?: string;
+}
+
+async function readSnapshotThemes(): Promise<Theme[] | null> {
+  try {
+    const file = await fs.readFile(SNAPSHOT_PATH, "utf8");
+    const snapshot = JSON.parse(file) as ThemeSnapshot;
+    return snapshot.themes;
+  } catch {
+    return null;
+  }
+}
+
+function filterSupportedThemes(themes: Theme[]): Theme[] {
+  return themes.filter(
+    (t) =>
+      t.installs <= MAX_INSTALLS &&
+      new Date(t.lastUpdated).getFullYear() >= MIN_YEAR
+  );
+}
 
 export async function getThemes(): Promise<Theme[]> {
   let themes: Theme[];
   if (process.env.NODE_ENV === "development") {
     themes = SAMPLE_THEMES;
   } else {
-    try {
-      const { fetchTrendingThemes } = await import("./marketplace");
-      themes = await fetchTrendingThemes();
-    } catch {
-      themes = SAMPLE_THEMES;
-    }
+    themes = (await readSnapshotThemes()) ?? SAMPLE_THEMES;
   }
-  return themes.filter((t) => t.installs <= MAX_INSTALLS && new Date(t.lastUpdated).getFullYear() >= 2026);
+
+  return filterSupportedThemes(themes);
 }
 
 export async function getThemeById(id: string): Promise<Theme | null> {
