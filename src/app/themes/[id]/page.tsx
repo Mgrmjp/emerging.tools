@@ -3,6 +3,7 @@ import { ThemeDetail } from "@/components/ThemeDetail";
 import { JsonLd } from "@/components/JsonLd";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 interface ThemePageProps {
   params: Promise<{ id: string }>;
@@ -13,16 +14,17 @@ export async function generateMetadata({
 }: ThemePageProps): Promise<Metadata> {
   const { id } = await params;
   const theme = await getThemeById(decodeURIComponent(id));
-  if (!theme) return { title: "not found" };
+  if (!theme) return { title: "Theme not found" };
+
   return {
-    title: `${theme.name} by ${theme.publisher} — trendingvscode.themes`,
+    title: `${theme.name} by ${theme.publisher}`,
     description: theme.description,
     keywords: [theme.name, theme.publisher, "VS Code theme", theme.type],
     openGraph: {
       title: theme.name,
       description: theme.description,
-      url: `https://emerging.tools/themes/${theme.id}`,
-      siteName: "trendingvscode.themes",
+      url: `${SITE_URL}/themes/${theme.id}`,
+      siteName: SITE_NAME,
       type: "article",
       authors: [theme.publisher],
       publishedTime: theme.lastUpdated,
@@ -33,7 +35,7 @@ export async function generateMetadata({
       description: theme.description,
     },
     alternates: {
-      canonical: `https://emerging.tools/themes/${theme.id}`,
+      canonical: `${SITE_URL}/themes/${theme.id}`,
     },
   };
 }
@@ -58,31 +60,54 @@ export default async function ThemePage({ params }: ThemePageProps) {
     );
   }
 
-return (
+  return (
     <>
       <JsonLd
+        id="theme-jsonld"
         data={{
-          "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          name: theme.name,
-          description: theme.description,
-          applicationCategory: "DeveloperApplication",
-          operatingSystem: "VS Code",
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: theme.rating.toFixed(1),
-            ratingCount: theme.ratingCount,
-          },
-          author: {
-            "@type": "Person",
-            name: theme.publisher,
-            url: `https://github.com/${theme.publisherId}`,
-          },
+          "@graph": [
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: theme.name,
+              description: theme.description,
+              url: `${SITE_URL}/themes/${theme.id}`,
+              applicationCategory: "DeveloperApplication",
+              operatingSystem: "VS Code",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: theme.rating.toFixed(1),
+                ratingCount: theme.ratingCount,
+              },
+              author: {
+                "@type": "Organization",
+                name: theme.publisher,
+              },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Themes",
+                  item: SITE_URL,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: theme.name,
+                  item: `${SITE_URL}/themes/${theme.id}`,
+                },
+              ],
+            },
+          ],
         }}
       />
       <div className="flex flex-1 flex-col">
@@ -100,7 +125,7 @@ return (
           <ThemeDetail theme={theme} />
         </main>
         <footer className="border-t border-[var(--border)] px-4 py-2 flex items-center justify-between text-[10px] text-[var(--muted)]">
-          <span>trendingvscode.themes</span>
+          <span>{SITE_NAME}</span>
           <span className="flex items-center gap-1">
             <span className="inline-block h-1.5 w-1.5 bg-[var(--accent)]" />
             connected
@@ -110,3 +135,4 @@ return (
     </>
   );
 }
+

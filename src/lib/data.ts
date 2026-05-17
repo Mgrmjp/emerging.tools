@@ -34,13 +34,10 @@ function filterSupportedThemes(themes: Theme[]): Theme[] {
 }
 
 export async function getThemes(): Promise<Theme[]> {
-  let themes: Theme[];
-  if (process.env.NODE_ENV === "development") {
-    themes = SAMPLE_THEMES;
-  } else {
-    themes = (await readSnapshotThemes()) ?? SAMPLE_THEMES;
-  }
-
+  const snapshotThemes = await readSnapshotThemes();
+  const themes = snapshotThemes && snapshotThemes.length > 0
+    ? snapshotThemes
+    : SAMPLE_THEMES;
   return filterSupportedThemes(themes);
 }
 

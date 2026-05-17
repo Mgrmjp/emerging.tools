@@ -4,6 +4,8 @@ import { Theme, ThemeColor } from "./types";
 const MARKETPLACE_API =
   "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery";
 const MIN_INSTALLS = 1_000;
+const MAX_INSTALLS = 150_000;
+const THEME_CATEGORY = "Themes";
 
 const MARKETPLACE_HEADERS = {
   "Content-Type": "application/json",
@@ -57,17 +59,19 @@ function buildQuery(
   sortBy: number,
   sortOrder: number,
   pageSize: number,
-  cursor?: string
+  pageNumber = 1
 ) {
   return {
     filters: [
       {
         criteria: [
           { filterType: 8, value: "Microsoft.VisualStudio.Code" },
+          { filterType: 5, value: THEME_CATEGORY },
+          { filterType: 12, value: "4096" },
         ],
         direction: sortOrder,
         pageSize,
-        cursor,
+        pageNumber,
         sortBy,
       },
     ],
@@ -378,10 +382,14 @@ async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
   }
 }
 
-function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
-  const stats = Object.fromEntries(
+function getStats(ext: MarketplaceExtension): Record<string, number> {
+  return Object.fromEntries(
     (ext.statistics || []).map((s) => [s.statisticName, s.value])
-  );
+  ) as Record<string, number>;
+}
+
+function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
+  const stats = getStats(ext);
   const latest = ext.versions[0];
   const typeTag = ext.tags?.find(
     (t) => t === "theme-dark" || t === "theme-light"
@@ -430,9 +438,7 @@ async function fetchManifest(ext: MarketplaceExtension): Promise<Record<string, 
 }
 
 function scoreTheme(ext: MarketplaceExtension): number {
-  const stats = Object.fromEntries(
-    (ext.statistics || []).map((s) => [s.statisticName, s.value])
-  );
+  const stats = getStats(ext);
   const daily = stats["trendingdaily"] || 0;
   const weekly = stats["trendingweekly"] || 0;
   const monthly = stats["trendingmonthly"] || 0;
@@ -450,9 +456,9 @@ async function fetchPage(
   sortBy: number,
   sortOrder: number,
   pageSize: number,
-  cursor?: string
+  pageNumber = 1
 ): Promise<MarketplaceExtension[]> {
-  const body = buildQuery(sortBy, sortOrder, pageSize, cursor);
+  const body = buildQuery(sortBy, sortOrder, pageSize, pageNumber);
 
   const res = await fetch(MARKETPLACE_API, {
     method: "POST",
@@ -499,31 +505,49 @@ export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
   const SORT_DESC = 0;
 
   const all: MarketplaceExtension[] = [];
-  let cursor: string | undefined;
-  const maxPages = 50;
-  
-  for (let page = 0; page < maxPages; page++) {
+  const seen = new Set<string>();
+  const maxPages = 12;
+  const minCandidates = pageSize * 4;
+
+  for (let pageNumber = 1; pageNumber <= maxPages; pageNumber++) {
     const [byInstalls, byDate, byRating] = await Promise.all([
-      fetchPage(SORT_BY_INSTALLS, SORT_DESC, pageSize, cursor),
-      fetchPage(SORT_BY_DATE, SORT_DESC, pageSize, cursor),
-      fetchPage(SORT_BY_RATING, SORT_DESC, Math.floor(pageSize / 2), cursor),
+      fetchPage(SORT_BY_INSTALLS, SORT_DESC, pageSize, pageNumber),
+      fetchPage(SORT_BY_DATE, SORT_DESC, pageSize, pageNumber),
+      fetchPage(SORT_BY_RATING, SORT_DESC, Math.floor(pageSize / 2), pageNumber),
     ]);
-    
-    const seen = new Set(all.map((ext) => ext.extensionId));
+
+    const pageResults = [...byInstalls, ...byDate, ...byRating];
+    if (pageResults.length === 0) break;
+
     for (const ext of [...byInstalls, ...byDate, ...byRating]) {
       if (!seen.has(ext.extensionId)) {
         seen.add(ext.extensionId);
         all.push(ext);
       }
     }
-    
-    if (cursor === undefined || all.length >= pageSize * 3) break;
+
+    const candidateCount = all.filter((ext) => {
+      const installs = getStats(ext).install || 0;
+      return installs >= MIN_INSTALLS && installs <= MAX_INSTALLS;
+    }).length;
+
+    if (candidateCount >= minCandidates) {
+      break;
+    }
   }
 
   await attachManifestsInBatches(all, 10);
 
   const ranked = all
-    .filter((ext) => ext._manifest && (ext._manifest.contributes as Record<string, unknown> | undefined)?.themes)
+    .filter((ext) => {
+      const installs = getStats(ext).install || 0;
+      if (installs < MIN_INSTALLS || installs > MAX_INSTALLS) return false;
+      return Boolean(
+        ext._manifest &&
+          (ext._manifest.contributes as Record<string, unknown> | undefined)
+            ?.themes
+      );
+    })
     .sort((a, b) => scoreTheme(b) - scoreTheme(a))
     .slice(0, pageSize);
 
@@ -531,7 +555,9 @@ export async function fetchTrendingThemes(pageSize = 100): Promise<Theme[]> {
 
   return ranked
     .map((ext) => mapExtension(ext, Math.round(scoreTheme(ext) * 100) / 100))
-    .filter((theme) => theme.installs >= MIN_INSTALLS)
+    .filter(
+      (theme) => theme.installs >= MIN_INSTALLS && theme.installs <= MAX_INSTALLS
+    )
     .sort((a, b) => b.trendingScore - a.trendingScore);
 }
 

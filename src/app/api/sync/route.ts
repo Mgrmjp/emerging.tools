@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createSnapshot, writeSnapshot } from "@/lib/snapshots";
+import { createFontSnapshot, writeFontSnapshot } from "@/lib/font-snapshots";
 
 export const dynamic = "force-dynamic";
 
@@ -65,15 +66,26 @@ export async function GET(request: Request) {
     }
 
     const { fetchTrendingThemes } = await import("@/lib/marketplace");
+    const { fetchTrendingFonts } = await import("@/lib/fonts");
     const themes = await fetchTrendingThemes(100);
+    const fontsResult = await fetchTrendingFonts({ pageSize: 100 });
+
     const snapshot = createSnapshot(themes);
     const { filePath } = await writeSnapshot(snapshot);
+    const fontsSnapshot = createFontSnapshot(fontsResult.fonts, fontsResult.source);
+    const { filePath: fontsFilePath } = await writeFontSnapshot(fontsSnapshot);
 
     return NextResponse.json({
       success: true,
       mode: "local-filesystem",
-      count: themes.length,
-      file: filePath,
+      counts: {
+        themes: themes.length,
+        fonts: fontsResult.fonts.length,
+      },
+      files: {
+        themes: filePath,
+        fonts: fontsFilePath,
+      },
       date: snapshot.date,
     });
   } catch (error) {

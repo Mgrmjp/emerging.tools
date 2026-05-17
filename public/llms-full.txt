@@ -1,0 +1,35 @@
+# emerging.tools — Full LLM Context
+
+## Purpose
+emerging.tools helps developers discover rising visual tooling, with a current focus on VS Code themes and a synced dataset of developer fonts.
+
+## Primary User Intent
+1. Find trending VS Code themes with lower install counts (emerging creators).
+2. Compare themes quickly with previews, ratings, and update recency.
+3. Discover trending developer fonts based on package/CDN momentum.
+
+## Ranking Notes
+- Themes are pulled from VS Code Marketplace and ranked with install velocity and quality signals.
+- Fonts are pulled from Fontsource metadata and stats (`npmDownloadMonthly`, `jsDelivrHitsMonthly`), with optional Google Webfonts ranking signals when `GOOGLE_FONTS_API_KEY` is configured.
+
+## Stable References
+- Home: https://emerging.tools/
+- Sitemap: https://emerging.tools/sitemap.xml
+- Robots: https://emerging.tools/robots.txt
+- Theme detail pattern: https://emerging.tools/themes/{id}
+
+## Structured Data
+- Organization JSON-LD on layout
+- WebSite JSON-LD on layout
+- ItemList JSON-LD on home feed
+- SoftwareApplication + BreadcrumbList JSON-LD on theme detail pages
+
+## Snapshots
+- Theme latest snapshot file: `data/latest.json`
+- Font latest snapshot file: `data/fonts-latest.json`
+- Weekly snapshots: `data/weekly-YYYY-MM-DD.json` and `data/fonts-weekly-YYYY-MM-DD.json`
+
+## Operational Endpoint
+- `GET /api/sync` refreshes local snapshots outside Vercel
+- Hosted Vercel mode dispatches GitHub workflow for snapshot refresh
+

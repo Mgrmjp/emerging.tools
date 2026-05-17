@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "sync": "npx tsx scripts/sync-weekly.ts"
+    "sync": "npx tsx scripts/sync-weekly.ts",
+    "sync:themes": "npx tsx scripts/sync-themes.ts",
+    "sync:fonts": "npx tsx scripts/sync-fonts.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

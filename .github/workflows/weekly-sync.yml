@@ -1,4 +1,4 @@
-name: Weekly Theme Sync
+name: Weekly Data Sync
 
 on:
   schedule:
@@ -31,7 +31,7 @@ jobs:
         run: npm ci --no-audit --no-fund --ignore-scripts
 
       - name: Run weekly sync
-        run: npx tsx scripts/sync-weekly.ts
+        run: npm run sync
         env:
           NODE_ENV: production
 

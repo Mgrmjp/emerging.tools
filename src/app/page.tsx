@@ -3,6 +3,8 @@ import { getThemes, filterThemes, formatInstalls } from "@/lib/data";
 import { ThemeCard } from "@/components/ThemeCard";
 import { SearchBar } from "@/components/SearchBar";
 import { JsonLd } from "@/components/JsonLd";
+import type { Metadata } from "next";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
 
 interface HomeProps {
   searchParams: Promise<{
@@ -12,6 +14,14 @@ interface HomeProps {
     max?: string;
   }>;
 }
+
+export const metadata: Metadata = {
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: SITE_URL,
+  },
+};
 
 export default async function Home({ searchParams }: HomeProps) {
   const params = await searchParams;
@@ -23,26 +33,24 @@ export default async function Home({ searchParams }: HomeProps) {
       (params.sort as "trending" | "installs" | "rating" | "updated" | "random") ||
       "trending",
     maxInstalls: params.max ? parseInt(params.max, 10) : undefined,
-  }).slice(0, 15);
-  const topTheme = themes[0];
+  });
 
   return (
     <>
       <JsonLd
+        id="themes-itemlist-jsonld"
         data={{
           "@context": "https://schema.org",
-          "@type": "WebSite",
-          name: "trendingvscode.themes",
-          url: "https://trendingvscode.themes",
-          description: "Discover emerging VS Code themes under 150K installs. Ranked by trending velocity.",
-          potentialAction: {
-            "@type": "SearchAction",
-            target: {
-              "@type": "EntryPoint",
-              urlTemplate: "https://trendingvscode.themes?q={search_term_string}",
-            },
-            "query-input": "required name=search_term_string",
-          },
+          "@type": "ItemList",
+          name: "Trending VS Code themes under 150K installs",
+          itemListOrder: "https://schema.org/ItemListOrderDescending",
+          numberOfItems: themes.length,
+          itemListElement: themes.slice(0, 30).map((theme, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: `${SITE_URL}/themes/${theme.id}`,
+            name: theme.name,
+          })),
         }}
       />
       <div className="flex flex-1 flex-col">
@@ -91,7 +99,7 @@ export default async function Home({ searchParams }: HomeProps) {
       </main>
 
       <footer className="border-t border-[var(--border)] px-4 py-2 flex items-center justify-between text-[10px] text-[var(--muted)] sm:px-6 lg:px-8">
-        <span>trendingvscode.themes</span>
+        <span>{SITE_NAME}</span>
         <span className="flex items-center gap-3">
           <span className="flex items-center gap-1">
             <span className="inline-block h-1.5 w-1.5 bg-[var(--accent)]" />

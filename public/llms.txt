@@ -1,0 +1,27 @@
+# emerging.tools
+
+> Discovery index for LLM and AI assistant retrieval.
+
+Site: https://emerging.tools
+Primary language: en
+Scope: Trending VS Code themes and developer fonts, ranked by momentum.
+
+## Canonical URLs
+- https://emerging.tools/
+- https://emerging.tools/sitemap.xml
+- https://emerging.tools/robots.txt
+
+## Key Pages
+- [Home](https://emerging.tools/): Main ranked feed of emerging VS Code themes under 150K installs.
+- [Theme Detail Pages](https://emerging.tools/themes/): Per-theme pages with metadata, color palettes, ratings, and install context.
+
+## Data Freshness
+- Theme snapshot: `data/latest.json`
+- Font snapshot: `data/fonts-latest.json`
+- Sync endpoint: `GET /api/sync` (auth optional via `SYNC_SECRET`)
+
+## Entity
+- Name: emerging.tools
+- Type: Website / Tool discovery index
+- Area served: Worldwide
+

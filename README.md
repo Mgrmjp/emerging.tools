@@ -21,9 +21,11 @@ Deploys automatically to Vercel on push to `main`.
 
 ## Sync
 
-`data/latest.json` is the production snapshot used during deploys and page rendering.
+`data/latest.json` (themes) and `data/fonts-latest.json` (fonts) are the production snapshots used during deploys and page rendering.
 
-- `npm run sync` refreshes the local snapshot files.
+- `npm run sync` refreshes both theme and font snapshots.
+- `npm run sync:themes` refreshes only themes.
+- `npm run sync:fonts` refreshes only fonts.
 - `.github/workflows/weekly-sync.yml` refreshes and commits snapshots on a schedule.
 - `/api/sync` writes snapshot files only when running outside Vercel.
 - On Vercel, `/api/sync` dispatches the GitHub Actions workflow instead of writing to ephemeral disk.
@@ -34,6 +36,7 @@ Hosted `/api/sync` requires:
 - `GITHUB_TOKEN` with permission to dispatch workflows
 - `SYNC_GITHUB_REPOSITORY` in `owner/repo` form
 - Optional `SYNC_GITHUB_WORKFLOW` and `SYNC_GITHUB_REF`
+- Optional `GOOGLE_FONTS_API_KEY` for Google Webfonts ranking signals in `fonts-latest.json`
 
 ## SEO
 
