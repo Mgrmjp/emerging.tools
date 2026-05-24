@@ -363,6 +363,44 @@ function buildPalette(themeDef: ThemeDefinition | null): ThemeColor[] {
   return palette;
 }
 
+function generateFallbackPalette(name: string): ThemeColor[] {
+  let hash = 5381;
+  for (let i = 0; i < name.length; i++)
+    hash = ((hash << 5) + hash) + name.charCodeAt(i);
+  const hue = ((hash % 360) + 360) % 360;
+
+  function hsl(h: number, s: number, l: number) {
+    h = ((h % 360) + 360) % 360;
+    s /= 100;
+    l /= 100;
+    const a = s * Math.min(l, 1 - l);
+    const f = (n: number) => {
+      const k = (n + h / 30) % 12;
+      return l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    };
+    const r = Math.round(f(0) * 255);
+    const g = Math.round(f(8) * 255);
+    const b = Math.round(f(4) * 255);
+    return (
+      "#" +
+      [r, g, b]
+        .map((x) => x.toString(16).padStart(2, "0"))
+        .join("")
+    );
+  }
+
+  return [
+    { name: "editor.background", hex: hsl(hue + 0, 25, 10) },
+    { name: "editor.foreground", hex: hsl(hue + 0, 20, 82) },
+    { name: "keyword", hex: hsl(hue + 130, 85, 52) },
+    { name: "string", hex: hsl(hue + 70, 80, 55) },
+    { name: "comment", hex: hsl(hue + 0, 15, 40) },
+    { name: "variable", hex: hsl(hue + 200, 80, 52) },
+    { name: "function", hex: hsl(hue + 260, 80, 55) },
+    { name: "number", hex: hsl(hue + 320, 85, 55) },
+  ];
+}
+
 async function fetchExtensionFile(
   assetUri: string,
   filePath: string
@@ -371,7 +409,9 @@ async function fetchExtensionFile(
     const url = `${assetUri}/${filePath}`;
     const res = await fetch(url, { next: { revalidate: 21600 } });
     if (!res.ok) return null;
-    return await res.text();
+    const text = await res.text();
+    if (!text.startsWith("{")) return null;
+    return text;
   } catch {
     return null;
   }
@@ -442,24 +482,28 @@ async function parseThemeDefinitionFromFiles(
 
 async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
   const themePath = getThemeContributions(ext._manifest)[0]?.path;
-  if (!themePath) return DEFAULT_THEME_COLORS;
+  if (!themePath) return generateFallbackPalette(ext.displayName || ext.extensionName);
 
   const assetUri = ext.versions[0].assetUri;
 
-  // Try fetching the theme JSON directly (lightweight, ~1-50KB per file)
-  // instead of the full VSIX (~1-10MB per file)
-  const raw = await fetchExtensionFile(assetUri, normalizeThemePath(themePath));
-  if (raw) {
-    try {
-      const themeDef = await parseThemeDefinitionFromFiles(
-        raw,
-        themePath,
-        assetUri,
-        new Set()
-      );
-      if (themeDef) return buildPalette(themeDef);
-    } catch {
-      // Fall through to VSIX download
+  // Try multiple URL patterns for direct theme file fetch (~1-50KB vs ~1-10MB VSIX)
+  for (const path of [
+    themePath.replace(/^\.\//, ""),
+    normalizeThemePath(themePath),
+  ]) {
+    const raw = await fetchExtensionFile(assetUri, path);
+    if (raw) {
+      try {
+        const themeDef = await parseThemeDefinitionFromFiles(
+          raw,
+          themePath,
+          assetUri,
+          new Set()
+        );
+        if (themeDef) return buildPalette(themeDef);
+      } catch {
+        // Try next pattern or fall back to VSIX
+      }
     }
   }
 
@@ -469,13 +513,13 @@ async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
     const res = await fetch(vsixUrl, {
       next: { revalidate: 21600 },
     });
-    if (!res.ok) return DEFAULT_THEME_COLORS;
+    if (!res.ok) return generateFallbackPalette(ext.displayName || ext.extensionName);
 
     const zipData = new Uint8Array(await res.arrayBuffer());
     const themeDef = parseThemeDefinition(zipData, themePath);
     return buildPalette(themeDef);
   } catch {
-    return DEFAULT_THEME_COLORS;
+    return generateFallbackPalette(ext.displayName || ext.extensionName);
   }
 }
 
@@ -513,7 +557,7 @@ function mapExtension(ext: MarketplaceExtension, trendingScore: number): Theme {
     categories: (ext.tags || []).filter(
       (t) => !t.startsWith("theme-") && !t.startsWith("__")
     ),
-    colors: ext._palette ?? DEFAULT_THEME_COLORS,
+    colors: ext._palette ?? generateFallbackPalette(ext.displayName || ext.extensionName),
     iconUrl: iconFile?.source || null,
     vscodeId: `${ext.publisher.publisherName}.${ext.extensionName}`,
     trendingScore,
