@@ -7,7 +7,7 @@
       "publisher": "Viral Team Theme",
       "publisherId": "viral-team",
       "description": "Carbon Candy Theme for VS Code",
-      "installs": 1224,
+      "installs": 1227,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2026-05-14T08:53:20.61Z",
@@ -58,7 +58,7 @@
       "publisher": "Gohit X",
       "publisherId": "bastndev",
       "description": "8 stunning themes + 3 icon packs for VS Code, Cursor, Windsurf & more. Dark, Light, Night, Ghibli, Fury, Kiro, NVIM & Blur. Reduce eye strain and boost your coding productivity.",
-      "installs": 5529,
+      "installs": 5533,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2026-05-12T02:14:09.58Z",
@@ -68,35 +68,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#131c20"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8d5da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed1d92"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#8030e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#576d75"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e79823"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#7ae830"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2beea0"
         }
       ],
       "iconUrl": null,
@@ -160,7 +160,7 @@
       "publisher": "nodlag",
       "publisherId": "javier-garrido-galdon",
       "description": "A Godot theme for Visual Studio Code",
-      "installs": 4101,
+      "installs": 4103,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2026-05-20T16:21:47.01Z",
@@ -170,35 +170,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#20131f"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dac8d9"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#b9ed1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e85e30"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#755773"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#23e774"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#309ce8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#7c2bee"
         }
       ],
       "iconUrl": null,
@@ -211,7 +211,7 @@
       "publisher": "Tinted Theming",
       "publisherId": "TintedTheming",
       "description": "Choose from over 250 Tinted Themes",
-      "installs": 2807,
+      "installs": 2808,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2026-05-10T04:04:37.777Z",
@@ -221,35 +221,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1f2013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d9dac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1db9ed"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e85e"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#737557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#7423e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e8309c"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee7c2b"
         }
       ],
       "iconUrl": null,
@@ -262,7 +262,7 @@
       "publisher": "Mark Miro",
       "publisherId": "markmiro",
       "description": "The battle-tested GitHub theme, but with a bunch of color variants.",
-      "installs": 1065,
+      "installs": 1067,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2025-09-22T02:23:04.44Z",
@@ -308,12 +308,63 @@
       "trendingScore": 6.17
     },
     {
+      "id": "bc3616ca-5332-4bb0-a7ff-7b7987b37e7f",
+      "name": "Ocean Green",
+      "publisher": "Jove Jonovski",
+      "publisherId": "jovejonovski",
+      "description": "Ocean Green Theme",
+      "installs": 44914,
+      "rating": 5,
+      "ratingCount": 1,
+      "lastUpdated": "2024-05-30T12:56:11.9Z",
+      "repository": "https://github.com/datyin/theme-ocean-green.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#201320"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#dac8da"
+        },
+        {
+          "name": "keyword",
+          "hex": "#caed1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e84f30"
+        },
+        {
+          "name": "comment",
+          "hex": "#755775"
+        },
+        {
+          "name": "variable",
+          "hex": "#23e764"
+        },
+        {
+          "name": "function",
+          "hex": "#30abe8"
+        },
+        {
+          "name": "number",
+          "hex": "#6c2bee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "jovejonovski.ocean-green",
+      "trendingScore": 5.95
+    },
+    {
       "id": "7d3bb193-6afc-4a0d-a315-e2363172174b",
       "name": "Flawuldragon",
       "publisher": "Humbanew Project",
       "publisherId": "humbanew",
       "description": "Humbanew starterkit development extension",
-      "installs": 1102,
+      "installs": 1103,
       "rating": 0,
       "ratingCount": 0,
       "lastUpdated": "2026-05-05T01:55:37.567Z",
@@ -356,58 +407,7 @@
       ],
       "iconUrl": null,
       "vscodeId": "humbanew.flawuldragon",
-      "trendingScore": 6.02
-    },
-    {
-      "id": "bc3616ca-5332-4bb0-a7ff-7b7987b37e7f",
-      "name": "Ocean Green",
-      "publisher": "Jove Jonovski",
-      "publisherId": "jovejonovski",
-      "description": "Ocean Green Theme",
-      "installs": 44891,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2024-05-30T12:56:11.9Z",
-      "repository": "https://github.com/datyin/theme-ocean-green.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "jovejonovski.ocean-green",
-      "trendingScore": 6
+      "trendingScore": 5.88
     },
     {
       "id": "58414b1a-c372-4a69-b90f-3f77388ac3e1",
@@ -415,7 +415,7 @@
       "publisher": "Pranjal Kumar",
       "publisherId": "PranjalKumar",
       "description": "Minimal Kiwi is a perfect-contrast, low-fatigue theme built for long coding sessions. Clean syntax hierarchy, vivid kiwi-greens for quick scanning, and pixel-tight contrasts so you can move faster and strain less",
-      "installs": 42573,
+      "installs": 42582,
       "rating": 5,
       "ratingCount": 10,
       "lastUpdated": "2025-11-11T08:33:25.767Z",
@@ -425,40 +425,40 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#131f20"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8d9da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed1dbc"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#5b30e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#577375"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e77123"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#9fe830"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2bee79"
         }
       ],
       "iconUrl": null,
       "vscodeId": "PranjalKumar.minimal-kiwi",
-      "trendingScore": 5.14
+      "trendingScore": 5.08
     },
     {
       "id": "9ca20f22-d6f5-428f-ad4e-bfbfccc0ccdc",
@@ -509,58 +509,7 @@
       ],
       "iconUrl": null,
       "vscodeId": "YY-GamePlayer.dark-modern-plus",
-      "trendingScore": 4.91
-    },
-    {
-      "id": "f154a421-f0b7-40be-9978-655dd637ccda",
-      "name": "(Original) Obsidian",
-      "publisher": "entense",
-      "publisherId": "entense",
-      "description": "(Actual) Obsidian theme for Visual Studio Code, based on the TextMate and Eclipse originals.",
-      "installs": 1200,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2024-10-30T20:34:40.073Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "entense.theme-original-obsidian",
-      "trendingScore": 4.84
+      "trendingScore": 5.03
     },
     {
       "id": "e61bc7e9-7fac-42f9-9b86-7547acd7b7cb",
@@ -568,7 +517,7 @@
       "publisher": "FullstacksJS",
       "publisherId": "FullstacksJS",
       "description": "FullstacksJS community Minimal VSCode and Cursor theme based on FlatRemix",
-      "installs": 1459,
+      "installs": 1460,
       "rating": 5,
       "ratingCount": 5,
       "lastUpdated": "2026-05-19T22:37:23.277Z",
@@ -611,7 +560,58 @@
       ],
       "iconUrl": null,
       "vscodeId": "FullstacksJS.fullstacksjs-vscode",
-      "trendingScore": 4.7
+      "trendingScore": 4.96
+    },
+    {
+      "id": "f154a421-f0b7-40be-9978-655dd637ccda",
+      "name": "(Original) Obsidian",
+      "publisher": "entense",
+      "publisherId": "entense",
+      "description": "(Actual) Obsidian theme for Visual Studio Code, based on the TextMate and Eclipse originals.",
+      "installs": 1201,
+      "rating": 5,
+      "ratingCount": 1,
+      "lastUpdated": "2024-10-30T20:34:40.073Z",
+      "repository": "",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#132014"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#c8dac9"
+        },
+        {
+          "name": "keyword",
+          "hex": "#4d1ded"
+        },
+        {
+          "name": "string",
+          "hex": "#30bde8"
+        },
+        {
+          "name": "comment",
+          "hex": "#577559"
+        },
+        {
+          "name": "variable",
+          "hex": "#e72398"
+        },
+        {
+          "name": "function",
+          "hex": "#e87a30"
+        },
+        {
+          "name": "number",
+          "hex": "#a0ee2b"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "entense.theme-original-obsidian",
+      "trendingScore": 4.84
     },
     {
       "id": "f93a66d8-1539-4079-8112-4175e7f5c0f0",
@@ -629,35 +629,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#162013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#cddac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1d2eed"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e8d9"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#5e7557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e723d6"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e84030"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#deee2b"
         }
       ],
       "iconUrl": null,
@@ -680,35 +680,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#131320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed3f1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e830c9"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#575775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#a5e723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e86e"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2badee"
         }
       ],
       "iconUrl": null,
@@ -772,7 +772,7 @@
       "publisher": "FighterOP",
       "publisherId": "FighterOP",
       "description": "A polished VS Code theme pack with Rex Dark Aura and Rex Dark Pulse.",
-      "installs": 2484,
+      "installs": 2485,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2026-04-29T10:11:32.933Z",
@@ -823,7 +823,7 @@
       "publisher": "renxzen",
       "publisherId": "renxzen",
       "description": "Google Colab Dark Theme for VS Code",
-      "installs": 97147,
+      "installs": 97143,
       "rating": 5,
       "ratingCount": 4,
       "lastUpdated": "2021-10-14T21:02:26.893Z",
@@ -833,35 +833,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#132015"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8daca"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#5b1ded"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30b1e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#57755b"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e7238b"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e88630"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#93ee2b"
         }
       ],
       "iconUrl": null,
@@ -884,35 +884,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201f13"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dad9c8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1dd8ed"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e843"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#757357"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#5723e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e830b7"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee5f2b"
         }
       ],
       "iconUrl": null,
@@ -925,7 +925,7 @@
       "publisher": "Brano Sandala",
       "publisherId": "brano",
       "description": "Set of 10 dark themes for VS Code, including syntax highlighting, debugging, diff/merge and terminal colors.",
-      "installs": 4323,
+      "installs": 4328,
       "rating": 4.5,
       "ratingCount": 4,
       "lastUpdated": "2026-05-16T13:35:46.843Z",
@@ -935,91 +935,40 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#20131f"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dac8d9"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#b9ed1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e85e30"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#755773"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#23e774"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#309ce8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#7c2bee"
         }
       ],
       "iconUrl": null,
       "vscodeId": "brano.bikkuri-theme",
-      "trendingScore": 4.43
-    },
-    {
-      "id": "dda5d730-a71b-47a4-9828-df9b57a4c764",
-      "name": "Fifty Shades of Grape",
-      "publisher": "Chen Yefet",
-      "publisherId": "ChenYefet",
-      "description": "A dark theme with pink, purple and turquoise as the main colours. Designed to be pleasant on the eyes",
-      "installs": 1386,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2026-05-17T03:38:36.417Z",
-      "repository": "https://github.com/ChenYefet/fifty-shades-of-grape.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#0c0020"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#DABDFF96"
-        },
-        {
-          "name": "keyword",
-          "hex": "#7a53d4"
-        },
-        {
-          "name": "string",
-          "hex": "#DABDFF96"
-        },
-        {
-          "name": "comment",
-          "hex": "#DABDFF96"
-        },
-        {
-          "name": "variable",
-          "hex": "#AA00FFE2"
-        },
-        {
-          "name": "function",
-          "hex": "#FF00DDD8"
-        },
-        {
-          "name": "number",
-          "hex": "#DD00FFDB"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "ChenYefet.fifty-shades-of-grape",
-      "trendingScore": 4.38
+      "trendingScore": 4.42
     },
     {
       "id": "eb9e971f-486b-4524-8705-5306180c3076",
@@ -1078,7 +1027,7 @@
       "publisher": "The24thDS",
       "publisherId": "The24thDS",
       "description": "Syntax highlighting and color themes for Stellaris localisation files.",
-      "installs": 1802,
+      "installs": 1803,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2024-08-02T18:48:39.19Z",
@@ -1088,40 +1037,40 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1a2013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d1dac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1d62ed"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e8ab"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#667557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#c623e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e8304f"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#eecd2b"
         }
       ],
       "iconUrl": null,
       "vscodeId": "The24thDS.stellaris-yaml-syntax",
-      "trendingScore": 4.28
+      "trendingScore": 4.32
     },
     {
       "id": "756ab3e1-ead4-48af-b802-6a84014cddcf",
@@ -1129,7 +1078,7 @@
       "publisher": "Lakshit Somani",
       "publisherId": "lakshits11",
       "description": "Discover the mesmerizing allure of the urban nightscape with Neon City, where sophistication meets the electric energy of the city streets.",
-      "installs": 45920,
+      "installs": 45931,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2024-03-03T05:24:49.473Z",
@@ -1139,40 +1088,91 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201b13"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dad4c8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1dedc3"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#55e830"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#756a57"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#2329e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e230e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee2b31"
         }
       ],
       "iconUrl": null,
       "vscodeId": "lakshits11.neon-city",
-      "trendingScore": 4.27
+      "trendingScore": 4.28
+    },
+    {
+      "id": "dda5d730-a71b-47a4-9828-df9b57a4c764",
+      "name": "Fifty Shades of Grape",
+      "publisher": "Chen Yefet",
+      "publisherId": "ChenYefet",
+      "description": "A dark theme with pink, purple and turquoise as the main colours. Designed to be pleasant on the eyes",
+      "installs": 1387,
+      "rating": 0,
+      "ratingCount": 0,
+      "lastUpdated": "2026-05-17T03:38:36.417Z",
+      "repository": "https://github.com/ChenYefet/fifty-shades-of-grape.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#0c0020"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#DABDFF96"
+        },
+        {
+          "name": "keyword",
+          "hex": "#7a53d4"
+        },
+        {
+          "name": "string",
+          "hex": "#DABDFF96"
+        },
+        {
+          "name": "comment",
+          "hex": "#DABDFF96"
+        },
+        {
+          "name": "variable",
+          "hex": "#AA00FFE2"
+        },
+        {
+          "name": "function",
+          "hex": "#FF00DDD8"
+        },
+        {
+          "name": "number",
+          "hex": "#DD00FFDB"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "ChenYefet.fifty-shades-of-grape",
+      "trendingScore": 4.28
     },
     {
       "id": "44615bea-ccd1-4cd8-9410-0a17a3a48903",
@@ -1180,7 +1180,7 @@
       "publisher": "Sukadia",
       "publisherId": "Sukadia",
       "description": "A theme based on \"Brackets Dark\" with better language support.",
-      "installs": 1677,
+      "installs": 1678,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2022-04-12T00:01:25.643Z",
@@ -1292,35 +1292,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201c13"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dad5c8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1dedd4"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#46e830"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#756d57"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#2c23e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e830df"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee342b"
         }
       ],
       "iconUrl": null,
@@ -1435,7 +1435,7 @@
       "publisher": "laf pub",
       "publisherId": "lafpub",
       "description": "浅色主题：豆沙绿、米黄色、豆沙绿（全屏）、米黄色（全屏）、精美(图标)",
-      "installs": 4949,
+      "installs": 4950,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2021-03-26T12:52:26.643Z",
@@ -1445,40 +1445,91 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1d1320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d6c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#eddf1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e8303d"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#6e5775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#23e736"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30d6e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#3e2bee"
         }
       ],
       "iconUrl": null,
       "vscodeId": "lafpub.EyesTheme",
       "trendingScore": 4.15
+    },
+    {
+      "id": "50cdb938-5004-4c38-bc57-b7cdbd7bf427",
+      "name": "Kawaii Theme",
+      "publisher": "diff001a",
+      "publisherId": "diff001a",
+      "description": "A very sweet theme for vscode. enjoy :)",
+      "installs": 48174,
+      "rating": 5,
+      "ratingCount": 7,
+      "lastUpdated": "2019-10-13T20:57:03.98Z",
+      "repository": "https://github.com/diff001a/KawaiiTheme",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#353042"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#FFF0F5"
+        },
+        {
+          "name": "keyword",
+          "hex": "#ff709b"
+        },
+        {
+          "name": "string",
+          "hex": "#FFA7C4"
+        },
+        {
+          "name": "comment",
+          "hex": "#857282"
+        },
+        {
+          "name": "variable",
+          "hex": "#FFE175"
+        },
+        {
+          "name": "function",
+          "hex": "#FFE175"
+        },
+        {
+          "name": "number",
+          "hex": "#FFA7C4"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "diff001a.kawaii-theme",
+      "trendingScore": 4.14
     },
     {
       "id": "87e0656f-b219-4468-9990-d77bf05a7bec",
@@ -1532,63 +1583,12 @@
       "trendingScore": 4.14
     },
     {
-      "id": "50cdb938-5004-4c38-bc57-b7cdbd7bf427",
-      "name": "Kawaii Theme",
-      "publisher": "diff001a",
-      "publisherId": "diff001a",
-      "description": "A very sweet theme for vscode. enjoy :)",
-      "installs": 48164,
-      "rating": 5,
-      "ratingCount": 7,
-      "lastUpdated": "2019-10-13T20:57:03.98Z",
-      "repository": "https://github.com/diff001a/KawaiiTheme",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#353042"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#FFF0F5"
-        },
-        {
-          "name": "keyword",
-          "hex": "#ff709b"
-        },
-        {
-          "name": "string",
-          "hex": "#FFA7C4"
-        },
-        {
-          "name": "comment",
-          "hex": "#857282"
-        },
-        {
-          "name": "variable",
-          "hex": "#FFE175"
-        },
-        {
-          "name": "function",
-          "hex": "#FFE175"
-        },
-        {
-          "name": "number",
-          "hex": "#FFA7C4"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "diff001a.kawaii-theme",
-      "trendingScore": 4.12
-    },
-    {
       "id": "4c471c3c-c3ce-43e6-b7bd-ebde0b9c4ace",
       "name": "One Hunter Theme",
       "publisher": "Railly Hugo",
       "publisherId": "RaillyHugo",
       "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
-      "installs": 38208,
+      "installs": 38210,
       "rating": 5,
       "ratingCount": 7,
       "lastUpdated": "2024-05-17T04:12:07Z",
@@ -1631,7 +1631,7 @@
       ],
       "iconUrl": null,
       "vscodeId": "RaillyHugo.one-hunter",
-      "trendingScore": 4
+      "trendingScore": 4.01
     },
     {
       "id": "e5e65f10-7303-4fb8-8717-2fa83da6aff1",
@@ -1639,7 +1639,7 @@
       "publisher": "dooez",
       "publisherId": "dooez",
       "description": "Catppuccin with Monokai, Dark One and more syntax styles",
-      "installs": 55508,
+      "installs": 55506,
       "rating": 5,
       "ratingCount": 4,
       "lastUpdated": "2023-06-04T10:46:41.53Z",
@@ -1690,7 +1690,7 @@
       "publisher": "Sandile Keswa",
       "publisherId": "skeswa",
       "description": "Noctis is a collection of light & dark themes with a well balanced blend of warm and cold colors",
-      "installs": 5291,
+      "installs": 5296,
       "rating": 0,
       "ratingCount": 0,
       "lastUpdated": "2024-09-05T16:15:26.08Z",
@@ -1741,7 +1741,7 @@
       "publisher": "Levminer",
       "publisherId": "levminer",
       "description": "A black Visual Studio Code theme with GitHub syntax highlighting colors.",
-      "installs": 2261,
+      "installs": 2263,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2023-03-26T14:31:33.71Z",
@@ -1751,35 +1751,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201d13"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dad7c8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1dede6"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#37e830"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#756f57"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#3d23e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e830d0"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee452b"
         }
       ],
       "iconUrl": null,
@@ -1787,55 +1787,55 @@
       "trendingScore": 3.98
     },
     {
-      "id": "7882c0be-9b50-45db-83bf-195329ac0f6d",
-      "name": "Crystalline Theme",
-      "publisher": "crystaltine",
-      "publisherId": "nonagon",
-      "description": "Smooth colorful dark themes",
-      "installs": 1928,
+      "id": "ff9121da-3ea9-4ab0-adae-2428cd83665e",
+      "name": "3anakib",
+      "publisher": "achraf el fadili",
+      "publisherId": "achrafelfadili",
+      "description": "3anakib theme, a theme for every language out there",
+      "installs": 1964,
       "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2026-05-18T23:15:47.693Z",
-      "repository": "https://github.com/crystaltine/Crystalline-Theme.git",
+      "ratingCount": 3,
+      "lastUpdated": "2022-08-30T10:26:34.193Z",
+      "repository": "https://github.com/0xShady/3anakib-theme.git",
       "type": "dark",
       "categories": [],
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1D1D1D"
+          "hex": "#201413"
         },
         {
           "name": "editor.foreground",
-          "hex": "#AAA"
+          "hex": "#dacac8"
         },
         {
           "name": "keyword",
-          "hex": "#FE3D83"
+          "hex": "#1ded54"
         },
         {
           "name": "string",
-          "hex": "#E08CB8"
+          "hex": "#b7e830"
         },
         {
           "name": "comment",
-          "hex": "#FFF5"
+          "hex": "#755a57"
         },
         {
           "name": "variable",
-          "hex": "#E2BB84"
+          "hex": "#2392e7"
         },
         {
           "name": "function",
-          "hex": "#D479FF"
+          "hex": "#8030e8"
         },
         {
           "name": "number",
-          "hex": "#FFF3B5"
+          "hex": "#ee2b99"
         }
       ],
       "iconUrl": null,
-      "vscodeId": "nonagon.crystalline-theme",
-      "trendingScore": 3.94
+      "vscodeId": "achrafelfadili.3anakib",
+      "trendingScore": 3.93
     },
     {
       "id": "98e2ad89-0613-4b2f-a56f-ef3386d21d78",
@@ -1894,7 +1894,7 @@
       "publisher": "Prabodha",
       "publisherId": "vampire-theme",
       "description": "This is a theme for night owls",
-      "installs": 39011,
+      "installs": 39015,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2020-06-26T15:02:15.61Z",
@@ -1937,6 +1937,108 @@
       ],
       "iconUrl": null,
       "vscodeId": "vampire-theme.vampire-theme",
+      "trendingScore": 3.92
+    },
+    {
+      "id": "7882c0be-9b50-45db-83bf-195329ac0f6d",
+      "name": "Crystalline Theme",
+      "publisher": "crystaltine",
+      "publisherId": "nonagon",
+      "description": "Smooth colorful dark themes",
+      "installs": 1928,
+      "rating": 5,
+      "ratingCount": 2,
+      "lastUpdated": "2026-05-18T23:15:47.693Z",
+      "repository": "https://github.com/crystaltine/Crystalline-Theme.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1D1D1D"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#AAA"
+        },
+        {
+          "name": "keyword",
+          "hex": "#FE3D83"
+        },
+        {
+          "name": "string",
+          "hex": "#E08CB8"
+        },
+        {
+          "name": "comment",
+          "hex": "#FFF5"
+        },
+        {
+          "name": "variable",
+          "hex": "#E2BB84"
+        },
+        {
+          "name": "function",
+          "hex": "#D479FF"
+        },
+        {
+          "name": "number",
+          "hex": "#FFF3B5"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "nonagon.crystalline-theme",
+      "trendingScore": 3.9
+    },
+    {
+      "id": "6381b694-ec7f-4ef5-ae2f-e9910eb7819e",
+      "name": "Rose Pine Dimmed",
+      "publisher": "Aayush Kunwar",
+      "publisherId": "AayushKunwar",
+      "description": "modified rose pine theme with the github dimmed ui theme",
+      "installs": 1500,
+      "rating": 0,
+      "ratingCount": 0,
+      "lastUpdated": "2026-05-20T03:10:57.51Z",
+      "repository": "https://github.com/AayushKunwar/rose-pine-dimmed.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#171320"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdc8da"
+        },
+        {
+          "name": "keyword",
+          "hex": "#ed7e1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e83092"
+        },
+        {
+          "name": "comment",
+          "hex": "#605775"
+        },
+        {
+          "name": "variable",
+          "hex": "#6ae723"
+        },
+        {
+          "name": "function",
+          "hex": "#30e8a5"
+        },
+        {
+          "name": "number",
+          "hex": "#2b72ee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "AayushKunwar.rose-pine-dimmed",
       "trendingScore": 3.88
     },
     {
@@ -1945,7 +2047,7 @@
       "publisher": "PROxZIMA",
       "publisherId": "PROxZIMA",
       "description": "Sweet Dracula — A beautiful, darker - Dracula fork",
-      "installs": 128641,
+      "installs": 128639,
       "rating": 5,
       "ratingCount": 7,
       "lastUpdated": "2022-12-19T10:18:53.22Z",
@@ -1955,35 +2057,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201813"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dad0c8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1ded96"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#7de830"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#756357"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#2354e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#ba30e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee2b5b"
         }
       ],
       "iconUrl": null,
@@ -1991,114 +2093,12 @@
       "trendingScore": 3.88
     },
     {
-      "id": "ff9121da-3ea9-4ab0-adae-2428cd83665e",
-      "name": "3anakib",
-      "publisher": "achraf el fadili",
-      "publisherId": "achrafelfadili",
-      "description": "3anakib theme, a theme for every language out there",
-      "installs": 1963,
-      "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2022-08-30T10:26:34.193Z",
-      "repository": "https://github.com/0xShady/3anakib-theme.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "achrafelfadili.3anakib",
-      "trendingScore": 3.86
-    },
-    {
-      "id": "d39e9b66-02b2-4f5f-92ab-5f4961f5e3e5",
-      "name": "2gua Light Theme",
-      "publisher": "2gua",
-      "publisherId": "2gua",
-      "description": "A light color theme for eye protection.",
-      "installs": 1383,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2022-01-17T03:08:44.403Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "2gua.2gua-light-color-theme",
-      "trendingScore": 3.85
-    },
-    {
       "id": "86eb2bf4-7089-43b9-9ed2-2a6c0ddcd98e",
       "name": "Expo Theme",
       "publisher": "Expo",
       "publisherId": "expo",
       "description": "Expo-inspired editor and syntax theme.",
-      "installs": 39129,
+      "installs": 39135,
       "rating": 5,
       "ratingCount": 5,
       "lastUpdated": "2026-01-22T20:57:57.723Z",
@@ -2159,35 +2159,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#182013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#cfdac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1d46ed"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e8c3"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#627557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e023e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e83037"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#eee72b"
         }
       ],
       "iconUrl": null,
@@ -2200,7 +2200,7 @@
       "publisher": "Rauno Freiberg",
       "publisherId": "raunofreiberg",
       "description": "Peppermint and orange flavored dark theme for VSCode.",
-      "installs": 84955,
+      "installs": 84953,
       "rating": 4.909090995788574,
       "ratingCount": 11,
       "lastUpdated": "2026-03-16T18:50:05.637Z",
@@ -2210,35 +2210,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1a1320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d2c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#edb51d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e83061"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#685775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#36e723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e8d6"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2b3eee"
         }
       ],
       "iconUrl": null,
@@ -2251,7 +2251,7 @@
       "publisher": "Wolfram Research",
       "publisherId": "WolframResearch",
       "description": "Official Visual Studio Code extension for Wolfram Language",
-      "installs": 22848,
+      "installs": 22854,
       "rating": 4.099999904632568,
       "ratingCount": 10,
       "lastUpdated": "2026-05-11T03:20:11.987Z",
@@ -2261,35 +2261,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1d2013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d6dac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1d9ded"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e877"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#6f7557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#8e23e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e83083"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee962b"
         }
       ],
       "iconUrl": null,
@@ -2312,35 +2312,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201513"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dacbc8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1ded65"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#a8e830"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#755c57"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#2381e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#8f30e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee2b89"
         }
       ],
       "iconUrl": null,
@@ -2348,55 +2348,157 @@
       "trendingScore": 3.82
     },
     {
-      "id": "cbcdfb34-9d52-4e95-9615-13754523594b",
-      "name": "Yukinord",
-      "publisher": "Yukina",
-      "publisherId": "yukina",
-      "description": "Dark theme inspired by Nord and Nord Deep.",
-      "installs": 1497,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2026-05-07T01:23:18.5Z",
-      "repository": "https://github.com/yukina3230/yukinord.git",
+      "id": "d39e9b66-02b2-4f5f-92ab-5f4961f5e3e5",
+      "name": "2gua Light Theme",
+      "publisher": "2gua",
+      "publisherId": "2gua",
+      "description": "A light color theme for eye protection.",
+      "installs": 1383,
+      "rating": 5,
+      "ratingCount": 1,
+      "lastUpdated": "2022-01-17T03:08:44.403Z",
+      "repository": "",
       "type": "dark",
       "categories": [],
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1b1320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d4c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#edc61d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e83052"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#6b5775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#26e723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e8e5"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2b2eee"
         }
       ],
       "iconUrl": null,
-      "vscodeId": "yukina.yukinord",
-      "trendingScore": 3.81
+      "vscodeId": "2gua.2gua-light-color-theme",
+      "trendingScore": 3.78
+    },
+    {
+      "id": "57a59600-ab41-441e-a359-9bc6eb73c8a5",
+      "name": "Abyski",
+      "publisher": "jamiesmiths",
+      "publisherId": "jamiesmiths",
+      "description": "VS Code theme - a turnt take on abyss + monokai",
+      "installs": 2389,
+      "rating": 5,
+      "ratingCount": 2,
+      "lastUpdated": "2019-10-06T22:51:38.12Z",
+      "repository": "https://github.com/jsmithdev/abyski.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#171320"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cdc8da"
+        },
+        {
+          "name": "keyword",
+          "hex": "#ed771d"
+        },
+        {
+          "name": "string",
+          "hex": "#e83098"
+        },
+        {
+          "name": "comment",
+          "hex": "#5f5775"
+        },
+        {
+          "name": "variable",
+          "hex": "#71e723"
+        },
+        {
+          "name": "function",
+          "hex": "#30e89f"
+        },
+        {
+          "name": "number",
+          "hex": "#2b79ee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "jamiesmiths.abyski",
+      "trendingScore": 3.78
+    },
+    {
+      "id": "3d3feb81-7807-4158-9603-071a58779f86",
+      "name": "Ace Dark",
+      "publisher": "Aleksandar Stojanoski",
+      "publisherId": "acestojanoski",
+      "description": "Color theme for VS Code, based on Oceanic Next and Subliminal.",
+      "installs": 2403,
+      "rating": 5,
+      "ratingCount": 1,
+      "lastUpdated": "2019-10-06T18:49:10.833Z",
+      "repository": "https://github.com/acestojanoski/ace-dark.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#201d13"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#dad7c8"
+        },
+        {
+          "name": "keyword",
+          "hex": "#1dede6"
+        },
+        {
+          "name": "string",
+          "hex": "#37e830"
+        },
+        {
+          "name": "comment",
+          "hex": "#756f57"
+        },
+        {
+          "name": "variable",
+          "hex": "#3d23e7"
+        },
+        {
+          "name": "function",
+          "hex": "#e830d0"
+        },
+        {
+          "name": "number",
+          "hex": "#ee452b"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "acestojanoski.ace-dark",
+      "trendingScore": 3.78
     },
     {
       "id": "ea772832-963a-4e23-a1eb-a7bfe3979108",
@@ -2447,58 +2549,7 @@
       ],
       "iconUrl": null,
       "vscodeId": "33p.2am",
-      "trendingScore": 3.8
-    },
-    {
-      "id": "4064751e-155b-4e18-936d-7bad08593818",
-      "name": "Kali Terminal Dark",
-      "publisher": "Kevin Norman",
-      "publisherId": "kevinnorman",
-      "description": "A dark theme inspired by the Kali Linux terminal",
-      "installs": 44743,
-      "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2022-05-14T23:54:17.407Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#23252e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#b7b8bb"
-        },
-        {
-          "name": "keyword",
-          "hex": "#49aee6"
-        },
-        {
-          "name": "string",
-          "hex": "#d41919"
-        },
-        {
-          "name": "comment",
-          "hex": "#5ebdab77"
-        },
-        {
-          "name": "variable",
-          "hex": "#fea44c"
-        },
-        {
-          "name": "function",
-          "hex": "#05a1f7"
-        },
-        {
-          "name": "number",
-          "hex": "#9755b3"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "kevinnorman.kali-terminal-dark",
-      "trendingScore": 3.79
+      "trendingScore": 3.77
     },
     {
       "id": "d7be68b1-f7c4-4527-9d48-1956f6774f45",
@@ -2549,7 +2600,7 @@
       ],
       "iconUrl": null,
       "vscodeId": "Bitcookies.pudding-vscode-theme",
-      "trendingScore": 3.79
+      "trendingScore": 3.77
     },
     {
       "id": "b885204f-300c-434c-8d58-0a56cb525cc8",
@@ -2557,7 +2608,7 @@
       "publisher": "markusylisiurunen",
       "publisherId": "markusylisiurunen",
       "description": "GitHub Dark Mode theme for Visual Studio Code",
-      "installs": 39187,
+      "installs": 39190,
       "rating": 5,
       "ratingCount": 3,
       "lastUpdated": "2021-02-05T14:59:42.09Z",
@@ -2600,109 +2651,58 @@
       ],
       "iconUrl": null,
       "vscodeId": "markusylisiurunen.githubdarkmode",
-      "trendingScore": 3.78
+      "trendingScore": 3.77
     },
     {
-      "id": "57a59600-ab41-441e-a359-9bc6eb73c8a5",
-      "name": "Abyski",
-      "publisher": "jamiesmiths",
-      "publisherId": "jamiesmiths",
-      "description": "VS Code theme - a turnt take on abyss + monokai",
-      "installs": 2389,
-      "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2019-10-06T22:51:38.12Z",
-      "repository": "https://github.com/jsmithdev/abyski.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "jamiesmiths.abyski",
-      "trendingScore": 3.78
-    },
-    {
-      "id": "3d3feb81-7807-4158-9603-071a58779f86",
-      "name": "Ace Dark",
-      "publisher": "Aleksandar Stojanoski",
-      "publisherId": "acestojanoski",
-      "description": "Color theme for VS Code, based on Oceanic Next and Subliminal.",
-      "installs": 2403,
+      "id": "4064751e-155b-4e18-936d-7bad08593818",
+      "name": "Kali Terminal Dark",
+      "publisher": "Kevin Norman",
+      "publisherId": "kevinnorman",
+      "description": "A dark theme inspired by the Kali Linux terminal",
+      "installs": 44747,
       "rating": 5,
       "ratingCount": 1,
-      "lastUpdated": "2019-10-06T18:49:10.833Z",
-      "repository": "https://github.com/acestojanoski/ace-dark.git",
+      "lastUpdated": "2022-05-14T23:54:17.407Z",
+      "repository": "",
       "type": "dark",
       "categories": [],
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#23252e"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#b7b8bb"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#49aee6"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#d41919"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#5ebdab77"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#fea44c"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#05a1f7"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#9755b3"
         }
       ],
       "iconUrl": null,
-      "vscodeId": "acestojanoski.ace-dark",
-      "trendingScore": 3.78
+      "vscodeId": "kevinnorman.kali-terminal-dark",
+      "trendingScore": 3.76
     },
     {
       "id": "0e64efb1-882d-4161-b745-42bc45fd5ac8",
@@ -2710,7 +2710,7 @@
       "publisher": "Louis Lacoste",
       "publisherId": "llacoste2000",
       "description": "VS Code theme inspired by the GitLab WebIDE color palette.",
-      "installs": 17404,
+      "installs": 17411,
       "rating": 5,
       "ratingCount": 2,
       "lastUpdated": "2026-05-18T14:11:30.453Z",
@@ -2720,40 +2720,40 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1c1320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d4c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#edcd1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e8304c"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#6c5775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#23e726"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e5e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2e2bee"
         }
       ],
       "iconUrl": null,
       "vscodeId": "llacoste2000.unofficial-gitlab-dark-theme",
-      "trendingScore": 3.77
+      "trendingScore": 3.76
     },
     {
       "id": "de4dba5e-a4b4-4bb3-a5dd-ee531c33c329",
@@ -2771,35 +2771,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#161320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#ccc8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed701d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e8309f"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#5e5775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#78e723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e898"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2b7fee"
         }
       ],
       "iconUrl": null,
@@ -2822,35 +2822,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#141320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c9c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed4d1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e830bd"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#595775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#98e723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e87a"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2ba0ee"
         }
       ],
       "iconUrl": null,
@@ -2924,35 +2924,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#20131e"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dac8d8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#abed1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e86b30"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#755771"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#23e781"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#308fe8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#892bee"
         }
       ],
       "iconUrl": null,
@@ -2975,35 +2975,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#131820"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8d0da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed1d51"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#ba30e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#576375"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e7d623"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#40e830"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2beede"
         }
       ],
       "iconUrl": null,
@@ -3016,7 +3016,7 @@
       "publisher": "Daur Gamisonia",
       "publisherId": "brofox86",
       "description": "Color theme for the VSCode editor. Heavily inspired by the Espresso syntax theme",
-      "installs": 4695,
+      "installs": 4696,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2026-04-27T08:55:28.437Z",
@@ -3026,35 +3026,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#132015"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8daca"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#5b1ded"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30b1e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#57755b"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e7238b"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e88630"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#93ee2b"
         }
       ],
       "iconUrl": null,
@@ -3113,6 +3113,108 @@
       "trendingScore": 3.7
     },
     {
+      "id": "18bf0a9a-8646-4391-9ddf-30c4305858a7",
+      "name": "Mr Pink",
+      "publisher": "juanmnl",
+      "publisherId": "juanmnl",
+      "description": "I wanna find out who the bad guy is.",
+      "installs": 48212,
+      "rating": 5,
+      "ratingCount": 3,
+      "lastUpdated": "2026-01-23T14:11:56.363Z",
+      "repository": "https://github.com/juanmnl/vs-mr-pink.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#25252F"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#F6F8F7"
+        },
+        {
+          "name": "keyword",
+          "hex": "#D167B5"
+        },
+        {
+          "name": "string",
+          "hex": "##F6F8F7"
+        },
+        {
+          "name": "comment",
+          "hex": "#525863"
+        },
+        {
+          "name": "variable",
+          "hex": "#D58FDB"
+        },
+        {
+          "name": "function",
+          "hex": "#fff"
+        },
+        {
+          "name": "number",
+          "hex": "#FAD481"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "juanmnl.vscode-theme-mr-pink",
+      "trendingScore": 3.7
+    },
+    {
+      "id": "fd650e5a-054b-41d8-a5b4-c638eba873c8",
+      "name": "Dark Magic Themes",
+      "publisher": "David Morais",
+      "publisherId": "DavidMorais",
+      "description": "A collection of dark 🖤 themes with tones of green and blue",
+      "installs": 49161,
+      "rating": 5,
+      "ratingCount": 6,
+      "lastUpdated": "2025-10-09T15:51:57.993Z",
+      "repository": "https://github.com/Dark-Magic-Studios/dark-magic-themes.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#0f0f17"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#bbccee"
+        },
+        {
+          "name": "keyword",
+          "hex": "#cfa3f5"
+        },
+        {
+          "name": "string",
+          "hex": "#db6797"
+        },
+        {
+          "name": "comment",
+          "hex": "#bbccee77"
+        },
+        {
+          "name": "variable",
+          "hex": "#66eeaadd"
+        },
+        {
+          "name": "function",
+          "hex": "#6bc7f5"
+        },
+        {
+          "name": "number",
+          "hex": "#b4f09e"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "DavidMorais.dark-magic-themes",
+      "trendingScore": 3.69
+    },
+    {
       "id": "9bd0b7e5-c146-4b39-8ab9-11b7ebb993c6",
       "name": "Academy City",
       "publisher": "CactusBlue",
@@ -3164,165 +3266,12 @@
       "trendingScore": 3.69
     },
     {
-      "id": "18bf0a9a-8646-4391-9ddf-30c4305858a7",
-      "name": "Mr Pink",
-      "publisher": "juanmnl",
-      "publisherId": "juanmnl",
-      "description": "I wanna find out who the bad guy is.",
-      "installs": 48209,
-      "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2026-01-23T14:11:56.363Z",
-      "repository": "https://github.com/juanmnl/vs-mr-pink.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#25252F"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#F6F8F7"
-        },
-        {
-          "name": "keyword",
-          "hex": "#D167B5"
-        },
-        {
-          "name": "string",
-          "hex": "##F6F8F7"
-        },
-        {
-          "name": "comment",
-          "hex": "#525863"
-        },
-        {
-          "name": "variable",
-          "hex": "#D58FDB"
-        },
-        {
-          "name": "function",
-          "hex": "#fff"
-        },
-        {
-          "name": "number",
-          "hex": "#FAD481"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "juanmnl.vscode-theme-mr-pink",
-      "trendingScore": 3.68
-    },
-    {
-      "id": "fd650e5a-054b-41d8-a5b4-c638eba873c8",
-      "name": "Dark Magic Themes",
-      "publisher": "David Morais",
-      "publisherId": "DavidMorais",
-      "description": "A collection of dark 🖤 themes with tones of green and blue",
-      "installs": 49158,
-      "rating": 5,
-      "ratingCount": 6,
-      "lastUpdated": "2025-10-09T15:51:57.993Z",
-      "repository": "https://github.com/Dark-Magic-Studios/dark-magic-themes.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#0f0f17"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#bbccee"
-        },
-        {
-          "name": "keyword",
-          "hex": "#cfa3f5"
-        },
-        {
-          "name": "string",
-          "hex": "#db6797"
-        },
-        {
-          "name": "comment",
-          "hex": "#bbccee77"
-        },
-        {
-          "name": "variable",
-          "hex": "#66eeaadd"
-        },
-        {
-          "name": "function",
-          "hex": "#6bc7f5"
-        },
-        {
-          "name": "number",
-          "hex": "#b4f09e"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "DavidMorais.dark-magic-themes",
-      "trendingScore": 3.68
-    },
-    {
-      "id": "6381b694-ec7f-4ef5-ae2f-e9910eb7819e",
-      "name": "Rose Pine Dimmed",
-      "publisher": "Aayush Kunwar",
-      "publisherId": "AayushKunwar",
-      "description": "modified rose pine theme with the github dimmed ui theme",
-      "installs": 1498,
-      "rating": 0,
-      "ratingCount": 0,
-      "lastUpdated": "2026-05-20T03:10:57.51Z",
-      "repository": "https://github.com/AayushKunwar/rose-pine-dimmed.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "AayushKunwar.rose-pine-dimmed",
-      "trendingScore": 3.68
-    },
-    {
       "id": "654fbcfc-6590-45ba-b0ef-49dd97e29acc",
       "name": "7lou Theme",
       "publisher": "Bachir Amiri",
       "publisherId": "bachiramiri",
       "description": "A sweet, minimal, pastel theme",
-      "installs": 2024,
+      "installs": 2025,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2020-09-06T15:29:28.477Z",
@@ -3332,193 +3281,40 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#132018"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8dacf"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#8f1ded"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#3083e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#577562"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e7235a"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e8b430"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#62ee2b"
         }
       ],
       "iconUrl": null,
       "vscodeId": "bachiramiri.7lou-vscode",
       "trendingScore": 3.6
-    },
-    {
-      "id": "c1edb175-911f-41cb-8ce4-037e7046293d",
-      "name": "Dark Red Theme",
-      "publisher": "rogeraabbccdd",
-      "publisherId": "rogeraabbccdd",
-      "description": "Dark red theme for vscode with transparency build support",
-      "installs": 47648,
-      "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2019-11-03T14:50:39.8Z",
-      "repository": "https://github.com/rogeraabbccdd/vscode-dark-red/",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "rogeraabbccdd.dark-red-theme",
-      "trendingScore": 3.6
-    },
-    {
-      "id": "8c24dc07-bf80-47ad-a83f-5a6985c2a833",
-      "name": "Github Blue",
-      "publisher": "Larxx",
-      "publisherId": "Larxx",
-      "description": "GitHub Blue theme - As seen from GitHub's home page.",
-      "installs": 43159,
-      "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2021-03-11T03:07:01.483Z",
-      "repository": "https://github.com/larxx/github-blue",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "Larxx.github-blue",
-      "trendingScore": 3.59
-    },
-    {
-      "id": "123a4dc9-9488-4600-b964-4137865fc82a",
-      "name": "24 Hours Dark Theme",
-      "publisher": "Eka Restu D. Putra",
-      "publisherId": "erdpme",
-      "description": "24 Hours is a Dark Theme for Visual Studio Code",
-      "installs": 2589,
-      "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2019-06-21T21:07:28.763Z",
-      "repository": "",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "erdpme.24hours",
-      "trendingScore": 3.58
     },
     {
       "id": "bf5981d4-ef66-4df6-ad19-b3bd774ec104",
@@ -3536,40 +3332,142 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#132016"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8dacc"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#6c1ded"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30a2e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#57755d"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e7237b"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e89530"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#82ee2b"
         }
       ],
       "iconUrl": null,
       "vscodeId": "rkma.academie-syntax",
       "trendingScore": 3.58
+    },
+    {
+      "id": "c1edb175-911f-41cb-8ce4-037e7046293d",
+      "name": "Dark Red Theme",
+      "publisher": "rogeraabbccdd",
+      "publisherId": "rogeraabbccdd",
+      "description": "Dark red theme for vscode with transparency build support",
+      "installs": 47652,
+      "rating": 5,
+      "ratingCount": 3,
+      "lastUpdated": "2019-11-03T14:50:39.8Z",
+      "repository": "https://github.com/rogeraabbccdd/vscode-dark-red/",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#13201b"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#c8dad3"
+        },
+        {
+          "name": "keyword",
+          "hex": "#c01ded"
+        },
+        {
+          "name": "string",
+          "hex": "#3058e8"
+        },
+        {
+          "name": "comment",
+          "hex": "#57756a"
+        },
+        {
+          "name": "variable",
+          "hex": "#e7232c"
+        },
+        {
+          "name": "function",
+          "hex": "#e8df30"
+        },
+        {
+          "name": "number",
+          "hex": "#34ee2b"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "rogeraabbccdd.dark-red-theme",
+      "trendingScore": 3.58
+    },
+    {
+      "id": "8c24dc07-bf80-47ad-a83f-5a6985c2a833",
+      "name": "Github Blue",
+      "publisher": "Larxx",
+      "publisherId": "Larxx",
+      "description": "GitHub Blue theme - As seen from GitHub's home page.",
+      "installs": 43162,
+      "rating": 5,
+      "ratingCount": 3,
+      "lastUpdated": "2021-03-11T03:07:01.483Z",
+      "repository": "https://github.com/larxx/github-blue",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#131c20"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#c8d4da"
+        },
+        {
+          "name": "keyword",
+          "hex": "#ed1d85"
+        },
+        {
+          "name": "string",
+          "hex": "#8c30e8"
+        },
+        {
+          "name": "comment",
+          "hex": "#576b75"
+        },
+        {
+          "name": "variable",
+          "hex": "#e7a523"
+        },
+        {
+          "name": "function",
+          "hex": "#6ee830"
+        },
+        {
+          "name": "number",
+          "hex": "#2beead"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "Larxx.github-blue",
+      "trendingScore": 3.57
     },
     {
       "id": "7daca95e-2157-4946-92de-ac1c461ee162",
@@ -3623,105 +3521,105 @@
       "trendingScore": 3.56
     },
     {
-      "id": "8fb2af18-5084-4620-9ec6-d65b78bbab59",
-      "name": "PowerShell Theme",
-      "publisher": "Insigne",
-      "publisherId": "Insigne",
-      "description": "",
-      "installs": 44048,
-      "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2021-03-15T20:14:19.613Z",
-      "repository": "https://github.com/Insigne/vsc-powershell-theme.git",
+      "id": "cbcdfb34-9d52-4e95-9615-13754523594b",
+      "name": "Yukinord",
+      "publisher": "Yukina",
+      "publisherId": "yukina",
+      "description": "Dark theme inspired by Nord and Nord Deep.",
+      "installs": 1497,
+      "rating": 0,
+      "ratingCount": 0,
+      "lastUpdated": "2026-05-07T01:23:18.5Z",
+      "repository": "https://github.com/yukina3230/yukinord.git",
       "type": "dark",
       "categories": [],
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#131d20"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c8d6da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed1d99"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#7a30e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#576e75"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e79223"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#80e830"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2bee99"
         }
       ],
       "iconUrl": null,
-      "vscodeId": "Insigne.powershell",
-      "trendingScore": 3.55
+      "vscodeId": "yukina.yukinord",
+      "trendingScore": 3.56
     },
     {
-      "id": "bdc23880-3d23-4fbc-8d16-a33a8140e8d2",
-      "name": "3024Night Theme",
-      "publisher": "gerane",
-      "publisherId": "gerane",
-      "description": "3024Night Theme ported from the 3024Night TextMate Theme",
-      "installs": 4211,
+      "id": "123a4dc9-9488-4600-b964-4137865fc82a",
+      "name": "24 Hours Dark Theme",
+      "publisher": "Eka Restu D. Putra",
+      "publisherId": "erdpme",
+      "description": "24 Hours is a Dark Theme for Visual Studio Code",
+      "installs": 2589,
       "rating": 5,
-      "ratingCount": 1,
-      "lastUpdated": "2019-10-16T17:16:23.26Z",
-      "repository": "https://github.com/gerane/VSCodeThemes.git",
+      "ratingCount": 2,
+      "lastUpdated": "2019-06-21T21:07:28.763Z",
+      "repository": "",
       "type": "dark",
       "categories": [],
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#162013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#cddac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1d2eed"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30e8d9"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#5e7557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e723d6"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e84030"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#deee2b"
         }
       ],
       "iconUrl": null,
-      "vscodeId": "gerane.Theme-3024Night",
+      "vscodeId": "erdpme.24hours",
       "trendingScore": 3.54
     },
     {
@@ -3776,6 +3674,57 @@
       "trendingScore": 3.54
     },
     {
+      "id": "bdc23880-3d23-4fbc-8d16-a33a8140e8d2",
+      "name": "3024Night Theme",
+      "publisher": "gerane",
+      "publisherId": "gerane",
+      "description": "3024Night Theme ported from the 3024Night TextMate Theme",
+      "installs": 4211,
+      "rating": 5,
+      "ratingCount": 1,
+      "lastUpdated": "2019-10-16T17:16:23.26Z",
+      "repository": "https://github.com/gerane/VSCodeThemes.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#141320"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#c9c8da"
+        },
+        {
+          "name": "keyword",
+          "hex": "#ed4a1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e830c0"
+        },
+        {
+          "name": "comment",
+          "hex": "#585775"
+        },
+        {
+          "name": "variable",
+          "hex": "#9be723"
+        },
+        {
+          "name": "function",
+          "hex": "#30e877"
+        },
+        {
+          "name": "number",
+          "hex": "#2ba3ee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "gerane.Theme-3024Night",
+      "trendingScore": 3.53
+    },
+    {
       "id": "ef60db39-9c6a-4dcf-9733-3d686bd2a1bf",
       "name": "1998 Hollywood Redpunk Color Theme",
       "publisher": "Hiury",
@@ -3827,12 +3776,63 @@
       "trendingScore": 3.53
     },
     {
+      "id": "8fb2af18-5084-4620-9ec6-d65b78bbab59",
+      "name": "PowerShell Theme",
+      "publisher": "Insigne",
+      "publisherId": "Insigne",
+      "description": "",
+      "installs": 44054,
+      "rating": 5,
+      "ratingCount": 2,
+      "lastUpdated": "2021-03-15T20:14:19.613Z",
+      "repository": "https://github.com/Insigne/vsc-powershell-theme.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#132014"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#c8dac9"
+        },
+        {
+          "name": "keyword",
+          "hex": "#511ded"
+        },
+        {
+          "name": "string",
+          "hex": "#30bae8"
+        },
+        {
+          "name": "comment",
+          "hex": "#577559"
+        },
+        {
+          "name": "variable",
+          "hex": "#e72395"
+        },
+        {
+          "name": "function",
+          "hex": "#e87d30"
+        },
+        {
+          "name": "number",
+          "hex": "#9dee2b"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "Insigne.powershell",
+      "trendingScore": 3.53
+    },
+    {
       "id": "c3c10038-b578-48f2-837c-225b0bac1650",
       "name": "Codemos Modern",
       "publisher": "Codemos",
       "publisherId": "Codemos",
       "description": "Innovative, modern theme suite/hub for VS Code",
-      "installs": 11195,
+      "installs": 11198,
       "rating": 5,
       "ratingCount": 8,
       "lastUpdated": "2026-05-14T12:12:16.15Z",
@@ -3878,108 +3878,6 @@
       "trendingScore": 3.51
     },
     {
-      "id": "2eb87768-5e01-4102-8354-3181a663adf5",
-      "name": "GDScript Theme",
-      "publisher": "James Sauer",
-      "publisherId": "JamesSauer",
-      "description": "Color theme that makes VSCode look like Godot's internal editor for GDScript",
-      "installs": 40976,
-      "rating": 5,
-      "ratingCount": 4,
-      "lastUpdated": "2022-07-12T05:45:11.787Z",
-      "repository": "https://gitlab.com/JamesSauer/GDScript-Theme-for-VSCode.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "JamesSauer.gdscript-theme",
-      "trendingScore": 3.5
-    },
-    {
-      "id": "f7852cb9-9b95-4514-986c-8a923792219c",
-      "name": "Atom Background Modified",
-      "publisher": "NAPTheDevHcj",
-      "publisherId": "NAPTheDevHcj",
-      "description": "Atom One Dark Theme with the background modified better for eye",
-      "installs": 17257,
-      "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2026-05-20T04:41:58.427Z",
-      "repository": "https://github.com/phongna07/atom-background-modified.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1E1E1E"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#ABB2BF"
-        },
-        {
-          "name": "keyword",
-          "hex": "#C678DD"
-        },
-        {
-          "name": "string",
-          "hex": "#98C379"
-        },
-        {
-          "name": "comment",
-          "hex": "#5C6370"
-        },
-        {
-          "name": "variable",
-          "hex": "#ABB2BF"
-        },
-        {
-          "name": "function",
-          "hex": "#61AFEF"
-        },
-        {
-          "name": "number",
-          "hex": "#D19A66"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "NAPTheDevHcj.atom-background-modified",
-      "trendingScore": 3.5
-    },
-    {
       "id": "1bfca39f-30a9-45e3-8631-027297c85b5c",
       "name": "Lilac",
       "publisher": "shubhamsaudolla",
@@ -3995,35 +3893,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#141320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c9c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed461d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e830c3"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#585775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#9fe723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e874"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2ba6ee"
         }
       ],
       "iconUrl": null,
@@ -4036,7 +3934,7 @@
       "publisher": "glitch",
       "publisherId": "anotherglitchinthematrix",
       "description": "Monochromatic theme collection, for those who seeks.",
-      "installs": 49938,
+      "installs": 49946,
       "rating": 4.333333492279053,
       "ratingCount": 9,
       "lastUpdated": "2021-07-06T09:12:04.517Z",
@@ -4079,7 +3977,109 @@
       ],
       "iconUrl": null,
       "vscodeId": "anotherglitchinthematrix.monochrome",
-      "trendingScore": 3.49
+      "trendingScore": 3.48
+    },
+    {
+      "id": "2eb87768-5e01-4102-8354-3181a663adf5",
+      "name": "GDScript Theme",
+      "publisher": "James Sauer",
+      "publisherId": "JamesSauer",
+      "description": "Color theme that makes VSCode look like Godot's internal editor for GDScript",
+      "installs": 40981,
+      "rating": 5,
+      "ratingCount": 4,
+      "lastUpdated": "2022-07-12T05:45:11.787Z",
+      "repository": "https://gitlab.com/JamesSauer/GDScript-Theme-for-VSCode.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#20131a"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#dac8d2"
+        },
+        {
+          "name": "keyword",
+          "hex": "#69ed1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e8a530"
+        },
+        {
+          "name": "comment",
+          "hex": "#755767"
+        },
+        {
+          "name": "variable",
+          "hex": "#23e7bf"
+        },
+        {
+          "name": "function",
+          "hex": "#3055e8"
+        },
+        {
+          "name": "number",
+          "hex": "#c72bee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "JamesSauer.gdscript-theme",
+      "trendingScore": 3.47
+    },
+    {
+      "id": "f7852cb9-9b95-4514-986c-8a923792219c",
+      "name": "Atom Background Modified",
+      "publisher": "NAPTheDevHcj",
+      "publisherId": "NAPTheDevHcj",
+      "description": "Atom One Dark Theme with the background modified better for eye",
+      "installs": 17261,
+      "rating": 5,
+      "ratingCount": 2,
+      "lastUpdated": "2026-05-20T04:41:58.427Z",
+      "repository": "https://github.com/phongna07/atom-background-modified.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1E1E1E"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#ABB2BF"
+        },
+        {
+          "name": "keyword",
+          "hex": "#C678DD"
+        },
+        {
+          "name": "string",
+          "hex": "#98C379"
+        },
+        {
+          "name": "comment",
+          "hex": "#5C6370"
+        },
+        {
+          "name": "variable",
+          "hex": "#ABB2BF"
+        },
+        {
+          "name": "function",
+          "hex": "#61AFEF"
+        },
+        {
+          "name": "number",
+          "hex": "#D19A66"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "NAPTheDevHcj.atom-background-modified",
+      "trendingScore": 3.47
     },
     {
       "id": "a98640cf-12de-451e-8809-1d98ab1900e7",
@@ -4087,7 +4087,7 @@
       "publisher": "Ujjwal Barman",
       "publisherId": "UjjwalBarman",
       "description": "A Visual Studio Code theme for those of us who like to code late into the night",
-      "installs": 43675,
+      "installs": 43679,
       "rating": 5,
       "ratingCount": 7,
       "lastUpdated": "2022-02-28T09:12:45.233Z",
@@ -4133,216 +4133,12 @@
       "trendingScore": 3.46
     },
     {
-      "id": "c947b1c8-da91-4bff-ad56-1412e71de4ad",
-      "name": "Dark Github Theme",
-      "publisher": "xmorse",
-      "publisherId": "xmorse",
-      "description": "GitHub Dark Theme for Visual Studio Code",
-      "installs": 48232,
-      "rating": 5,
-      "ratingCount": 2,
-      "lastUpdated": "2019-08-08T19:59:33.68Z",
-      "repository": "https://github.com/remorses/dark-github-theme",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "xmorse.dark-theme-github",
-      "trendingScore": 3.4
-    },
-    {
-      "id": "ad89b35d-addd-453b-bb3e-3b1b400e983b",
-      "name": "Moegi Theme",
-      "publisher": "Diu",
-      "publisherId": "ddiu8081",
-      "description": "An elegant theme for VS Code",
-      "installs": 37886,
-      "rating": 5,
-      "ratingCount": 22,
-      "lastUpdated": "2024-02-24T08:48:25.05Z",
-      "repository": "https://github.com/moegi-design/vscode-theme.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "ddiu8081.moegi-theme",
-      "trendingScore": 3.39
-    },
-    {
-      "id": "fd475a96-b1a4-4964-a03a-01eed6bc3b3b",
-      "name": ".NET Purple Theme",
-      "publisher": ".NET Conf Team",
-      "publisherId": "dotnetconfteam",
-      "description": "A theme for .NET fans and all those who love purple.",
-      "installs": 7961,
-      "rating": 3.6666667461395264,
-      "ratingCount": 3,
-      "lastUpdated": "2020-11-05T05:31:55.103Z",
-      "repository": "https://github.com/dotnet-presentations/dotNETConf/tree/master/2020/MainEvent/DigitalSWAG/VisualStudioCode-theme",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "dotnetconfteam.dotnet-purple-theme",
-      "trendingScore": 3.38
-    },
-    {
-      "id": "50f64e38-de9f-4d88-8efc-5e81a6c60fd0",
-      "name": "Dark+ Black",
-      "publisher": "Vince Salvino",
-      "publisherId": "VinceSalvino",
-      "description": "Pure black version of default \"Dark+\", with enhanced syntax highlighting and comment styles.",
-      "installs": 44792,
-      "rating": 5,
-      "ratingCount": 6,
-      "lastUpdated": "2023-07-09T07:10:45.897Z",
-      "repository": "https://github.com/vsalvino/dark-plus-black.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#000000"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cccccc"
-        },
-        {
-          "name": "keyword",
-          "hex": "#569CD6"
-        },
-        {
-          "name": "string",
-          "hex": "#CE9178"
-        },
-        {
-          "name": "comment",
-          "hex": "#6A9955"
-        },
-        {
-          "name": "variable",
-          "hex": "#9CDCFE"
-        },
-        {
-          "name": "function",
-          "hex": "#DCDCAA"
-        },
-        {
-          "name": "number",
-          "hex": "#B5CEA8"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "VinceSalvino.dark-plus-black",
-      "trendingScore": 3.38
-    },
-    {
       "id": "58f94c62-ca25-465f-b51b-587c7e0c13a3",
       "name": "Synthwave x Fluoromachine & epic animations",
       "publisher": "TheCodemonkey",
       "publisherId": "TheCodemonkey",
       "description": "This theme brings crazy 80's animations into your VS code 🚀🎉",
-      "installs": 47677,
+      "installs": 47680,
       "rating": 5,
       "ratingCount": 10,
       "lastUpdated": "2021-10-13T17:43:17.517Z",
@@ -4385,58 +4181,109 @@
       ],
       "iconUrl": null,
       "vscodeId": "TheCodemonkey.synthwave-x-fluoromachine-epic-animations",
-      "trendingScore": 3.37
+      "trendingScore": 3.39
     },
     {
-      "id": "41a02070-98e1-46cb-ae70-71cd21973729",
-      "name": "Seti-Black",
-      "publisher": "bobsparadox",
-      "publisherId": "bobsparadox",
-      "description": "",
-      "installs": 44202,
+      "id": "c947b1c8-da91-4bff-ad56-1412e71de4ad",
+      "name": "Dark Github Theme",
+      "publisher": "xmorse",
+      "publisherId": "xmorse",
+      "description": "GitHub Dark Theme for Visual Studio Code",
+      "installs": 48235,
       "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2025-11-30T17:47:47.753Z",
-      "repository": "https://github.com/bobsparadox/seti-black.git",
+      "ratingCount": 2,
+      "lastUpdated": "2019-08-08T19:59:33.68Z",
+      "repository": "https://github.com/remorses/dark-github-theme",
       "type": "dark",
       "categories": [],
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#1b1320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#d3c8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#edc01d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e83058"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#6a5775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#2ce723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e8df"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2b34ee"
         }
       ],
       "iconUrl": null,
-      "vscodeId": "bobsparadox.seti-black",
-      "trendingScore": 3.37
+      "vscodeId": "xmorse.dark-theme-github",
+      "trendingScore": 3.39
+    },
+    {
+      "id": "fd475a96-b1a4-4964-a03a-01eed6bc3b3b",
+      "name": ".NET Purple Theme",
+      "publisher": ".NET Conf Team",
+      "publisherId": "dotnetconfteam",
+      "description": "A theme for .NET fans and all those who love purple.",
+      "installs": 7961,
+      "rating": 3.6666667461395264,
+      "ratingCount": 3,
+      "lastUpdated": "2020-11-05T05:31:55.103Z",
+      "repository": "https://github.com/dotnet-presentations/dotNETConf/tree/master/2020/MainEvent/DigitalSWAG/VisualStudioCode-theme",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#201317"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#dac8ce"
+        },
+        {
+          "name": "keyword",
+          "hex": "#3ced1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e8cd30"
+        },
+        {
+          "name": "comment",
+          "hex": "#755760"
+        },
+        {
+          "name": "variable",
+          "hex": "#23e3e7"
+        },
+        {
+          "name": "function",
+          "hex": "#3430e8"
+        },
+        {
+          "name": "number",
+          "hex": "#ee2beb"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "dotnetconfteam.dotnet-purple-theme",
+      "trendingScore": 3.38
     },
     {
       "id": "c85bd13d-99fb-4e1d-9e63-af4aff52910d",
@@ -4444,7 +4291,7 @@
       "publisher": "Renato Neto",
       "publisherId": "zRnatoNeto",
       "description": "A Dark Green for Visual Studio Code",
-      "installs": 42845,
+      "installs": 42853,
       "rating": 5,
       "ratingCount": 4,
       "lastUpdated": "2018-11-03T04:51:08.73Z",
@@ -4454,35 +4301,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#201713"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dacdc8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#1ded77"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#98e830"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#755f57"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#2371e7"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#9f30e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#ee2b79"
         }
       ],
       "iconUrl": null,
@@ -4490,12 +4337,165 @@
       "trendingScore": 3.37
     },
     {
+      "id": "50f64e38-de9f-4d88-8efc-5e81a6c60fd0",
+      "name": "Dark+ Black",
+      "publisher": "Vince Salvino",
+      "publisherId": "VinceSalvino",
+      "description": "Pure black version of default \"Dark+\", with enhanced syntax highlighting and comment styles.",
+      "installs": 44796,
+      "rating": 5,
+      "ratingCount": 6,
+      "lastUpdated": "2023-07-09T07:10:45.897Z",
+      "repository": "https://github.com/vsalvino/dark-plus-black.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#000000"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#cccccc"
+        },
+        {
+          "name": "keyword",
+          "hex": "#569CD6"
+        },
+        {
+          "name": "string",
+          "hex": "#CE9178"
+        },
+        {
+          "name": "comment",
+          "hex": "#6A9955"
+        },
+        {
+          "name": "variable",
+          "hex": "#9CDCFE"
+        },
+        {
+          "name": "function",
+          "hex": "#DCDCAA"
+        },
+        {
+          "name": "number",
+          "hex": "#B5CEA8"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "VinceSalvino.dark-plus-black",
+      "trendingScore": 3.37
+    },
+    {
+      "id": "ad89b35d-addd-453b-bb3e-3b1b400e983b",
+      "name": "Moegi Theme",
+      "publisher": "Diu",
+      "publisherId": "ddiu8081",
+      "description": "An elegant theme for VS Code",
+      "installs": 37890,
+      "rating": 5,
+      "ratingCount": 22,
+      "lastUpdated": "2024-02-24T08:48:25.05Z",
+      "repository": "https://github.com/moegi-design/vscode-theme.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1a2013"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#d1dac8"
+        },
+        {
+          "name": "keyword",
+          "hex": "#1d65ed"
+        },
+        {
+          "name": "string",
+          "hex": "#30e8a8"
+        },
+        {
+          "name": "comment",
+          "hex": "#677557"
+        },
+        {
+          "name": "variable",
+          "hex": "#c323e7"
+        },
+        {
+          "name": "function",
+          "hex": "#e83052"
+        },
+        {
+          "name": "number",
+          "hex": "#eeca2b"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "ddiu8081.moegi-theme",
+      "trendingScore": 3.36
+    },
+    {
+      "id": "da5ec6b8-f2c1-4b36-bade-ea775b1c2fba",
+      "name": "Night Hacker Dark Theme",
+      "publisher": "Dharam Dhurandhar",
+      "publisherId": "ddh4r4m",
+      "description": "A Dark theme for VSCode",
+      "installs": 39112,
+      "rating": 5,
+      "ratingCount": 3,
+      "lastUpdated": "2021-05-10T05:08:36.303Z",
+      "repository": "https://github.com/rkstrdee/night-hacker-dark-theme",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#1e1320"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#d7c8da"
+        },
+        {
+          "name": "keyword",
+          "hex": "#eded1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e83030"
+        },
+        {
+          "name": "comment",
+          "hex": "#705775"
+        },
+        {
+          "name": "variable",
+          "hex": "#23e743"
+        },
+        {
+          "name": "function",
+          "hex": "#30c9e8"
+        },
+        {
+          "name": "number",
+          "hex": "#4b2bee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "ddh4r4m.night-hacker-dark-theme",
+      "trendingScore": 3.36
+    },
+    {
       "id": "305888a0-9ae2-4cd6-8971-1cc481242866",
       "name": "Tailwind Colour Themes",
       "publisher": "Lucia Lovelace",
       "publisherId": "shadowblood",
       "description": "A set of matching themes based on the Tailwind colour scheme, based on Tailwind Breeze by Praveen Puglia.",
-      "installs": 44978,
+      "installs": 44986,
       "rating": 5,
       "ratingCount": 3,
       "lastUpdated": "2023-01-17T09:50:14.227Z",
@@ -4505,40 +4505,40 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#142013"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#c9dac8"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#2e1ded"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#30d9e8"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#597557"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#e723b6"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#e85e30"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#bdee2b"
         }
       ],
       "iconUrl": null,
       "vscodeId": "shadowblood.tailwind-moon",
-      "trendingScore": 3.37
+      "trendingScore": 3.36
     },
     {
       "id": "35308a4d-95c8-446a-bb21-99737ea486b7",
@@ -4546,7 +4546,7 @@
       "publisher": "aramok",
       "publisherId": "aramok",
       "description": "For those who are not satisfied with less colors. Let your mind to focus more , return true;",
-      "installs": 41219,
+      "installs": 41224,
       "rating": 5,
       "ratingCount": 10,
       "lastUpdated": "2023-11-04T18:03:21.6Z",
@@ -4589,108 +4589,6 @@
       ],
       "iconUrl": null,
       "vscodeId": "aramok.aramoks-black",
-      "trendingScore": 3.36
-    },
-    {
-      "id": "da5ec6b8-f2c1-4b36-bade-ea775b1c2fba",
-      "name": "Night Hacker Dark Theme",
-      "publisher": "Dharam Dhurandhar",
-      "publisherId": "ddh4r4m",
-      "description": "A Dark theme for VSCode",
-      "installs": 39110,
-      "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2021-05-10T05:08:36.303Z",
-      "repository": "https://github.com/rkstrdee/night-hacker-dark-theme",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "ddh4r4m.night-hacker-dark-theme",
-      "trendingScore": 3.35
-    },
-    {
-      "id": "ccc5962e-179e-4a8b-953a-58943d20b2a1",
-      "name": "Atom One Darker Theme",
-      "publisher": "Christopher Af Bjur",
-      "publisherId": "christopherafbjur",
-      "description": "Inspired by Atom One Dark but with a higher contrast.",
-      "installs": 38061,
-      "rating": 5,
-      "ratingCount": 3,
-      "lastUpdated": "2022-02-10T16:30:17.943Z",
-      "repository": "https://github.com/christopherafbjur/vscode-theme-onedarker.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#14161A"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#9DA5B4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#D45FF6"
-        },
-        {
-          "name": "string",
-          "hex": "#95D567"
-        },
-        {
-          "name": "comment",
-          "hex": "#40454E"
-        },
-        {
-          "name": "variable",
-          "hex": "#FD4F5C"
-        },
-        {
-          "name": "function",
-          "hex": "#51B1FF"
-        },
-        {
-          "name": "number",
-          "hex": "#EC994B"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "christopherafbjur.vscode-theme-onedarker",
       "trendingScore": 3.35
     },
     {
@@ -4699,7 +4597,7 @@
       "publisher": "caumeira",
       "publisherId": "CarlosHenrique",
       "description": "Official Dracula Theme. A dark theme for many editors, shells, and more.",
-      "installs": 40166,
+      "installs": 40168,
       "rating": 5,
       "ratingCount": 5,
       "lastUpdated": "2020-11-21T16:43:01.83Z",
@@ -4742,7 +4640,7 @@
       ],
       "iconUrl": null,
       "vscodeId": "CarlosHenrique.dark-material-dracula",
-      "trendingScore": 3.34
+      "trendingScore": 3.35
     },
     {
       "id": "e5a3a1b5-6ba9-4860-99b9-ea75c8cff848",
@@ -4750,7 +4648,7 @@
       "publisher": "Andrew X. Shah",
       "publisherId": "drewxs",
       "description": "Darker version of Tokyo Night Dark",
-      "installs": 81372,
+      "installs": 81371,
       "rating": 4.666666507720947,
       "ratingCount": 3,
       "lastUpdated": "2022-06-10T06:41:28.19Z",
@@ -4760,35 +4658,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#181320"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#cfc8da"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#ed8f1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e83083"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#625775"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#5ae723"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#30e8b4"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#2b62ee"
         }
       ],
       "iconUrl": null,
@@ -4801,7 +4699,7 @@
       "publisher": "Terrastruct",
       "publisherId": "terrastruct",
       "description": "Support for .d2 files.",
-      "installs": 70679,
+      "installs": 70678,
       "rating": 3.4000000953674316,
       "ratingCount": 5,
       "lastUpdated": "2023-09-22T17:46:32.133Z",
@@ -4847,63 +4745,12 @@
       "trendingScore": 3.34
     },
     {
-      "id": "6c2f0898-81a3-4823-b746-0633c81909f6",
-      "name": "Cyber '77",
-      "publisher": "Code Reviewer14",
-      "publisherId": "CodeReviewer14",
-      "description": "A theme inspired by  Synthwave '84 & Deepdark Material and the Cyberpunk 77 game",
-      "installs": 42766,
-      "rating": 5,
-      "ratingCount": 6,
-      "lastUpdated": "2022-11-11T16:27:50.03Z",
-      "repository": "https://github.com/CodeReviewer14/Cyber-77-Synthwave-VSCode.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "CodeReviewer14.cyber77-vscode",
-      "trendingScore": 3.33
-    },
-    {
       "id": "77fb256a-e4da-43f4-af74-35f28a3046df",
       "name": "Tailwind Theme",
       "publisher": "Wollace Buarque",
       "publisherId": "WollaceBuarque",
       "description": "Most identical tailwind theme (Not finished yet)",
-      "installs": 39141,
+      "installs": 39148,
       "rating": 5,
       "ratingCount": 1,
       "lastUpdated": "2022-08-29T22:03:19.21Z",
@@ -4949,12 +4796,216 @@
       "trendingScore": 3.33
     },
     {
+      "id": "41a02070-98e1-46cb-ae70-71cd21973729",
+      "name": "Seti-Black",
+      "publisher": "bobsparadox",
+      "publisherId": "bobsparadox",
+      "description": "",
+      "installs": 44210,
+      "rating": 5,
+      "ratingCount": 3,
+      "lastUpdated": "2025-11-30T17:47:47.753Z",
+      "repository": "https://github.com/bobsparadox/seti-black.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#162013"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#ccdac8"
+        },
+        {
+          "name": "keyword",
+          "hex": "#1d23ed"
+        },
+        {
+          "name": "string",
+          "hex": "#30e8e2"
+        },
+        {
+          "name": "comment",
+          "hex": "#5d7557"
+        },
+        {
+          "name": "variable",
+          "hex": "#e723cc"
+        },
+        {
+          "name": "function",
+          "hex": "#e84930"
+        },
+        {
+          "name": "number",
+          "hex": "#d4ee2b"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "bobsparadox.seti-black",
+      "trendingScore": 3.33
+    },
+    {
+      "id": "ccc5962e-179e-4a8b-953a-58943d20b2a1",
+      "name": "Atom One Darker Theme",
+      "publisher": "Christopher Af Bjur",
+      "publisherId": "christopherafbjur",
+      "description": "Inspired by Atom One Dark but with a higher contrast.",
+      "installs": 38065,
+      "rating": 5,
+      "ratingCount": 3,
+      "lastUpdated": "2022-02-10T16:30:17.943Z",
+      "repository": "https://github.com/christopherafbjur/vscode-theme-onedarker.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#14161A"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#9DA5B4"
+        },
+        {
+          "name": "keyword",
+          "hex": "#D45FF6"
+        },
+        {
+          "name": "string",
+          "hex": "#95D567"
+        },
+        {
+          "name": "comment",
+          "hex": "#40454E"
+        },
+        {
+          "name": "variable",
+          "hex": "#FD4F5C"
+        },
+        {
+          "name": "function",
+          "hex": "#51B1FF"
+        },
+        {
+          "name": "number",
+          "hex": "#EC994B"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "christopherafbjur.vscode-theme-onedarker",
+      "trendingScore": 3.33
+    },
+    {
+      "id": "46ed7e19-d635-4ec8-97f8-783097fe5d22",
+      "name": "CRT Themes",
+      "publisher": "krueger71",
+      "publisherId": "krueger71",
+      "description": "Color themes for a more civilized age",
+      "installs": 39098,
+      "rating": 5,
+      "ratingCount": 9,
+      "lastUpdated": "2020-06-27T12:49:38.027Z",
+      "repository": "https://github.com/krueger71/crt-themes.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#352879"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#6c5eb5"
+        },
+        {
+          "name": "keyword",
+          "hex": "#6c5eb588"
+        },
+        {
+          "name": "string",
+          "hex": "#56489dff"
+        },
+        {
+          "name": "comment",
+          "hex": "#6c5eb588"
+        },
+        {
+          "name": "variable",
+          "hex": "#5d50a5ff"
+        },
+        {
+          "name": "function",
+          "hex": "#685ab1ff"
+        },
+        {
+          "name": "number",
+          "hex": "#6557adff"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "krueger71.crt-themes",
+      "trendingScore": 3.32
+    },
+    {
+      "id": "6c2f0898-81a3-4823-b746-0633c81909f6",
+      "name": "Cyber '77",
+      "publisher": "Code Reviewer14",
+      "publisherId": "CodeReviewer14",
+      "description": "A theme inspired by  Synthwave '84 & Deepdark Material and the Cyberpunk 77 game",
+      "installs": 42768,
+      "rating": 5,
+      "ratingCount": 6,
+      "lastUpdated": "2022-11-11T16:27:50.03Z",
+      "repository": "https://github.com/CodeReviewer14/Cyber-77-Synthwave-VSCode.git",
+      "type": "dark",
+      "categories": [],
+      "colors": [
+        {
+          "name": "editor.background",
+          "hex": "#20131c"
+        },
+        {
+          "name": "editor.foreground",
+          "hex": "#dac8d4"
+        },
+        {
+          "name": "keyword",
+          "hex": "#88ed1d"
+        },
+        {
+          "name": "string",
+          "hex": "#e88930"
+        },
+        {
+          "name": "comment",
+          "hex": "#75576c"
+        },
+        {
+          "name": "variable",
+          "hex": "#23e7a2"
+        },
+        {
+          "name": "function",
+          "hex": "#3071e8"
+        },
+        {
+          "name": "number",
+          "hex": "#aa2bee"
+        }
+      ],
+      "iconUrl": null,
+      "vscodeId": "CodeReviewer14.cyber77-vscode",
+      "trendingScore": 3.32
+    },
+    {
       "id": "f85d5ec7-e1e0-4808-804f-c5ef765ef981",
       "name": "Earthbound Themes",
       "publisher": "Ben Busby",
       "publisherId": "benbusby",
       "description": "Unique color themes inspired by the SNES game Earthbound",
-      "installs": 48317,
+      "installs": 48319,
       "rating": 5,
       "ratingCount": 7,
       "lastUpdated": "2021-06-11T22:40:34.237Z",
@@ -5000,63 +5051,12 @@
       "trendingScore": 3.32
     },
     {
-      "id": "e8c20548-3f6b-4cb7-8924-741d3a5ea676",
-      "name": "Sk-VSC (Skript)",
-      "publisher": "Ayham Al-Ali",
-      "publisherId": "ayhamalali",
-      "description": "A modern, colorful and creative Syntax Highlighting for Skript Language.",
-      "installs": 47622,
-      "rating": 5,
-      "ratingCount": 4,
-      "lastUpdated": "2023-06-12T09:27:47.677Z",
-      "repository": "https://github.com/AyhamAl-Ali/Sk-VSC.git",
-      "type": "dark",
-      "categories": [],
-      "colors": [
-        {
-          "name": "editor.background",
-          "hex": "#1e1e2e"
-        },
-        {
-          "name": "editor.foreground",
-          "hex": "#cdd6f4"
-        },
-        {
-          "name": "keyword",
-          "hex": "#3cf73c"
-        },
-        {
-          "name": "string",
-          "hex": "#f7d73c"
-        },
-        {
-          "name": "comment",
-          "hex": "#5a5a66"
-        },
-        {
-          "name": "variable",
-          "hex": "#f73c3c"
-        },
-        {
-          "name": "function",
-          "hex": "#3c9cf7"
-        },
-        {
-          "name": "number",
-          "hex": "#f7d73c"
-        }
-      ],
-      "iconUrl": null,
-      "vscodeId": "ayhamalali.Sk-VSC",
-      "trendingScore": 3.31
-    },
-    {
       "id": "b158eb6b-7aeb-4e2e-a583-ce32be439513",
       "name": "Android Studio Default Themes",
       "publisher": "Shayan Ahmed Khan",
       "publisherId": "ShayanAhmedKhan",
       "description": "Default themes used in Android Studio",
-      "installs": 76154,
+      "installs": 76153,
       "rating": 5,
       "ratingCount": 6,
       "lastUpdated": "2025-06-05T17:55:16.977Z",
@@ -5066,35 +5066,35 @@
       "colors": [
         {
           "name": "editor.background",
-          "hex": "#1e1e2e"
+          "hex": "#20131d"
         },
         {
           "name": "editor.foreground",
-          "hex": "#cdd6f4"
+          "hex": "#dac8d6"
         },
         {
           "name": "keyword",
-          "hex": "#3cf73c"
+          "hex": "#9ded1d"
         },
         {
           "name": "string",
-          "hex": "#f7d73c"
+          "hex": "#e87730"
         },
         {
           "name": "comment",
-          "hex": "#5a5a66"
+          "hex": "#75576f"
         },
         {
           "name": "variable",
-          "hex": "#f73c3c"
+          "hex": "#23e78e"
         },
         {
           "name": "function",
-          "hex": "#3c9cf7"
+          "hex": "#3083e8"
         },
         {
           "name": "number",
-          "hex": "#f7d73c"
+          "hex": "#962bee"
         }
       ],
       "iconUrl": null,
@@ -5102,5 +5102,5 @@
       "trendingScore": 3.31
     }
   ],
-  "generatedAt": "2026-05-24T00:59:33.555Z"
+  "generatedAt": "2026-05-24T16:18:34.706Z"
 }
