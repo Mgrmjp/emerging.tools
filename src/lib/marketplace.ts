@@ -363,12 +363,109 @@ function buildPalette(themeDef: ThemeDefinition | null): ThemeColor[] {
   return palette;
 }
 
+async function fetchExtensionFile(
+  assetUri: string,
+  filePath: string
+): Promise<string | null> {
+  try {
+    const url = `${assetUri}/${filePath}`;
+    const res = await fetch(url, { next: { revalidate: 21600 } });
+    if (!res.ok) return null;
+    return await res.text();
+  } catch {
+    return null;
+  }
+}
+
+async function parseThemeDefinitionFromFiles(
+  raw: string,
+  themePath: string,
+  assetUri: string,
+  visited: Set<string>
+): Promise<ThemeDefinition | null> {
+  const normalizedPath = normalizeThemePath(themePath);
+  if (visited.has(normalizedPath)) return null;
+  visited.add(normalizedPath);
+
+  try {
+    const parsed = JSON.parse(raw) as ThemeDefinition;
+    const mergedColors: Record<string, string> = {};
+    const mergedTokens: TokenColorRule[] = [];
+
+    if (parsed.include) {
+      const includePath = resolveRelativeThemePath(
+        normalizedPath,
+        parsed.include
+      );
+      const includeRaw = await fetchExtensionFile(assetUri, includePath);
+      if (includeRaw) {
+        const included = await parseThemeDefinitionFromFiles(
+          includeRaw,
+          includePath,
+          assetUri,
+          visited
+        );
+        if (included?.colors) Object.assign(mergedColors, included.colors);
+        if (Array.isArray(included?.tokenColors))
+          mergedTokens.push(...included.tokenColors);
+      }
+    }
+
+    if (typeof parsed.tokenColors === "string") {
+      const tokenPath = resolveRelativeThemePath(
+        normalizedPath,
+        parsed.tokenColors
+      );
+      const tokenRaw = await fetchExtensionFile(assetUri, tokenPath);
+      if (tokenRaw) {
+        try {
+          const parsedTokens = JSON.parse(tokenRaw) as TokenColorRule[];
+          if (Array.isArray(parsedTokens)) mergedTokens.push(...parsedTokens);
+        } catch {
+          // Ignore token color formats we do not parse yet.
+        }
+      }
+    } else if (Array.isArray(parsed.tokenColors)) {
+      mergedTokens.push(...parsed.tokenColors);
+    }
+
+    if (parsed.colors) Object.assign(mergedColors, parsed.colors);
+
+    return {
+      colors: mergedColors,
+      tokenColors: mergedTokens,
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
   const themePath = getThemeContributions(ext._manifest)[0]?.path;
   if (!themePath) return DEFAULT_THEME_COLORS;
 
+  const assetUri = ext.versions[0].assetUri;
+
+  // Try fetching the theme JSON directly (lightweight, ~1-50KB per file)
+  // instead of the full VSIX (~1-10MB per file)
+  const raw = await fetchExtensionFile(assetUri, normalizeThemePath(themePath));
+  if (raw) {
+    try {
+      const themeDef = await parseThemeDefinitionFromFiles(
+        raw,
+        themePath,
+        assetUri,
+        new Set()
+      );
+      if (themeDef) return buildPalette(themeDef);
+    } catch {
+      // Fall through to VSIX download
+    }
+  }
+
+  // Fallback: download full VSIX
   try {
-    const vsixUrl = `${ext.versions[0].assetUri}/Microsoft.VisualStudio.Services.VSIXPackage`;
+    const vsixUrl = `${assetUri}/Microsoft.VisualStudio.Services.VSIXPackage`;
     const res = await fetch(vsixUrl, {
       next: { revalidate: 21600 },
     });
@@ -573,7 +670,7 @@ export async function fetchThemeById(id: string): Promise<Theme | null> {
         pageSize: 1,
       },
     ],
-    assetTypes: [],
+    assetTypes: ["Microsoft.VisualStudio.Code.Manifest"],
     flags: 0x192,
   };
 

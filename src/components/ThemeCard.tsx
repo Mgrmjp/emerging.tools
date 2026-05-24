@@ -7,6 +7,7 @@ export function ThemeCard({ theme, index }: { theme: Theme; index: number }) {
   const bg = theme.colors[0]?.hex || "#111114";
   const fg = theme.colors[1]?.hex || "#e8e8ed";
   const keyword = theme.colors[2]?.hex || "#3cf73c";
+  const stringColor = theme.colors[3]?.hex || "#f7d73c";
   const comment = theme.colors[4]?.hex || "#5a5a66";
   const variable = theme.colors[5]?.hex || "#f73c3c";
   const fn = theme.colors[6]?.hex || "#3c9cf7";
@@ -73,7 +74,9 @@ export function ThemeCard({ theme, index }: { theme: Theme; index: number }) {
             <span style={{ color: keyword }}>let</span>{" "}
             <span style={{ color: variable }}>x</span>{" "}
             <span style={{ color: fg }}>= </span>
-            <span style={{ color: num }}>{Math.floor(theme.installs / 1000)}</span>
+            <span style={{ color: stringColor }}>"</span>
+            <span style={{ color: stringColor }}>{Math.floor(theme.installs / 1000)}</span>
+            <span style={{ color: stringColor }}>"</span>
             <span style={{ color: fg }}>;</span>
             <br />
             <span style={{ color: fg }}>{"}"}</span>
