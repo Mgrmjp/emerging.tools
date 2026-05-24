@@ -5,6 +5,7 @@ import { SearchBar } from "@/components/SearchBar";
 import { JsonLd } from "@/components/JsonLd";
 import type { Metadata } from "next";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
+import Link from "next/link";
 
 interface HomeProps {
   searchParams: Promise<{
@@ -99,7 +100,12 @@ export default async function Home({ searchParams }: HomeProps) {
       </main>
 
       <footer className="border-t border-[var(--border)] px-4 py-2 flex items-center justify-between text-[10px] text-[var(--muted)] sm:px-6 lg:px-8">
-        <span>{SITE_NAME}</span>
+        <span className="flex items-center gap-3">
+          <span>{SITE_NAME}</span>
+          <Link href="/fonts" className="hover:text-[var(--text)] transition-colors">
+            fonts
+          </Link>
+        </span>
         <span className="flex items-center gap-3">
           <span className="flex items-center gap-1">
             <span className="inline-block h-1.5 w-1.5 bg-[var(--accent)]" />

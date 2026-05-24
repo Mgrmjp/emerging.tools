@@ -273,8 +273,8 @@ function parseThemeDefinition(
   }
 }
 
-function buildPalette(themeDef: ThemeDefinition | null): ThemeColor[] {
-  if (!themeDef) return DEFAULT_THEME_COLORS;
+function buildPalette(themeDef: ThemeDefinition | null, themeName: string): ThemeColor[] {
+  if (!themeDef) return generateFallbackPalette(themeName);
 
   const colors = themeDef.colors ?? {};
   const tokenMap: Record<string, string> = {};
@@ -360,13 +360,17 @@ function buildPalette(themeDef: ThemeDefinition | null): ThemeColor[] {
     },
   ];
 
+  const defaultCount = palette.filter((c, i) => c.hex === DEFAULT_THEME_COLORS[i].hex).length;
+  if (defaultCount >= 6) return generateFallbackPalette(themeName);
+
   return palette;
 }
 
 function generateFallbackPalette(name: string): ThemeColor[] {
+  const safeName = name.trim() || "unknown-theme";
   let hash = 5381;
-  for (let i = 0; i < name.length; i++)
-    hash = ((hash << 5) + hash) + name.charCodeAt(i);
+  for (let i = 0; i < safeName.length; i++)
+    hash = ((hash << 5) + hash) + safeName.charCodeAt(i);
   const hue = ((hash % 360) + 360) % 360;
 
   function hsl(h: number, s: number, l: number) {
@@ -500,7 +504,7 @@ async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
           assetUri,
           new Set()
         );
-        if (themeDef) return buildPalette(themeDef);
+        if (themeDef) return buildPalette(themeDef, ext.displayName || ext.extensionName);
       } catch {
         // Try next pattern or fall back to VSIX
       }
@@ -517,7 +521,7 @@ async function fetchPalette(ext: MarketplaceExtension): Promise<ThemeColor[]> {
 
     const zipData = new Uint8Array(await res.arrayBuffer());
     const themeDef = parseThemeDefinition(zipData, themePath);
-    return buildPalette(themeDef);
+    return buildPalette(themeDef, ext.displayName || ext.extensionName);
   } catch {
     return generateFallbackPalette(ext.displayName || ext.extensionName);
   }

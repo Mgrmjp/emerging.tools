@@ -1,59 +1,58 @@
-import { getThemeById } from "@/lib/data";
-import { ThemeDetail } from "@/components/ThemeDetail";
+import { getFontById } from "@/lib/font-data";
+import { FontDetail } from "@/components/FontDetail";
 import { JsonLd } from "@/components/JsonLd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
-interface ThemePageProps {
+interface FontPageProps {
   params: Promise<{ id: string }>;
 }
 
 export async function generateMetadata({
   params,
-}: ThemePageProps): Promise<Metadata> {
+}: FontPageProps): Promise<Metadata> {
   const { id } = await params;
-  const theme = await getThemeById(decodeURIComponent(id));
-  if (!theme) return { title: "Theme not found" };
+  const font = await getFontById(decodeURIComponent(id));
+  if (!font) return { title: "Font not found" };
 
   return {
-    title: `${theme.name} by ${theme.publisher}`,
-    description: theme.description,
-    keywords: [theme.name, theme.publisher, "VS Code theme", theme.type],
+    title: `${font.family} | Trending Fonts`,
+    description: `${font.family} - ${font.category} font with ${font.weights.length} weights`,
+    keywords: [font.family, font.category, "developer font", "trending font"],
     openGraph: {
-      title: theme.name,
-      description: theme.description,
-      url: `${SITE_URL}/themes/${theme.id}`,
+      title: font.family,
+      description: `${font.family} - ${font.category} font`,
+      url: `${SITE_URL}/fonts/${font.id}`,
       siteName: SITE_NAME,
       type: "article",
-      authors: [theme.publisher],
-      publishedTime: theme.lastUpdated,
+      publishedTime: font.lastModified,
     },
     twitter: {
       card: "summary",
-      title: theme.name,
-      description: theme.description,
+      title: font.family,
+      description: `${font.family} - ${font.category} font`,
     },
     alternates: {
-      canonical: `${SITE_URL}/themes/${theme.id}`,
+      canonical: `${SITE_URL}/fonts/${font.id}`,
     },
   };
 }
 
-export default async function ThemePage({ params }: ThemePageProps) {
+export default async function FontPage({ params }: FontPageProps) {
   const { id } = await params;
-  const theme = await getThemeById(decodeURIComponent(id));
+  const font = await getFontById(decodeURIComponent(id));
 
-  if (!theme) {
+  if (!font) {
     return (
       <div className="flex flex-1 items-center justify-center">
         <div className="text-center">
-          <p className="text-[var(--muted)] text-sm">$ 404: theme not found</p>
+          <p className="text-[var(--muted)] text-sm">$ 404: font not found</p>
           <Link
-            href="/"
+            href="/fonts"
             className="mt-3 inline-block text-xs text-[var(--accent)] hover:underline"
           >
-            $ cd ~/trending-themes
+            $ cd ~/trending-fonts
           </Link>
         </div>
       </div>
@@ -63,30 +62,25 @@ export default async function ThemePage({ params }: ThemePageProps) {
   return (
     <>
       <JsonLd
-        id="theme-jsonld"
+        id="font-jsonld"
         data={{
           "@graph": [
             {
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              name: theme.name,
-              description: theme.description,
-              url: `${SITE_URL}/themes/${theme.id}`,
-              applicationCategory: "DeveloperApplication",
-              operatingSystem: "VS Code",
+              name: font.family,
+              description: `${font.family} - ${font.category} font`,
+              url: `${SITE_URL}/fonts/${font.id}`,
+              applicationCategory: "DesignerApplication",
+              operatingSystem: "Web",
               offers: {
                 "@type": "Offer",
                 price: "0",
                 priceCurrency: "USD",
               },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: theme.rating.toFixed(1),
-                ratingCount: theme.ratingCount,
-              },
               author: {
                 "@type": "Organization",
-                name: theme.publisher,
+                name: "Google Fonts",
               },
             },
             {
@@ -96,14 +90,14 @@ export default async function ThemePage({ params }: ThemePageProps) {
                 {
                   "@type": "ListItem",
                   position: 1,
-                  name: "Themes",
-                  item: SITE_URL,
+                  name: "Fonts",
+                  item: `${SITE_URL}/fonts`,
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
-                  name: theme.name,
-                  item: `${SITE_URL}/themes/${theme.id}`,
+                  name: font.family,
+                  item: `${SITE_URL}/fonts/${font.id}`,
                 },
               ],
             },
@@ -113,22 +107,22 @@ export default async function ThemePage({ params }: ThemePageProps) {
       <div className="flex flex-1 flex-col">
         <header className="border-b border-[var(--border)] px-4 py-2 flex items-center gap-3">
           <Link
-            href="/"
+            href="/fonts"
             className="text-xs text-[var(--muted)] hover:text-[var(--text)] transition-colors"
           >
-            ~/trending-themes
+            ~/trending-fonts
           </Link>
           <span className="text-[var(--muted)] text-[10px]">/</span>
-          <span className="text-xs text-[var(--text)]">{theme.name}</span>
+          <span className="text-xs text-[var(--text)]">{font.family}</span>
         </header>
         <main className="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8 flex-1">
-          <ThemeDetail theme={theme} />
+          <FontDetail font={font} />
         </main>
         <footer className="border-t border-[var(--border)] px-4 py-2 flex items-center justify-between text-[10px] text-[var(--muted)]">
           <span className="flex items-center gap-3">
             <span>{SITE_NAME}</span>
-            <Link href="/fonts" className="hover:text-[var(--text)] transition-colors">
-              fonts
+            <Link href="/" className="hover:text-[var(--text)] transition-colors">
+              themes
             </Link>
           </span>
           <span className="flex items-center gap-1">
@@ -140,4 +134,3 @@ export default async function ThemePage({ params }: ThemePageProps) {
     </>
   );
 }
-
