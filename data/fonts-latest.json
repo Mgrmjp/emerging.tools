@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-11-01",
   "fonts": [
     {
       "id": "roboto",
@@ -56,7 +56,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 34.56,
+      "trendingScore": 34.52,
       "installUrl": "https://fontsource.org/fonts/roboto"
     },
     {
@@ -87,7 +87,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v56",
+      "version": "v57",
       "stats": {
         "total": {
           "npmDownloadTotal": 6435018,
@@ -109,7 +109,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 34.2,
+      "trendingScore": 34.16,
       "installUrl": "https://fontsource.org/fonts/noto-sans-jp"
     },
     {
@@ -140,7 +140,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v39",
+      "version": "v40",
       "stats": {
         "total": {
           "npmDownloadTotal": 2611596,
@@ -162,7 +162,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 32.87,
+      "trendingScore": 32.83,
       "installUrl": "https://fontsource.org/fonts/noto-sans-tc"
     },
     {
@@ -233,7 +233,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v33",
+      "version": "v34",
       "stats": {
         "total": {
           "npmDownloadTotal": 429433,
@@ -255,7 +255,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 30.04,
+      "trendingScore": 30,
       "installUrl": "https://fontsource.org/fonts/noto-serif-jp"
     },
     {
@@ -286,7 +286,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v39",
+      "version": "v40",
       "stats": {
         "total": {
           "npmDownloadTotal": 1563926,
@@ -308,7 +308,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 29.42,
+      "trendingScore": 29.38,
       "installUrl": "https://fontsource.org/fonts/noto-sans-kr"
     },
     {
@@ -338,7 +338,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v36",
+      "version": "v37",
       "stats": {
         "total": {
           "npmDownloadTotal": 120262,
@@ -360,7 +360,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 28.88,
+      "trendingScore": 28.84,
       "installUrl": "https://fontsource.org/fonts/noto-serif-tc"
     },
     {
@@ -391,7 +391,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v40",
+      "version": "v41",
       "stats": {
         "total": {
           "npmDownloadTotal": 2691642,
@@ -413,7 +413,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 28.87,
+      "trendingScore": 28.83,
       "installUrl": "https://fontsource.org/fonts/noto-sans-sc"
     },
     {
@@ -505,7 +505,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 28.36,
+      "trendingScore": 28.32,
       "installUrl": "https://fontsource.org/fonts/geist"
     },
     {
@@ -536,7 +536,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v35",
+      "version": "v36",
       "stats": {
         "total": {
           "npmDownloadTotal": 822226,
@@ -558,7 +558,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 28.05,
+      "trendingScore": 28.01,
       "installUrl": "https://fontsource.org/fonts/noto-sans-hk"
     },
     {
@@ -652,7 +652,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 27.66,
+      "trendingScore": 27.62,
       "installUrl": "https://fontsource.org/fonts/ibm-plex-sans-arabic"
     },
     {
@@ -707,7 +707,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 27.57,
+      "trendingScore": 27.53,
       "installUrl": "https://fontsource.org/fonts/geist-mono"
     },
     {
@@ -745,7 +745,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 27.35,
+      "trendingScore": 27.31,
       "installUrl": "https://fontsource.org/fonts/tiro-bangla"
     },
     {
@@ -800,7 +800,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 27.32,
+      "trendingScore": 27.28,
       "installUrl": "https://fontsource.org/fonts/onest"
     },
     {
@@ -827,7 +827,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v19",
+      "version": "v20",
       "stats": {
         "total": {
           "npmDownloadTotal": 113563,
@@ -843,7 +843,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 26.8,
+      "trendingScore": 26.77,
       "installUrl": "https://fontsource.org/fonts/zen-maru-gothic"
     },
     {
@@ -887,7 +887,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 26.73,
+      "trendingScore": 26.69,
       "installUrl": "https://fontsource.org/fonts/cousine"
     },
     {
@@ -917,7 +917,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v31",
+      "version": "v32",
       "stats": {
         "total": {
           "npmDownloadTotal": 133067,
@@ -939,7 +939,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 26.36,
+      "trendingScore": 26.32,
       "installUrl": "https://fontsource.org/fonts/noto-serif-kr"
     },
     {
@@ -969,7 +969,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v35",
+      "version": "v36",
       "stats": {
         "total": {
           "npmDownloadTotal": 393432,
@@ -991,7 +991,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 26.31,
+      "trendingScore": 26.27,
       "installUrl": "https://fontsource.org/fonts/noto-serif-sc"
     },
     {
@@ -1017,7 +1017,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v18",
+      "version": "v19",
       "stats": {
         "total": {
           "npmDownloadTotal": 209554,
@@ -1033,7 +1033,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 26.31,
+      "trendingScore": 26.27,
       "installUrl": "https://fontsource.org/fonts/zen-kaku-gothic-new"
     },
     {
@@ -1043,6 +1043,7 @@
       "type": "google",
       "variable": false,
       "subsets": [
+        "arabic",
         "armenian",
         "bengali",
         "canadian-aboriginal",
@@ -1056,6 +1057,7 @@
         "gujarati",
         "gurmukhi",
         "hebrew",
+        "kannada",
         "khmer",
         "lao",
         "latin",
@@ -1080,7 +1082,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v70",
+      "version": "v76",
       "stats": {
         "total": {
           "npmDownloadTotal": 75057,
@@ -1102,7 +1104,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 26.14,
+      "trendingScore": 26.1,
       "installUrl": "https://fontsource.org/fonts/google-sans"
     },
     {
@@ -1210,7 +1212,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25.9,
+      "trendingScore": 25.86,
       "installUrl": "https://fontsource.org/fonts/eb-garamond"
     },
     {
@@ -1264,7 +1266,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25.84,
+      "trendingScore": 25.8,
       "installUrl": "https://fontsource.org/fonts/bitter"
     },
     {
@@ -1297,7 +1299,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v19",
+      "version": "v20",
       "stats": {
         "total": {
           "npmDownloadTotal": 1873517,
@@ -1319,7 +1321,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25.74,
+      "trendingScore": 25.7,
       "installUrl": "https://fontsource.org/fonts/source-sans-3"
     },
     {
@@ -1462,58 +1464,6 @@
       "installUrl": "https://fontsource.org/fonts/noto-sans-arabic"
     },
     {
-      "id": "arimo",
-      "family": "Arimo",
-      "category": "sans-serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "cyrillic",
-        "cyrillic-ext",
-        "greek",
-        "greek-ext",
-        "hebrew",
-        "latin",
-        "latin-ext",
-        "vietnamese"
-      ],
-      "weights": [
-        400,
-        500,
-        600,
-        700
-      ],
-      "styles": [
-        "italic",
-        "normal"
-      ],
-      "lastModified": "2026-05-18",
-      "version": "v36",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 862507,
-          "npmDownloadMonthly": 223403,
-          "jsDelivrHitsTotal": 8603583,
-          "jsDelivrHitsMonthly": 6827280
-        },
-        "static": {
-          "npmDownloadTotal": 810090,
-          "npmDownloadMonthly": 215123,
-          "jsDelivrHitsTotal": 6323551,
-          "jsDelivrHitsMonthly": 4548811
-        },
-        "variable": {
-          "npmDownloadTotal": 52417,
-          "npmDownloadMonthly": 8280,
-          "jsDelivrHitsTotal": 2280032,
-          "jsDelivrHitsMonthly": 2278469
-        }
-      },
-      "ranks": {},
-      "trendingScore": 25.49,
-      "installUrl": "https://fontsource.org/fonts/arimo"
-    },
-    {
       "id": "barlow-semi-condensed",
       "family": "Barlow Semi Condensed",
       "category": "sans-serif",
@@ -1606,6 +1556,58 @@
       "installUrl": "https://fontsource.org/fonts/ibm-plex-mono"
     },
     {
+      "id": "arimo",
+      "family": "Arimo",
+      "category": "sans-serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "greek-ext",
+        "hebrew",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "styles": [
+        "italic",
+        "normal"
+      ],
+      "lastModified": "2026-05-18",
+      "version": "v36",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 862507,
+          "npmDownloadMonthly": 223403,
+          "jsDelivrHitsTotal": 8603583,
+          "jsDelivrHitsMonthly": 6827280
+        },
+        "static": {
+          "npmDownloadTotal": 810090,
+          "npmDownloadMonthly": 215123,
+          "jsDelivrHitsTotal": 6323551,
+          "jsDelivrHitsMonthly": 4548811
+        },
+        "variable": {
+          "npmDownloadTotal": 52417,
+          "npmDownloadMonthly": 8280,
+          "jsDelivrHitsTotal": 2280032,
+          "jsDelivrHitsMonthly": 2278469
+        }
+      },
+      "ranks": {},
+      "trendingScore": 25.46,
+      "installUrl": "https://fontsource.org/fonts/arimo"
+    },
+    {
       "id": "roboto-mono",
       "family": "Roboto Mono",
       "category": "monospace",
@@ -1655,7 +1657,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25.3,
+      "trendingScore": 25.26,
       "installUrl": "https://fontsource.org/fonts/roboto-mono"
     },
     {
@@ -1701,7 +1703,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25.23,
+      "trendingScore": 25.19,
       "installUrl": "https://fontsource.org/fonts/libre-baskerville"
     },
     {
@@ -1737,7 +1739,7 @@
         "normal"
       ],
       "lastModified": "2026-10-20",
-      "version": "v22",
+      "version": "v26",
       "stats": {
         "total": {
           "npmDownloadTotal": 74616,
@@ -1759,7 +1761,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25.04,
+      "trendingScore": 25,
       "installUrl": "https://fontsource.org/fonts/google-sans-flex"
     },
     {
@@ -1791,7 +1793,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v14",
+      "version": "v15",
       "stats": {
         "total": {
           "npmDownloadTotal": 1714749,
@@ -1813,7 +1815,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 25,
+      "trendingScore": 24.96,
       "installUrl": "https://fontsource.org/fonts/source-serif-4"
     },
     {
@@ -1846,7 +1848,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v31",
+      "version": "v32",
       "stats": {
         "total": {
           "npmDownloadTotal": 5170076,
@@ -1868,7 +1870,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 24.68,
+      "trendingScore": 24.64,
       "installUrl": "https://fontsource.org/fonts/source-code-pro"
     },
     {
@@ -1973,7 +1975,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v8",
+      "version": "v9",
       "stats": {
         "total": {
           "npmDownloadTotal": 18308,
@@ -1989,7 +1991,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 24.36,
+      "trendingScore": 24.32,
       "installUrl": "https://fontsource.org/fonts/yuji-syuku"
     },
     {
@@ -2015,7 +2017,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v5",
+      "version": "v6",
       "stats": {
         "total": {
           "npmDownloadTotal": 35824,
@@ -2031,7 +2033,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 24.26,
+      "trendingScore": 24.22,
       "installUrl": "https://fontsource.org/fonts/line-seed-jp"
     },
     {
@@ -2075,7 +2077,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 24.26,
+      "trendingScore": 24.22,
       "installUrl": "https://fontsource.org/fonts/tinos"
     },
     {
@@ -2103,7 +2105,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v7",
+      "version": "v8",
       "stats": {
         "total": {
           "npmDownloadTotal": 77669,
@@ -2119,7 +2121,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 24,
+      "trendingScore": 23.96,
       "installUrl": "https://fontsource.org/fonts/ibm-plex-sans-jp"
     },
     {
@@ -2218,7 +2220,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 23.59,
+      "trendingScore": 23.55,
       "installUrl": "https://fontsource.org/fonts/alegreya-sans"
     },
     {
@@ -2264,94 +2266,6 @@
       "ranks": {},
       "trendingScore": 23.33,
       "installUrl": "https://fontsource.org/fonts/krub"
-    },
-    {
-      "id": "zen-old-mincho",
-      "family": "Zen Old Mincho",
-      "category": "serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "cyrillic",
-        "greek",
-        "japanese",
-        "latin",
-        "latin-ext"
-      ],
-      "weights": [
-        400,
-        500,
-        600,
-        700,
-        900
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-10-01",
-      "version": "v13",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 40757,
-          "npmDownloadMonthly": 9075,
-          "jsDelivrHitsTotal": 2761520,
-          "jsDelivrHitsMonthly": 1404060
-        },
-        "static": {
-          "npmDownloadTotal": 40757,
-          "npmDownloadMonthly": 9075,
-          "jsDelivrHitsTotal": 2761520,
-          "jsDelivrHitsMonthly": 1404060
-        }
-      },
-      "ranks": {},
-      "trendingScore": 23.23,
-      "installUrl": "https://fontsource.org/fonts/zen-old-mincho"
-    },
-    {
-      "id": "encode-sans-condensed",
-      "family": "Encode Sans Condensed",
-      "category": "sans-serif",
-      "type": "google",
-      "variable": true,
-      "subsets": [
-        "latin",
-        "latin-ext",
-        "vietnamese"
-      ],
-      "weights": [
-        100,
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-06-30",
-      "version": "v13",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 23724,
-          "npmDownloadMonthly": 967,
-          "jsDelivrHitsTotal": 2034510,
-          "jsDelivrHitsMonthly": 1632552
-        },
-        "static": {
-          "npmDownloadTotal": 23724,
-          "npmDownloadMonthly": 967,
-          "jsDelivrHitsTotal": 2034510,
-          "jsDelivrHitsMonthly": 1632552
-        }
-      },
-      "ranks": {},
-      "trendingScore": 23.21,
-      "installUrl": "https://fontsource.org/fonts/encode-sans-condensed"
     },
     {
       "id": "fira-code",
@@ -2405,6 +2319,94 @@
       "installUrl": "https://fontsource.org/fonts/fira-code"
     },
     {
+      "id": "zen-old-mincho",
+      "family": "Zen Old Mincho",
+      "category": "serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "cyrillic",
+        "greek",
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        900
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-10-01",
+      "version": "v14",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 40757,
+          "npmDownloadMonthly": 9075,
+          "jsDelivrHitsTotal": 2761520,
+          "jsDelivrHitsMonthly": 1404060
+        },
+        "static": {
+          "npmDownloadTotal": 40757,
+          "npmDownloadMonthly": 9075,
+          "jsDelivrHitsTotal": 2761520,
+          "jsDelivrHitsMonthly": 1404060
+        }
+      },
+      "ranks": {},
+      "trendingScore": 23.19,
+      "installUrl": "https://fontsource.org/fonts/zen-old-mincho"
+    },
+    {
+      "id": "encode-sans-condensed",
+      "family": "Encode Sans Condensed",
+      "category": "sans-serif",
+      "type": "google",
+      "variable": true,
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-06-30",
+      "version": "v13",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 23724,
+          "npmDownloadMonthly": 967,
+          "jsDelivrHitsTotal": 2034510,
+          "jsDelivrHitsMonthly": 1632552
+        },
+        "static": {
+          "npmDownloadTotal": 23724,
+          "npmDownloadMonthly": 967,
+          "jsDelivrHitsTotal": 2034510,
+          "jsDelivrHitsMonthly": 1632552
+        }
+      },
+      "ranks": {},
+      "trendingScore": 23.17,
+      "installUrl": "https://fontsource.org/fonts/encode-sans-condensed"
+    },
+    {
       "id": "zen-kaku-gothic-antique",
       "family": "Zen Kaku Gothic Antique",
       "category": "sans-serif",
@@ -2427,7 +2429,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v18",
+      "version": "v19",
       "stats": {
         "total": {
           "npmDownloadTotal": 51819,
@@ -2443,7 +2445,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 23.19,
+      "trendingScore": 23.15,
       "installUrl": "https://fontsource.org/fonts/zen-kaku-gothic-antique"
     },
     {
@@ -2495,7 +2497,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 23.1,
+      "trendingScore": 23.06,
       "installUrl": "https://fontsource.org/fonts/yanone-kaffeesatz"
     },
     {
@@ -2636,7 +2638,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v13",
+      "version": "v14",
       "stats": {
         "total": {
           "npmDownloadTotal": 2894,
@@ -2652,7 +2654,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 22.76,
+      "trendingScore": 22.72,
       "installUrl": "https://fontsource.org/fonts/iansui"
     },
     {
@@ -2690,43 +2692,8 @@
         }
       },
       "ranks": {},
-      "trendingScore": 22.59,
+      "trendingScore": 22.55,
       "installUrl": "https://fontsource.org/fonts/sunflower"
-    },
-    {
-      "id": "noto-color-emoji",
-      "family": "Noto Color Emoji",
-      "category": "sans-serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "emoji"
-      ],
-      "weights": [
-        400
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-09-16",
-      "version": "v47",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 320781,
-          "npmDownloadMonthly": 52034,
-          "jsDelivrHitsTotal": 1512914,
-          "jsDelivrHitsMonthly": 659341
-        },
-        "static": {
-          "npmDownloadTotal": 320781,
-          "npmDownloadMonthly": 52034,
-          "jsDelivrHitsTotal": 1512914,
-          "jsDelivrHitsMonthly": 659341
-        }
-      },
-      "ranks": {},
-      "trendingScore": 22.5,
-      "installUrl": "https://fontsource.org/fonts/noto-color-emoji"
     },
     {
       "id": "hind-siliguri",
@@ -2768,6 +2735,41 @@
       "ranks": {},
       "trendingScore": 22.5,
       "installUrl": "https://fontsource.org/fonts/hind-siliguri"
+    },
+    {
+      "id": "noto-color-emoji",
+      "family": "Noto Color Emoji",
+      "category": "sans-serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "emoji"
+      ],
+      "weights": [
+        400
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-09-16",
+      "version": "v50",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 320781,
+          "npmDownloadMonthly": 52034,
+          "jsDelivrHitsTotal": 1512914,
+          "jsDelivrHitsMonthly": 659341
+        },
+        "static": {
+          "npmDownloadTotal": 320781,
+          "npmDownloadMonthly": 52034,
+          "jsDelivrHitsTotal": 1512914,
+          "jsDelivrHitsMonthly": 659341
+        }
+      },
+      "ranks": {},
+      "trendingScore": 22.46,
+      "installUrl": "https://fontsource.org/fonts/noto-color-emoji"
     },
     {
       "id": "noto-naskh-arabic",
@@ -2814,7 +2816,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 22.1,
+      "trendingScore": 22.06,
       "installUrl": "https://fontsource.org/fonts/noto-naskh-arabic"
     },
     {
@@ -2967,7 +2969,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.99,
+      "trendingScore": 21.95,
       "installUrl": "https://fontsource.org/fonts/alegreya"
     },
     {
@@ -3096,7 +3098,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.8,
+      "trendingScore": 21.76,
       "installUrl": "https://fontsource.org/fonts/alegreya-sans-sc"
     },
     {
@@ -3200,7 +3202,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v13",
+      "version": "v14",
       "stats": {
         "total": {
           "npmDownloadTotal": 19183,
@@ -3216,7 +3218,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.64,
+      "trendingScore": 21.6,
       "installUrl": "https://fontsource.org/fonts/klee-one"
     },
     {
@@ -3255,86 +3257,8 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.64,
-      "installUrl": "https://fontsource.org/fonts/sawarabi-gothic"
-    },
-    {
-      "id": "tiro-devanagari-hindi",
-      "family": "Tiro Devanagari Hindi",
-      "category": "serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "devanagari",
-        "latin",
-        "latin-ext"
-      ],
-      "weights": [
-        400
-      ],
-      "styles": [
-        "italic",
-        "normal"
-      ],
-      "lastModified": "2026-06-29",
-      "version": "v7",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 7261,
-          "npmDownloadMonthly": 641,
-          "jsDelivrHitsTotal": 11874036,
-          "jsDelivrHitsMonthly": 774454
-        },
-        "static": {
-          "npmDownloadTotal": 7261,
-          "npmDownloadMonthly": 641,
-          "jsDelivrHitsTotal": 11874036,
-          "jsDelivrHitsMonthly": 774454
-        }
-      },
-      "ranks": {},
-      "trendingScore": 21.61,
-      "installUrl": "https://fontsource.org/fonts/tiro-devanagari-hindi"
-    },
-    {
-      "id": "scheherazade-new",
-      "family": "Scheherazade New",
-      "category": "serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "arabic",
-        "latin",
-        "latin-ext"
-      ],
-      "weights": [
-        400,
-        500,
-        600,
-        700
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-05-13",
-      "version": "v21",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 23128,
-          "npmDownloadMonthly": 3013,
-          "jsDelivrHitsTotal": 1138064,
-          "jsDelivrHitsMonthly": 875986
-        },
-        "static": {
-          "npmDownloadTotal": 23128,
-          "npmDownloadMonthly": 3013,
-          "jsDelivrHitsTotal": 1138064,
-          "jsDelivrHitsMonthly": 875986
-        }
-      },
-      "ranks": {},
       "trendingScore": 21.6,
-      "installUrl": "https://fontsource.org/fonts/scheherazade-new"
+      "installUrl": "https://fontsource.org/fonts/sawarabi-gothic"
     },
     {
       "id": "grandstander",
@@ -3387,6 +3311,84 @@
       "ranks": {},
       "trendingScore": 21.6,
       "installUrl": "https://fontsource.org/fonts/grandstander"
+    },
+    {
+      "id": "tiro-devanagari-hindi",
+      "family": "Tiro Devanagari Hindi",
+      "category": "serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "devanagari",
+        "latin",
+        "latin-ext"
+      ],
+      "weights": [
+        400
+      ],
+      "styles": [
+        "italic",
+        "normal"
+      ],
+      "lastModified": "2026-06-29",
+      "version": "v7",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 7261,
+          "npmDownloadMonthly": 641,
+          "jsDelivrHitsTotal": 11874036,
+          "jsDelivrHitsMonthly": 774454
+        },
+        "static": {
+          "npmDownloadTotal": 7261,
+          "npmDownloadMonthly": 641,
+          "jsDelivrHitsTotal": 11874036,
+          "jsDelivrHitsMonthly": 774454
+        }
+      },
+      "ranks": {},
+      "trendingScore": 21.57,
+      "installUrl": "https://fontsource.org/fonts/tiro-devanagari-hindi"
+    },
+    {
+      "id": "scheherazade-new",
+      "family": "Scheherazade New",
+      "category": "serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "arabic",
+        "latin",
+        "latin-ext"
+      ],
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-05-13",
+      "version": "v21",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 23128,
+          "npmDownloadMonthly": 3013,
+          "jsDelivrHitsTotal": 1138064,
+          "jsDelivrHitsMonthly": 875986
+        },
+        "static": {
+          "npmDownloadTotal": 23128,
+          "npmDownloadMonthly": 3013,
+          "jsDelivrHitsTotal": 1138064,
+          "jsDelivrHitsMonthly": 875986
+        }
+      },
+      "ranks": {},
+      "trendingScore": 21.56,
+      "installUrl": "https://fontsource.org/fonts/scheherazade-new"
     },
     {
       "id": "bodoni-moda",
@@ -3519,7 +3521,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.37,
+      "trendingScore": 21.33,
       "installUrl": "https://fontsource.org/fonts/acme"
     },
     {
@@ -3573,7 +3575,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.37,
+      "trendingScore": 21.33,
       "installUrl": "https://fontsource.org/fonts/roboto-serif"
     },
     {
@@ -3622,7 +3624,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.34,
+      "trendingScore": 21.3,
       "installUrl": "https://fontsource.org/fonts/m-plus-rounded-1c"
     },
     {
@@ -3666,58 +3668,6 @@
       "ranks": {},
       "trendingScore": 21.29,
       "installUrl": "https://fontsource.org/fonts/zain"
-    },
-    {
-      "id": "noto-serif-hk",
-      "family": "Noto Serif HK",
-      "category": "serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "chinese-hongkong",
-        "cyrillic",
-        "latin",
-        "latin-ext",
-        "vietnamese"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-10-01",
-      "version": "v12",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 79802,
-          "npmDownloadMonthly": 16260,
-          "jsDelivrHitsTotal": 3616003,
-          "jsDelivrHitsMonthly": 346520
-        },
-        "static": {
-          "npmDownloadTotal": 27647,
-          "npmDownloadMonthly": 974,
-          "jsDelivrHitsTotal": 3371691,
-          "jsDelivrHitsMonthly": 108979
-        },
-        "variable": {
-          "npmDownloadTotal": 52155,
-          "npmDownloadMonthly": 15286,
-          "jsDelivrHitsTotal": 244312,
-          "jsDelivrHitsMonthly": 237541
-        }
-      },
-      "ranks": {},
-      "trendingScore": 21.2,
-      "installUrl": "https://fontsource.org/fonts/noto-serif-hk"
     },
     {
       "id": "kumbh-sans",
@@ -3770,6 +3720,58 @@
       "ranks": {},
       "trendingScore": 21.2,
       "installUrl": "https://fontsource.org/fonts/kumbh-sans"
+    },
+    {
+      "id": "noto-serif-hk",
+      "family": "Noto Serif HK",
+      "category": "serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "chinese-hongkong",
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "weights": [
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-10-01",
+      "version": "v13",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 79802,
+          "npmDownloadMonthly": 16260,
+          "jsDelivrHitsTotal": 3616003,
+          "jsDelivrHitsMonthly": 346520
+        },
+        "static": {
+          "npmDownloadTotal": 27647,
+          "npmDownloadMonthly": 974,
+          "jsDelivrHitsTotal": 3371691,
+          "jsDelivrHitsMonthly": 108979
+        },
+        "variable": {
+          "npmDownloadTotal": 52155,
+          "npmDownloadMonthly": 15286,
+          "jsDelivrHitsTotal": 244312,
+          "jsDelivrHitsMonthly": 237541
+        }
+      },
+      "ranks": {},
+      "trendingScore": 21.16,
+      "installUrl": "https://fontsource.org/fonts/noto-serif-hk"
     },
     {
       "id": "comic-neue",
@@ -3858,7 +3860,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.09,
+      "trendingScore": 21.05,
       "installUrl": "https://fontsource.org/fonts/tiktok-sans"
     },
     {
@@ -3894,7 +3896,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 21.06,
+      "trendingScore": 21.02,
       "installUrl": "https://fontsource.org/fonts/ma-shan-zheng"
     },
     {
@@ -3947,7 +3949,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.97,
+      "trendingScore": 20.93,
       "installUrl": "https://fontsource.org/fonts/sn-pro"
     },
     {
@@ -3999,61 +4001,8 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.95,
-      "installUrl": "https://fontsource.org/fonts/saira"
-    },
-    {
-      "id": "chiron-goround-tc",
-      "family": "Chiron GoRound TC",
-      "category": "sans-serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "chinese-traditional",
-        "cyrillic",
-        "cyrillic-ext",
-        "latin",
-        "latin-ext",
-        "vietnamese"
-      ],
-      "weights": [
-        200,
-        300,
-        400,
-        500,
-        600,
-        700,
-        800,
-        900
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-10-01",
-      "version": "v4",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 5272,
-          "npmDownloadMonthly": 1333,
-          "jsDelivrHitsTotal": 2435965,
-          "jsDelivrHitsMonthly": 376290
-        },
-        "static": {
-          "npmDownloadTotal": 3833,
-          "npmDownloadMonthly": 829,
-          "jsDelivrHitsTotal": 2255548,
-          "jsDelivrHitsMonthly": 200117
-        },
-        "variable": {
-          "npmDownloadTotal": 1439,
-          "npmDownloadMonthly": 504,
-          "jsDelivrHitsTotal": 180417,
-          "jsDelivrHitsMonthly": 176173
-        }
-      },
-      "ranks": {},
       "trendingScore": 20.91,
-      "installUrl": "https://fontsource.org/fonts/chiron-goround-tc"
+      "installUrl": "https://fontsource.org/fonts/saira"
     },
     {
       "id": "abhaya-libre",
@@ -4097,6 +4046,59 @@
       "installUrl": "https://fontsource.org/fonts/abhaya-libre"
     },
     {
+      "id": "chiron-goround-tc",
+      "family": "Chiron GoRound TC",
+      "category": "sans-serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "chinese-traditional",
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "weights": [
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-10-01",
+      "version": "v5",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 5272,
+          "npmDownloadMonthly": 1333,
+          "jsDelivrHitsTotal": 2435965,
+          "jsDelivrHitsMonthly": 376290
+        },
+        "static": {
+          "npmDownloadTotal": 3833,
+          "npmDownloadMonthly": 829,
+          "jsDelivrHitsTotal": 2255548,
+          "jsDelivrHitsMonthly": 200117
+        },
+        "variable": {
+          "npmDownloadTotal": 1439,
+          "npmDownloadMonthly": 504,
+          "jsDelivrHitsTotal": 180417,
+          "jsDelivrHitsMonthly": 176173
+        }
+      },
+      "ranks": {},
+      "trendingScore": 20.87,
+      "installUrl": "https://fontsource.org/fonts/chiron-goround-tc"
+    },
+    {
       "id": "chiron-hei-hk",
       "family": "Chiron Hei HK",
       "category": "sans-serif",
@@ -4128,7 +4130,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v6",
+      "version": "v7",
       "stats": {
         "total": {
           "npmDownloadTotal": 3270,
@@ -4150,7 +4152,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.85,
+      "trendingScore": 20.81,
       "installUrl": "https://fontsource.org/fonts/chiron-hei-hk"
     },
     {
@@ -4241,6 +4243,91 @@
       "installUrl": "https://fontsource.org/fonts/abril-fatface"
     },
     {
+      "id": "didact-gothic",
+      "family": "Didact Gothic",
+      "category": "sans-serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "greek-ext",
+        "latin",
+        "latin-ext"
+      ],
+      "weights": [
+        400
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2025-09-16",
+      "version": "v21",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 522967,
+          "npmDownloadMonthly": 21670,
+          "jsDelivrHitsTotal": 1094683,
+          "jsDelivrHitsMonthly": 757724
+        },
+        "static": {
+          "npmDownloadTotal": 522967,
+          "npmDownloadMonthly": 21670,
+          "jsDelivrHitsTotal": 1094683,
+          "jsDelivrHitsMonthly": 757724
+        }
+      },
+      "ranks": {},
+      "trendingScore": 20.53,
+      "installUrl": "https://fontsource.org/fonts/didact-gothic"
+    },
+    {
+      "id": "noto-emoji",
+      "family": "Noto Emoji",
+      "category": "sans-serif",
+      "type": "google",
+      "variable": false,
+      "subsets": [
+        "emoji"
+      ],
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "styles": [
+        "normal"
+      ],
+      "lastModified": "2026-09-17",
+      "version": "v65",
+      "stats": {
+        "total": {
+          "npmDownloadTotal": 174072,
+          "npmDownloadMonthly": 40966,
+          "jsDelivrHitsTotal": 282408,
+          "jsDelivrHitsMonthly": 50856
+        },
+        "static": {
+          "npmDownloadTotal": 146358,
+          "npmDownloadMonthly": 40474,
+          "jsDelivrHitsTotal": 238881,
+          "jsDelivrHitsMonthly": 7911
+        },
+        "variable": {
+          "npmDownloadTotal": 27714,
+          "npmDownloadMonthly": 492,
+          "jsDelivrHitsTotal": 43527,
+          "jsDelivrHitsMonthly": 42945
+        }
+      },
+      "ranks": {},
+      "trendingScore": 20.5,
+      "installUrl": "https://fontsource.org/fonts/noto-emoji"
+    },
+    {
       "id": "noto-sans-bengali",
       "family": "Noto Sans Bengali",
       "category": "sans-serif",
@@ -4288,93 +4375,8 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.54,
+      "trendingScore": 20.5,
       "installUrl": "https://fontsource.org/fonts/noto-sans-bengali"
-    },
-    {
-      "id": "noto-emoji",
-      "family": "Noto Emoji",
-      "category": "sans-serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "emoji"
-      ],
-      "weights": [
-        300,
-        400,
-        500,
-        600,
-        700
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2026-09-17",
-      "version": "v65",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 174072,
-          "npmDownloadMonthly": 40966,
-          "jsDelivrHitsTotal": 282408,
-          "jsDelivrHitsMonthly": 50856
-        },
-        "static": {
-          "npmDownloadTotal": 146358,
-          "npmDownloadMonthly": 40474,
-          "jsDelivrHitsTotal": 238881,
-          "jsDelivrHitsMonthly": 7911
-        },
-        "variable": {
-          "npmDownloadTotal": 27714,
-          "npmDownloadMonthly": 492,
-          "jsDelivrHitsTotal": 43527,
-          "jsDelivrHitsMonthly": 42945
-        }
-      },
-      "ranks": {},
-      "trendingScore": 20.53,
-      "installUrl": "https://fontsource.org/fonts/noto-emoji"
-    },
-    {
-      "id": "didact-gothic",
-      "family": "Didact Gothic",
-      "category": "sans-serif",
-      "type": "google",
-      "variable": false,
-      "subsets": [
-        "cyrillic",
-        "cyrillic-ext",
-        "greek",
-        "greek-ext",
-        "latin",
-        "latin-ext"
-      ],
-      "weights": [
-        400
-      ],
-      "styles": [
-        "normal"
-      ],
-      "lastModified": "2025-09-16",
-      "version": "v21",
-      "stats": {
-        "total": {
-          "npmDownloadTotal": 522967,
-          "npmDownloadMonthly": 21670,
-          "jsDelivrHitsTotal": 1094683,
-          "jsDelivrHitsMonthly": 757724
-        },
-        "static": {
-          "npmDownloadTotal": 522967,
-          "npmDownloadMonthly": 21670,
-          "jsDelivrHitsTotal": 1094683,
-          "jsDelivrHitsMonthly": 757724
-        }
-      },
-      "ranks": {},
-      "trendingScore": 20.53,
-      "installUrl": "https://fontsource.org/fonts/didact-gothic"
     },
     {
       "id": "caladea",
@@ -4411,7 +4413,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.5,
+      "trendingScore": 20.46,
       "installUrl": "https://fontsource.org/fonts/caladea"
     },
     {
@@ -4462,7 +4464,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.47,
+      "trendingScore": 20.43,
       "installUrl": "https://fontsource.org/fonts/zalando-sans"
     },
     {
@@ -4627,7 +4629,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v20",
+      "version": "v21",
       "stats": {
         "total": {
           "npmDownloadTotal": 165845,
@@ -4643,7 +4645,7 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.04,
+      "trendingScore": 20,
       "installUrl": "https://fontsource.org/fonts/kiwi-maru"
     },
     {
@@ -4672,7 +4674,7 @@
         "normal"
       ],
       "lastModified": "2026-10-01",
-      "version": "v10",
+      "version": "v11",
       "stats": {
         "total": {
           "npmDownloadTotal": 9759,
@@ -4688,15 +4690,15 @@
         }
       },
       "ranks": {},
-      "trendingScore": 20.02,
+      "trendingScore": 19.98,
       "installUrl": "https://fontsource.org/fonts/lxgw-wenkai-tc"
     }
   ],
-  "generatedAt": "2026-10-25T03:44:30.033Z",
+  "generatedAt": "2026-11-01T04:57:46.710Z",
   "source": {
     "provider": "fontsource",
     "candidateCount": 450,
-    "statsResolvedCount": 450,
+    "statsResolvedCount": 448,
     "hasGoogleRankSignals": false
   }
 }
